@@ -1,1 +1,105 @@
 // Add your custom CSS here.
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Black+Han+Sans&family=Ropa+Sans:ital@0;1&display=swap');
+
+.black-han-sans-regular {
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.ropa-sans-regular {
+  font-family: "Ropa Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ropa-sans-regular-italic {
+  font-family: "Ropa Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.alfa-slab-one-regular {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.font-weight-bold{font-weight: bold;}
+.font-weight-800{font-weight: 800;}
+.font-weight-700{font-weight: 700;}
+.font-weight-600{font-weight: 600;}
+.font-weight-500{font-weight: 500;}
+.font-weight-normal{font-weight: normal;}
+.font-weight-300{font-weight: 300;}
+
+.align-items-center{align-items: center;}
+.align-items-end{align-items: flex-end;}
+.justify-content-center{justify-content: center;}
+.justify-content-end{justify-content: flex-end;}
+.justify-content-between{justify-content: space-between;}
+
+
+/* Direção de flexbox como linha em todos os dispositivos */
+.flex-row {
+  flex-direction: row !important;
+}
+
+/* Direção de flexbox como coluna em todos os dispositivos */
+.flex-column {
+  flex-direction: column !important;
+}
+
+/* Direção de flexbox como linha em dispositivos de tamanho médio e maiores */
+@media (min-width: 768px) {
+  .flex-md-row {
+      flex-direction: row !important;
+  }
+}
+
+/* Direção de flexbox como coluna em dispositivos menores que o tamanho médio */
+@media (max-width: 767.98px) {
+  .flex-md-column {
+      flex-direction: column !important;
+  }
+}
+.w-100{width: 100%;}
+main ~ iframe{display: none;}
+:root{
+  --warning:var(--danger);
+  --h1:39.81px;
+  --h2:33.18px;
+  --h3:27.65px;
+  --h4:23.04px;
+  --h5:19.02px;  
+  --font-size:16px;
+  --font-size-sm: 13.33px;
+  --smallest: 11.11px;
+  --blk:#131313;
+  --wht:#fff;
+  --txt:#131313;
+  --c1:var(--primary);
+  --c2:var(--secondary);
+  --ff1:"Black Han Sans", sans-serif;;
+  --ff2:"Ropa Sans", sans-serif;
+  --gray:#4f4f4f;
+
+
+}
+@media(max-width:990px){
+  :root{
+      --h1:28.38px;
+      --h2:22.45px;
+      --h3:19.93px;
+      --h4:17.72px;
+      --h5:15.75px;
+      --h6:15.75px;
+      --font-size:14px;
+      --font-size-sm: 12.4px;
+      --smallest: 11px;
+
+      
+  }
+}
+body{font-family: var(--ff2);}
+
+.container{max-width: 100%;width: 1320px;}
