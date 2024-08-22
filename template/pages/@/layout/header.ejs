@@ -11,8 +11,8 @@ const networks = [
   'instagram',
   'twitter',
   'pinterest',
-  'linkedin',
-  'tiktok'
+  'tiktok',
+  'linkedin'
 ]
 
 // marketing stripe custom styles
@@ -54,7 +54,18 @@ const hasAllDepartments = header.menu_all_departments
 
 <div id="overlay" class="fade"></div>
 
-<div class="top-bar">
+<div class="top-bar d-flex justify-content-between align-items-center px-md-3">
+  <% if (header.contacts_stripe.socials) { %>
+    <div>
+      <% networks.forEach(network => { %>
+        <% if (contacts[network]) { %>
+          <a href="<%= contacts[network] %>" target="_blank" rel="noopener" class="mr-md-2">
+            <img src="/img/vp_<%= network%>.svg"/>
+          </a>
+        <% } %>
+      <% }) %>
+    </div>
+  <% } %>
   <% if (header.marketing_stripe) { %>
     <% if (header.marketing_stripe.text) { %>
       <% if (header.marketing_stripe.link) { %>
@@ -73,52 +84,7 @@ const hasAllDepartments = header.menu_all_departments
     <% } %>
   <% } %>
 
-  <div class="top-bar__nav d-none d-md-block">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col d-flex">
-          <nav class="top-bar__page-links">
-            <% if (header.contacts_stripe.pages) { %>
-              <div class="<%= (themeCustom === 'ecom-beauty' && isCategoriesNavFull) ? 'd-lg-none' : '' %>">
-                <% header.contacts_stripe.pages.forEach(({ link, title }) => { %>
-                  <a href="<%= link %>"><%= title %></a>
-                <% }) %>
-              </div>
-            <% } %>
-          </nav>
-          <% if (header.contacts_stripe.phone_wpp) { %>
-            <div class="top-bar__contacts-container">
-              <% if (contacts.whatsapp) { %>
-                <a href="javascript:;" target="_blank" rel="noopener" class="whatsapp-link"
-                  data-tel="<%= contacts.whatsapp.replace(/\D/g, '') %>">
-                  <i class="i-whatsapp"></i>
-                  <%= contacts.whatsapp %>
-                </a>
-                <% } %>
-              <% if (contacts.phone) { %>
-                <a href="tel:+<%= contacts.phone.replace(/\D/g, '') %>" target="_blank" rel="noopener">
-                  <i class="i-phone"></i>
-                  <%= contacts.phone %>
-                </a>
-              <% } %>
-            </div>
-            
-          <% } %>
-        </div>
-        <% if (header.contacts_stripe.socials) { %>
-          <div class="col-auto">
-            <% networks.forEach(network => { %>
-              <% if (contacts[network]) { %>
-                <a href="<%= contacts[network] %>" target="_blank" rel="noopener">
-                  <i class="i-<%= network %>"></i>
-                </a>
-              <% } %>
-            <% }) %>
-          </div>
-        <% } %>
-      </div>
-    </div>
-  </div>
+  
 </div>
 
 <header class="header" id="header">
@@ -153,7 +119,7 @@ const hasAllDepartments = header.menu_all_departments
           aria-label="<%= _.dictionary('myAccount') %>"
         >
           <button
-            class="d-lg-none btn btn-lg"
+            class="btn btn-lg"
             id="mobile-search-btn"
             type="button"
             data-toggle="collapse"
@@ -163,7 +129,7 @@ const hasAllDepartments = header.menu_all_departments
             aria-controls="search-bar"
             title="<%= _.dictionary('searchProducts') %>"
           >
-            <i class="i-search"></i>
+            <img src="/img/vp_search.svg"/>
           </button>
 
           <a
@@ -173,7 +139,7 @@ const hasAllDepartments = header.menu_all_departments
             href="/app/#/account/"
             title="<%= _.dictionary('myAccount') %>"
           >
-            <i class="i-user"></i>
+          <img src="/img/vp_user.svg"/>
           </a>
           <a
             id="cart-button"
@@ -182,7 +148,7 @@ const hasAllDepartments = header.menu_all_departments
             href="/app/#/cart"
             title="<%= _.dictionary('openCart') %>"
           >
-            <i class="i-shopping-bag"></i>
+            <img src="/img/vp_cart.svg"/>
             <span id="cart-count" class="badge badge-primary"></span>
           </a>
         </div>
@@ -205,7 +171,7 @@ const hasAllDepartments = header.menu_all_departments
         const searchColSize = !isCategoriesNavFull && categories.length ? '-3' : ''
         %>
         <div
-          class="d-none d-lg-block col-12 col-lg<%= searchColSize %> collapse show"
+          class="d-none d-lg-none col-12 col-lg<%= searchColSize %> collapse show"
           id="search-bar"
         >
           <form
