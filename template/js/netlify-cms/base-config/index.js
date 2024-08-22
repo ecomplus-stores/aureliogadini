@@ -560,6 +560,50 @@ export default options => {
         },
         ...spacer]
     },
+    {
+      label: '[ALPIX] - Grid de Banners',
+      name: 'apx_banners-grid',
+      widget: 'object',
+      fields: [
+          
+        ...spacer, 
+        {
+          label: 'Formato',
+          required: true,
+          name: 'grid',
+          widget: 'select',
+          hint:'12 é a medida referente a um banner de ponta a ponta',
+          options: [
+            {
+              label: '[12]',
+              value: "1"
+            },
+            {
+              label: '[6][6]',
+              value: "2"
+            },
+            {
+              label: '[8][4]',
+              value: "3"
+            },
+            {
+              label: '[4][8]',
+              value: "4"
+            },
+            {
+              label: '[4][4][4]',
+              value: "5"
+            },            
+          ]
+        },
+        {
+          label: 'Banners',
+          name: 'banners',
+          widget: 'list',
+          fields: bannerFields
+        }
+      ]
+    },
     // {
     //   label: '[ALPIX] - Tarja de Vantagens',
     //   name: 'apx_banners-stripe',

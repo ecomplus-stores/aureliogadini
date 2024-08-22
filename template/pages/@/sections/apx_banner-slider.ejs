@@ -1,0 +1,103 @@
+<%
+const timestamp = Date.now()
+let slides
+if (Array.isArray(opt.slides)) {
+  slides = opt.slides.filter(({ start, end }) => {
+    if (start && timestamp < new Date(start).getTime()) {
+      return false
+    }
+    if (end && timestamp > new Date(end).getTime()) {
+      return false
+    }
+    return true
+  })
+}
+
+if (slides && slides.length) {
+  const isBannerFullWidth = opt.full_width
+  let style = ''
+  let className = 'banner-slider'
+  if (isBannerFullWidth) {
+    className += ' banner-slider--full-width'
+  }
+  for (let i = 0; i < 2; i++) {
+    const img = slides[0][i ? 'mobile_img' : 'img']
+    if (img) {
+      const { width, height } = _.tryImageSize(img)
+      if (width) {
+        style += '--banner-aspect-ratio'
+        if (i > 0) {
+          style += '-mobile'
+        }
+        style += `:${Math.ceil(height / width * 1000) / 1000};`
+      }
+    }
+  }
+  %>
+  <div class="
+  <%= opt.spacing?.container || 'container' %>  
+  px-0
+      mt-md-<%= opt.spacing?.desktop ? opt.spacing.desktop.margin_top : 0 %>
+      mt-<%= opt.spacing?.mobile ? opt.spacing.mobile.margin_top : 0%>
+      mb-md-<%= opt.spacing?.desktop ? opt.spacing.desktop.margin_bottom : 0%>
+      mb-<%= opt.spacing?.mobile ? opt.spacing.mobile.margin_bottom : 0%>
+      pt-md-<%= opt.spacing?.desktop ? opt.spacing.desktop.padding_top : 0%>
+      pt-<%= opt.spacing?.mobile ? opt.spacing.mobile.padding_top : 0 %>
+      pb-md-<%= opt.spacing?.desktop ? opt.spacing.desktop.padding_bottom : 0%>
+      pb-<%= opt.spacing?.mobile ? opt.spacing.mobile.padding_bottom : 0%>
+      ">
+  <div class="<%- className %>
+    " style="<%- style %>">
+    <div class="glide" data-autoplay="<%= opt.autoplay %>">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides banner-slider__slides">
+          <% for (let i = 0; i < slides.length; i++) { %>
+            <li class="glide__slide">
+              <%- await include('@/sections/inc/apx_banner', {
+                _, opt: { ...slides[i], height_auto: true, sync_load: i === 0 }
+              }) %>
+            </li>
+          <% } %>
+        </ul>
+
+        <% if (slides.length > 1) { %>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button
+              class="btn glide__arrow glide__arrow--left"
+              data-glide-dir="<"
+              aria-label="<%= _.dictionary('previous') %>"
+            >
+              
+<svg width="60" height="66" viewBox="0 0 60 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M37.5 48.9404L22.5 32.6269L37.5 16.3135" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  
+            </button>
+            <button
+              class="btn glide__arrow glide__arrow--right"
+              data-glide-dir=">"
+              aria-label="<%= _.dictionary('next') %>"
+            >
+            
+<svg width="60" height="66" viewBox="0 0 60 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22.5 48.9404L37.5 32.6269L22.5 16.3135" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  
+            </button>
+          </div>
+
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <% slides.forEach((_, index) => { %>
+              <button
+                class="glide__bullet"
+                data-glide-dir="=<%= index %>"
+                aria-label="<%= `${(index + 1)}° banner` %>"
+              ></button>
+            <% }) %>
+          </div>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</div>
+<% } %>
