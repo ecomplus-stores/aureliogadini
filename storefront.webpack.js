@@ -30,5 +30,6 @@ module.exports = () => ({
     // //   './js/QuantitySelector.js': path.resolve(__dirname, 'template/js/custom-js/html/QuantitySelector.js'),   
         // './html/CartQuickview.html': path.resolve(__dirname, 'template/js/custom-js/html/CartQuickview.html'),   
     }
+    
   }
 })
