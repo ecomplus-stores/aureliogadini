@@ -468,6 +468,7 @@ export default options => {
       widget: 'object',
       fields: [
         {
+          required: false,
           label: 'Logotipo',
           name: 'title_img',
           widget: 'image'
@@ -485,11 +486,13 @@ export default options => {
           widget: 'text'
         },
         {
+          required: false,
           label: 'Imagem Sessão',
           name: 'section_img',
           widget: 'image'
         },        
         {
+          required: false,
           label: 'Imagem Sessão - Mobile',
           name: 'section_img_m',
           widget: 'image'
@@ -502,7 +505,7 @@ export default options => {
         },        
         {
           label: 'Formato',
-          required: true,
+          required: false,
           name: 'section_type',
           widget: 'select',
           options: [
@@ -515,43 +518,45 @@ export default options => {
         {
           label: "Cor do Título",
           name: "title_color",
-          widget: "color"
+          widget: "color",
+          required:false
         },
         {
+          required: false,
           label: "Cor do Texto",
           name: "txt_color",
           widget: "color"
         },
         {
+          required: false,
           label: "Cor do Fundo",
           name: "bg_color",
           widget: "color"
         },
         {
+          required: false,
           label: "Cor do Botão",
           name: "btn_color",
           widget: "color"
         },
         {
+          required: false,
           label: "Fundo do Botão",
           name: "btn_bg",
           widget: "color"
         },
         {
+          required: true,
           label: 'Produtos',
           name: 'products',
-          widget: 'list',
-          field: {
-            label: 'SKU do produto',
-            name: 'product_id',
-            widget: 'select',
-            options: options.state.routes
+          widget: 'select',
+          options: options.state.routes
               .filter(({ sku }) => typeof sku === 'string')
               .map(({ _id, sku }) => ({
                 label: sku,
                 value: _id
-              }))
-          }
+              })),
+          multiple:true         
         },
         ...spacer]
     },
