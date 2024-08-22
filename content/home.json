@@ -3,24 +3,36 @@
   "meta_description": "",
   "sections": [
     {
-      "type": "banner-slider",
+      "type": "apx_banner-slider",
+      "visibility": "d-block d-md-block",
       "autoplay": 9000,
-      "full_width": false,
+      "spacing": {
+        "container": "container-fluid"
+      },
       "slides": [
         {
-          "img": "/img/uploads/rect89.webp",
-          "link": "/headset",
-          "alt": "Headset banner",
-          "start": "2020-04-11T05:54:06.750Z",
-          "end": "2020-12-31T03:00:00.000Z",
-          "mobile_img": "/img/uploads/headphone.webp"
-        },
-        {
+          "desktop": {
+            "description_color": "#ffffff",
+            "animate": "fadeInDown",
+            "img": "/img/uploads/rectangle-3-2-.png",
+            "content_order": "inside_image",
+            "btn_url": "/",
+            "content_position": "center_right",
+            "mask_color": "#000000",
+            "btn_text": "VER DISCOGRAFIA",
+            "btn_background": "#000000",
+            "btn_text_color": "#ffffff",
+            "mask_opacity": 3,
+            "title": "SLIPKNOT",
+            "title_color": "#ffffff",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede."
+          },
+          "mobile": {
+            "mask_opacity": 0,
+            "img": "/img/uploads/rectangle-3-3-.png"
+          },
           "start": "",
-          "end": "",
-          "img": "/img/uploads/banner2.webp",
-          "alt": "Banner sample two",
-          "mobile_img": "/img/uploads/passion.webp"
+          "end": ""
         }
       ]
     },
