@@ -1,0 +1,86 @@
+<%
+const views = ['desktop','mobile']
+for (let i=0; i < views.length; i++){ 
+  if (opt[views[i]].img) {
+    const { width, height } = _.tryImageSize(opt[views[i]].img, opt)
+    const sources = [{ src: opt[views[i]].img }]    
+
+    
+    opt.mobile.description_color = opt.mobile.description_color || opt.desktop.description_color
+    opt.mobile.title_color = opt.mobile.title_color || opt.desktop.title_color
+    opt.mobile.btn_background = opt.mobile.btn_background || opt.desktop.btn_background
+    opt.mobile.btn_text_color = opt.mobile.btn_text_color || opt.desktop.btn_text_color
+    opt.mobile.mask_color = opt.mobile.mask_color || opt.desktop.mask_color
+    opt.mobile.mask_opacity = opt.mobile.mask_opacity || opt.desktop.mask_opacity
+    opt.mobile.content_order = opt.mobile.content_order || opt.desktop.content_order
+    opt.mobile.content_position = opt.mobile.content_position || opt.desktop.content_position
+    opt.mobile.title = opt.mobile.title || opt.desktop.title
+    opt.mobile.description = opt.mobile.description || opt.desktop.description
+    opt.mobile.btn_text = opt.mobile.btn_text || opt.desktop.btn_text
+    opt.mobile.btn_url = opt.mobile.btn_url || opt.desktop.btn_url
+    opt.mobile.btn_text_2 = opt.mobile.btn_text_2 || opt.desktop.btn_text_2
+    opt.mobile.btn_url_2 = opt.mobile.btn_url_2 || opt.desktop.btn_url_2
+    opt.mobile.link = opt.mobile.link || opt.desktop.link
+    opt.mobile.alt = opt.mobile.alt || opt.desktop.alt
+    opt.mobile.img = opt.mobile.img || opt.desktop.img
+    
+    %>
+    
+    <div class="banner d-md-<%= views[i] == 'desktop' ? 'block' : 'none'%> d-<%= views[i] == 'mobile' ? 'block' : 'none'%>">
+        <div class="banner-box">
+          <div class="<%= opt[views[i]].animate %> <%= opt[views[i]].content_position %> <%= opt[views[i]].content_order %>" style="
+            --mask:<%= opt[views[i]].mask_opacity || 0 %>; 
+            --mask_color: <%= opt[views[i]].mask_color || 'transparent'%>;
+            --title_color: <%= opt[views[i]].title_color || 'var(--c1)' %>;
+            --description_color: <%= opt[views[i]].description_color || 'var(--blk)' %>;
+            --btn_text_color: <%= opt[views[i]].btn_text_color || 'var(--c2)'%>;
+            --btn_background: <%= opt[views[i]].btn_background %>;
+            --btn_text_color_2: <%= opt[views[i]].btn_text_color %>;
+            --btn_background_2: <%= opt[views[i]].btn_background || 'transparent' %>;
+            ">
+            <a
+              href="<%= opt[views[i]].link || 'javascript:;' %>"
+              aria-label="<%= opt[views[i]].alt %>"
+              class="col-image"
+            >
+              <img
+                class="img-responsive w-100"
+                loading="lazy"
+                src="<%= _.assetsPrefix || '' %><%= opt[views[i]].img.replace('.webp', '.png') %>"
+                alt="<%= opt[views[i]].alt %>"
+                <% if (width) { %>
+                  width="<%= width %>"
+                  height="<%= height %>"
+                <% } %>
+              />        
+            </a>
+            <% if (opt[views[i]].title) {%>
+              <div class="content">
+                <strong class="h3">
+                  <%= opt[views[i]].title %>
+                </strong>
+                <% if(opt[views[i]].description){ %>
+                  <p><%= opt[views[i]].description %></p>
+                <% } %>
+                <div class="actions">
+                  <% if(opt[views[i]].btn_text && opt[views[i]].btn_url){ %>
+                    <a href="<%= opt[views[i]].btn_url %>" class="btn_1">
+                      <%= opt[views[i]].btn_text %>
+                    </a>
+                  <% } %>
+                  <% if(opt[views[i]].btn_text_2 && opt[views[i]].btn_url_2){ %>
+                    <a href="<%= opt[views[i]].btn_url_2 %>" class="btn_2">
+                      <%= opt[views[i]].btn_text_2 %>
+                    </a>
+                  <% } %>
+                </div>              
+              </div>  
+            <% } %>
+          </div>      
+        </div>  
+      
+    </div>
+    <%
+  }
+}
+%>
