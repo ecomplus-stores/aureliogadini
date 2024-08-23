@@ -35,6 +35,47 @@
           "end": ""
         }
       ]
+    },
+    {
+      "type": "apx_banners-grid",
+      "visibility": "d-block d-md-block",
+      "banners": [
+        {
+          "desktop": {
+            "mask_opacity": 3,
+            "img": "/img/uploads/rectangle-9-2x.png",
+            "title": "RAP<br>TRAP<br>R&B",
+            "mask_color": "#000000",
+            "content_position": "center_center",
+            "content_order": "inside_image",
+            "title_color": "#ffffff"
+          },
+          "mobile": {
+            "mask_opacity": 0
+          }
+        },
+        {
+          "desktop": {
+            "mask_opacity": 0,
+            "img": "/img/uploads/rectangle-10-2x.png",
+            "title": ""
+          },
+          "mobile": {
+            "mask_opacity": 0
+          }
+        },
+        {
+          "desktop": {
+            "mask_opacity": 0,
+            "img": "/img/uploads/rectangle-11-2x.png",
+            "title": "POP"
+          },
+          "mobile": {
+            "mask_opacity": 0
+          }
+        }
+      ],
+      "grid": "5"
     }
   ]
 }
