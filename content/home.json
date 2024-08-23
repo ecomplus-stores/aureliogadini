@@ -125,6 +125,25 @@
       "btn_bg": "#ffffff"
     },
     {
+      "type": "apx_productList_A",
+      "visibility": "d-block d-md-block",
+      "products": [
+        "66c5448e86679971c64c41d7",
+        "66c5449186679971c64c41dc",
+        "66c5449086679971c64c41da",
+        "66c5449286679971c64c41e2",
+        "66c5449686679971c64c41f2"
+      ],
+      "title": "Toys",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.",
+      "num_col_md": 3,
+      "num_col_sm": 1,
+      "title_color": "",
+      "spacing": {
+        "container": "container_90"
+      }
+    },
+    {
       "btn_color": "#000000",
       "spacing": {
         "container": "container-fluid"
@@ -141,7 +160,8 @@
       "section_img": "/img/uploads/c82cef9d-e425-48ae-a228-a76ccfb1a9f6-1.png",
       "visibility": "d-block d-md-block",
       "section_type": 3,
-      "num_col_md": 6,
+      "num_col_md": 2,
+      "num_col_sm": 1,
       "type": "apx_productList_A",
       "title_img": "/img/uploads/image-23.png",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede."

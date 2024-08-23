@@ -397,31 +397,39 @@ body .banner-slider{
 }
 
 .apx_product-list.section_type_1,
-.apx_product-list.section_type_2{
+.apx_product-list.section_type_2,
+.apx_product-list.section_type_3,
+.apx_product-list.section_type_4{
   .apx_section-title{
-    text-align: left;
-    justify-content: flex-start;
-    margin: 2rem 0;
     h2{font-size: var(--h2);}
     small{font-size: var(--font-size);}
-    width: 45%;
-    max-width: 100%;
-  }
-  > img{
-    max-width: 50%;
-    margin-top: var(--imagem_margin);
   }
 }
 .apx_product-list.section_type_1{
+  
   .section-text-content{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     border-bottom: 2px solid var(--title_color,var(--primary));
-    margin-bottom: 1.5rem;    
+    margin-bottom: 1.5rem; 
+    .apx_section-title{
+      width: 45%;
+      max-width: 100%;
+      text-align: left;
+    }
+    > img{
+      max-width: 50%;
+      margin-top: var(--imagem_margin);
+    }  
   }
 }
 .apx_product-list.section_type_2{
+  .apx_section-title{
+    width: 45%;
+    max-width: 100%;
+    text-align: right;
+  }
   .section-text-content{
     display: flex;
     justify-content: space-between;
@@ -430,17 +438,30 @@ body .banner-slider{
     margin-bottom: 1.5rem;    
   }
 }
-.apx_product-list.section_type_3{
-  
+.apx_product-list.section_type_3{  
   > div {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+    align-items: flex-end;
+    > *:not(.section-text-content){
+      max-width: 50%;
+    }
     .section-text-content{
+      width: 45%;
       display: flex;
-      flex-direction: column;
-      border-bottom: 2px solid var(--title_color,var(--primary));
-      margin-bottom: 1.5rem;    
+      flex-direction: column;      
+      text-align: right;
+      justify-content: flex-end;
+      align-items: flex-end;
+      .apx_section-title{
+        text-align: right;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-bottom: 1.5rem;    
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 }
@@ -483,12 +504,15 @@ body .banner-slider{
     max-height: unset;
     height: auto;
     margin-bottom: .5rem;
+    width: 100%;
     .product-card__picture{
       max-height: unset;
       height: auto;
+      width: 100%;
       img{
         max-height: unset;
         height: auto;
+        width: 100%;
       }
     }
   }
