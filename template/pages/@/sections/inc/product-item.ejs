@@ -9,6 +9,7 @@ itemDataFields.forEach(field => itemData[field] = opt.item[field])
 itemData.name = _.ecomUtils.name(opt.item)
 itemData.price = _.ecomUtils.price(opt.item)
 
+
 const imgObj = _.ecomUtils.img(opt.item)
 if (imgObj) {
   itemData.pictures = [{
@@ -76,10 +77,24 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
           </picture>
         <% } %>
       </div>
-
+      
       <div data-slot="title">
         <h3 class="product-card__name">
-          <%= itemData.name %>
+          <%
+            let artistOrBrand = itemData.name.split(` -`)
+            artistOrBrand = artistOrBrand.length > 0 ? artistOrBrand[0] : '';
+          %>
+          <% if (artistOrBrand != '') {
+            let showName = itemData.name.replace(artistOrBrand,``)
+            if (showName.startsWith(" - ")) {
+              showName = showName.substring(3);
+            }
+            %>
+            <small class="d-block"><%= artistOrBrand %> </small>
+            <%= showName %>
+          <% }else{ %>
+            <%= itemData.name %>
+          <% } %>
         </h3>
       </div>
     </a>
@@ -95,12 +110,12 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
     </div>
 
     <!-- Customize add to cart button content:
-    <div data-slot="buy-button-content">
-      <i class="i-shopping-bag mr-1"></i>
-      {{ _.dictionary('buy') }}
-    </div>
+    
     -->
-
+    <div data-slot="buy-button-content">
+      
+      <%= _.dictionary('buy') %>
+    </div>
     <div class="spinner-border spinner-border-sm fade" role="status">
       <span class="sr-only">Loading...</span>
     </div>

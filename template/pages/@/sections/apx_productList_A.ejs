@@ -5,9 +5,9 @@
         await search.setProductIds(opt.products).fetch(true)
         const items = opt.products[0] && opt.products[0].sku ? opt.products : search.getItems().filter(item => _.ecomUtils.inStock(item))
     
-        opt.num_col_sm = opt.num_col_sm ? opt.num_col_sm : 3
+        opt.num_col_sm = opt.num_col_sm ? opt.num_col_sm : 2
         opt.carrossel_sm = opt.carrossel_sm ? opt.carrossel_sm : true
-        opt.num_col_md = opt.num_col_md  ? opt.num_col_md  : 3
+        opt.num_col_md = opt.num_col_md  ? opt.num_col_md  : 4
         opt.carrossel_md = opt.carrossel_md ? opt.carrossel_md : false
         opt.carrossel_dots_md = opt.carrossel_dots_md ? opt.carrossel_dots_md : false
         opt.carrossel_arrows_md = opt.carrossel_arrows_md ? opt.carrossel_arrows_md : false
@@ -18,67 +18,76 @@
         opt.container = opt.container ? opt.container : 'container_90'
         opt.padding_md = opt.padding_md ? opt.padding_md : 'px-md-1'
     %>
-    
-    <section
-      class="apx_product-list mt-<%= opt.margin_top %> mb-<%= opt.margin_bottom %> pt-<%= opt.padding_top %> pb-<%= opt.padding_bottom %>"
-      data-num_col_sm="<%= opt.num_col_sm  %>"
+    <!-- 
+    data-num_col_sm="<%= opt.num_col_sm  %>"
       data-carrossel_sm="<%= opt.carrossel_sm %>"
       data-num_col_md="<%= opt.num_col_md %>"
       data-carrossel_md="<%= opt.carrossel_md %>"
       data-carrossel_dots_md="<%= opt.carrossel_dots_md %>"
       data-carrossel_arrows_md="<%= opt.carrossel_arrows_md %>"
       data-carrossel_dots_sm="<%= opt.carrossel_dots_sm %>"
-      data-carrossel_arrows_sm="<%= opt.carrossel_arrows_sm %>"
+      data-carrossel_arrows_sm="<%= opt.carrossel_arrows_sm %>"-->
+    <section
+      class="apx_product-list mt-<%= opt.margin_top %> mb-<%= opt.margin_bottom %> pt-<%= opt.padding_top %> pb-<%= opt.padding_bottom %>"
+      
+
+      data-wait-mutation="true"
+      data-autoplay="<%= opt.autoplay %>"
+     
      >
-     <% if (opt.bg_img || opt.bg_img_mobile) { %>
-     <div class="list_bg  <%= opt.bg_img ? 'md-visible' : 'md-hidden' %> <%= opt.bg_img_mobile ? 'd-visible' : 'd-hidden' %>">
-        <picture class="<%= opt.bg_img ? 'd-md-block' : 'd-md-none' %> <%= opt.bg_img_mobile ? 'd-block' : 'd-none' %>">
-            <source
-                srcset="<%= opt.bg_img_mobile %>"
-                type="image/webp"
-                media="(max-width: 399.98px)"
-            >
-            <source
-                srcset="<%= opt.bg_img  %>"
-                type="image/webp"
-                media="(min-width: 400px)"
-            >
-            <img loading="lazy" src="<%= opt.bg_img %>"/>
-        </picture>
-     </div>
-     <% } %>
-     <div class="<%= opt.container %> <%= opt.padding_sm %> <%= opt.padding_md %> pb-5">
-        <%
-            if(opt.title){
-                %>
-                    <div class="apx_section-title text-center">
-                    <%
-                    if(opt.list != "description_last"){
-                        %>
-                        <small class="text-uppercase"><%- opt.description %></small>
-                        <%
-                    }
-                    %>
-                        <h2 class="text-bold text-uppercase"><%- opt.title %></h2>
-                    <%
-                    if(opt.list == "description_last"){
-                        %>
-                        <small class="text-uppercase"><%- opt.description %></small>
-                        <%
-                    }
-                    %>
-                    </div>
-                <%
-            }
-        %>
-        <div class="row list mx-0">        
-            <% for (let i = 0; i < items.length; i++) { %>
-              <div class="col-md-<%= 12 / opt.num_col_md  %> col-sm-<%= 12 / opt.num_col_sm  %> <%= opt.padding_md %> <%= opt.padding_sm %> my-4">
-                <%- await include('@/sections/inc/product-item', {
-                  _, opt: { item: items[i] }
-                }) %>
-              </div>
-            <% } %>          
+     <div class="<%= opt.container %> <%= opt.padding_sm %> <%= opt.padding_md %> pb-5 <%= opt.section_img ? 'has_image' : ''%>">
+        <div class="apx_section-title text-center <%= opt.title_img ? 'has_title_image' : ''%>">
+        <%  if(opt.title_img){ %>            
+            <img src="<%= opt.title_img %>" class="d-block mb-3"/>
+        <% } %>
+        <%  if(opt.title){ %>            
+                <h2 class="text-bold text-uppercase"><%- opt.title %></h2>
+        <% } %>
+        <% if(opt.description){ %>
+            <small><%- opt.description %></small>
+        <% } %>
+        </div>
+                    
+                
+        <div
+            class="glide"
+            data-wait-mutation="true"
+            data-autoplay=""
+            data-per-view="<%= opt.num_col_md %>"
+            data-per-view-sm="<%= opt.num_col_sm %>"
+            data-per-view-xs="<%= opt.num_col_sm %>"
+        >
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides products-carousel__list">
+                <% for (let i = 0; i < items.length; i++) { %>
+                    <li class="glide__slide products-carousel__item">
+                    <%- await include('@/sections/inc/product-item', {
+                        _, opt: { item: items[i] }
+                    }) %>
+                    </li>
+                <% } %>
+                </ul>
+
+                <div
+                class="glide__arrows glide__arrows--outer"
+                data-glide-el="controls"
+                >
+                <button
+                    class="btn glide__arrow glide__arrow--left"
+                    data-glide-dir="<"
+                    aria-label="<%= _.dictionary('previous') %>"
+                >
+                    <img src="/img/vp_chevron_l.svg"/>
+                </button>
+                <button
+                    class="btn glide__arrow glide__arrow--right"
+                    data-glide-dir=">"
+                    aria-label="<%= _.dictionary('next') %>"
+                >
+                <img src="/img/vp_chevron_r.svg"/>
+                </button>
+                </div>
+            </div>
         </div>
     </div>
     </section>

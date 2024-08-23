@@ -42,7 +42,7 @@
       "banners": [
         {
           "desktop": {
-            "mask_opacity": 3,
+            "mask_opacity": 6,
             "img": "/img/uploads/rectangle-9-2x.png",
             "title": "RAP<br>TRAP<br>R&B",
             "mask_color": "#000000",
@@ -58,7 +58,11 @@
           "desktop": {
             "mask_opacity": 0,
             "img": "/img/uploads/rectangle-10-2x.png",
-            "title": ""
+            "title": "PUNK<br>METAL",
+            "mask_color": "#000000",
+            "content_position": "center_center",
+            "content_order": "inside_image",
+            "title_color": "#ffffff"
           },
           "mobile": {
             "mask_opacity": 0
@@ -68,7 +72,11 @@
           "desktop": {
             "mask_opacity": 0,
             "img": "/img/uploads/rectangle-11-2x.png",
-            "title": "POP"
+            "title": "POP",
+            "mask_color": "#000000",
+            "content_position": "center_center",
+            "content_order": "inside_image",
+            "title_color": "#ffffff"
           },
           "mobile": {
             "mask_opacity": 0

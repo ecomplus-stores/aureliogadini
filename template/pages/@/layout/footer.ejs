@@ -1,28 +1,80 @@
 <%
 // load footer options and contacts from content
+const apx_popup = _.cms('apx_popup') || {}
 const footer = _.cms('footer') || {}
 const contacts = _.cms('contacts') || {}
 const themeCustom = _.settings.theme.custom || ''
 %>
-
-<footer class="footer py-3 py-lg-4 py-xl-5">
+<% if(apx_popup && apx_popup.image && apx_popup.title){ %>
+<div id="apx_popup">
+  <div class="modal fade" id="apx_popup-box" tabindex="-1"  aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <% if(apx_popup.image){ %>  
+            <div class="modal-image">
+              <img src="<%= apx_popup.image %>">
+            </div>
+            <% } %>
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <% if(apx_popup.title){ %>  
+                <h5 class="modal-title"><%- apx_popup.title %></h5>
+                <% } if(apx_popup.description){ %>  
+                <p><%- apx_popup.description %></p>
+                <% } if(apx_popup.code){ %>  
+                  <%- apx_popup.code.code %>
+                <% } %>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<% } %>
+<% if (contacts.whatsapp) { %>   
+    <a
+      href="https://wa.me/55<%= contacts.whatsapp.replace(/\D/g, '') %>"
+      target="_blank"
+      rel="noopener"
+      class="floating-whatsapp-link"
+    >
+      <i class="i-whatsapp"></i>
+    </a>
+  
+<% } %>
+<footer class="footer">
+  
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-auto order-<%= themeCustom === 'ecom-beauty' ? '' : 'lg-'%>last pl-xl-4">
+      <div class="mt-5 mb-5 w-100">
+        <% if (footer.contacts.socials) { %>
+          <p class="footer__social text-center justify-content-center">
+            <%- await include('@/layout/inc/networks', { _, contacts }) %>
+          </p>
+        <% } %> 
+      </div>
+    </div>
+    <div class="row justify-content-between">
+      <div class="col-12 col-md-auto order-lg-first order-last mt-md-0 mt-4">
         <div class="footer__contacts">
-          <% if (footer.contacts.title) { %>
-            <div class="footer__title">
-              <%= footer.contacts.title %>
-            </div>
-          <% } %>
-
+          <a
+          class="footer__title"
+          data-toggle="collapse"
+          href="#footer-pages"
+          role="button"
+          aria-expanded="false"
+          aria-controls="footer-pages"
+        >
+          <%= footer.contacts.title%>
+          <button type="button" class="d-inline d-md-none">                    
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 7V17M7 12L17 12" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg> 
+          </button>
+        </a>
           <ul class="list-unstyled">
             <% if (footer.contacts.phone_wpp) { %>
               <% if (contacts.whatsapp) { %>
                 <li>
-                  <span class="footer__list-icon">
-                    <i class="i-whatsapp"></i>
-                  </span>
                   <a
                     href="javascript:;"
                     target="_blank"
@@ -30,20 +82,19 @@ const themeCustom = _.settings.theme.custom || ''
                     class="whatsapp-link"
                     data-tel="<%= contacts.whatsapp.replace(/\D/g, '') %>"
                   >
+                    <small>Whatsapp</small>
                     <%= contacts.whatsapp %>
                   </a>
                 </li>
-              <% } %>
+              <% } %> 
               <% if (contacts.phone) { %>
                 <li>
-                  <span class="footer__list-icon">
-                    <i class="i-phone"></i>
-                  </span>
                   <a
                     href="tel:+<%= contacts.phone.replace(/\D/g, '') %>"
                     target="_blank"
                     rel="noopener"
                   >
+                    <small>Telefone</small>
                     <%= contacts.phone %>
                   </a>
                 </li>
@@ -52,159 +103,174 @@ const themeCustom = _.settings.theme.custom || ''
             <% if (footer.contacts.email) { %>
               <li>
                 <a href="mailto:<%= contacts.email %>" target="_blank" rel="noopener">
+                  <small>E-mail</small>
                   <%= contacts.email %>
                 </a>
               </li>
             <% } %>
-            <% if (footer.contacts.address) { %>
-              <li>
-                <address>
-                  <%= contacts.address %>
-                </address>
-              </li>
-            <% } %>
+            
+            <li>
+              <p>
+                <small>Atendimento</small>
+                Seg. à Sex. das 8h às 18h (Exceto Feriados)
+              </p>
+            </li>
           </ul>
 
-          <% if (footer.contacts.socials) { %>
-            <p class="footer__social">
-              <%- await include('@/layout/inc/networks', { _, contacts }) %>
-            </p>
-          <% } %>
+          
         </div>
       </div>
-
-      <% if (footer.links_1.list_pages || footer.links_1.list.find(({ url }) => url)) { %>
-        <div class="col-12 col-sm-6 col-lg col-xl-auto px-xl-4">
-          <a
-            class="footer__title"
-            data-toggle="collapse"
-            href="#footer-pages"
-            role="button"
-            aria-expanded="false"
-            aria-controls="footer-pages"
-          >
-            <%= footer.links_1.title || _.dictionary('pages') %>
-          </a>
-          <div class="collapse" id="footer-pages">
-            <% if (footer.links_1.list_pages) { %>
-              <ul class="footer__links">
-                <% (_.cms('pages') || []).forEach(slug => { %>
-                  <% const { title } = _.cms(`pages/${slug}`) %>
-                  <li>
-                    <i class="i-chevron-right"></i>
-                    <a href="/pages/<%= slug %>">
-                      <%= title %>
-                    </a>
-                  </li>
-                <% }) %>
-              </ul>
-            <% } else { %>
-              <ul class="footer__links">
-                <% footer.links_1.list.forEach(({ url, text }) => { %>
-                  <li>
-                    <i class="i-chevron-right"></i>
-                    <a href="<%= url %>">
-                      <%= text %>
-                    </a>
-                  </li>
-                <% }) %>
-              </ul>
-            <% } %>
-          </div>
-        </div>
-      <% } %>
-
-      <% if (footer.links_2.list_categories || footer.links_2.list.find(({ url }) => url)) { %>
-        <div class="col-12 col-sm-6 col-lg col-xl-auto px-xl-4">
-          <a
-            class="footer__title"
-            data-toggle="collapse"
-            href="#footer-categories"
-            role="button"
-            aria-expanded="false"
-            aria-controls="footer-categories"
-          >
-            <%= footer.links_2.title || _.dictionary('categories') %>
-          </a>
-          <div class="collapse" id="footer-categories">
-            <% if (footer.links_2.list_categories) { %>
-              <ul class="footer__links">
-                <% _.categories.forEach(({ name, slug, parent }) => { %>
-                  <% if (!parent) { %>
-                    <li>
-                      <i class="i-chevron-right"></i>
-                      <a href="/<%= slug %>">
-                        <%= name %>
-                      </a>
-                    </li>
+    
+        <% if (footer.links_1.list_pages || footer.links_1.list.find(({ url }) => url)) { %>
+          <div class="col-12 col-md-auto">
+              <a
+                class="footer__title"
+                data-toggle="collapse"
+                href="#footer-pages"
+                role="button"
+                aria-expanded="false"
+                aria-controls="footer-pages"
+              >
+                <%= footer.links_1.title || _.dictionary('pages') %>
+                <button type="button" class="d-inline d-md-none">                    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 7V17M7 12L17 12" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg> 
+                </button>
+              </a>
+              <div class="collapse" id="footer-pages">
+                <% if (footer.links_1.list_pages) { %>
+                  <ul class="footer__links">
+                    <% (_.cms('pages') || []).forEach(slug => { %>
+                      <% const { title } = _.cms(`pages/${slug}`) %>
+                      <li>
+                        <i class="i-chevron-right"></i>
+                        <a href="/pages/<%= slug %>">
+                          <%= title %>
+                        </a>
+                      </li>
+                    <% }) %>
+                  </ul>
+                <% } else { %>
+                  <ul class="footer__links">
+                    <% footer.links_1.list.forEach(({ url, text }) => { %>
+                      <li>
+                        <i class="i-chevron-right"></i>
+                        <a href="<%= url %>">
+                          <%= text %>
+                        </a>
+                      </li>
+                    <% }) %>
+                  </ul>
+                <% } %>
+              </div>
+            </div>
+          <% } %>
+    
+          <% if (footer.links_2.list_categories || footer.links_2.list.find(({ url }) => url)) { %>
+            <div class="col-12 col-md-auto">
+              <a
+                class="footer__title"
+                data-toggle="collapse"
+                href="#footer-categories"
+                role="button"
+                aria-expanded="false"
+                aria-controls="footer-categories"
+              >
+                <%= footer.links_2.title || _.dictionary('categories') %>
+                <button type="button" class="d-inline d-md-none">                    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 7V17M7 12L17 12" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </button>
+              </a>
+              <div class="collapse" id="footer-categories">
+                <% if (footer.links_2.list_categories) { %>
+                  <ul class="footer__links">
+                    <% _.categories.slice(0,3).forEach(({ name, slug, parent }) => { %>
+                      <% if (!parent) { %>
+                        <li>
+                          <i class="i-chevron-right"></i>
+                          <a href="/<%= slug %>">
+                            <%= name %>
+                          </a>
+                        </li>
+                      <% } %>
+                    <% }) %>
+                  </ul>
+                <% } else { %>
+                  
+                  <ul class="footer__links">
+                    <% footer.links_2.list.forEach(({ url, text }) => { %>
+                      <li>
+                        <i class="i-chevron-right"></i>
+                        <a href="<%= url %>">
+                          <%= text %>
+                        </a>
+                      </li>
+                    <% }) %>
+                  </ul>
+                <% } %>
+              </div>
+              
+            </div>
+          <% } %>
+    
+          <div class="col-12 col-md-auto">
+            <div class="">
+              <a
+                class="footer__title"
+                data-toggle="collapse"
+                href="#footer-payments"
+                role="button"
+                aria-expanded="false"
+                aria-controls="footer-payments"
+              >Pagamento                
+              </a>
+              <p class="footer__payment-methods collapse" id="footer-payments">
+                <span class="d-flex">
+                <% Object.keys(footer.payment_methods).forEach(method => { %>
+                  <% if (footer.payment_methods[method]) { %>
+                    <span class="pay-icon_">
+                    <i class="pay-icon pay-icon--<%= method %>"></i>
+                    </span>
                   <% } %>
                 <% }) %>
-              </ul>
-            <% } else { %>
-              <ul class="footer__links">
-                <% footer.links_2.list.forEach(({ url, text }) => { %>
-                  <li>
-                    <i class="i-chevron-right"></i>
-                    <a href="<%= url %>">
-                      <%= text %>
-                    </a>
-                  </li>
-                <% }) %>
-              </ul>
-            <% } %>
+                </span>
+              </p>
+              
+            </div>
+            
           </div>
-        </div>
-      <% } %>
-
-      <div class="col-12 col-xl order-<%= themeCustom === 'ecom-beauty' ? '' : 'lg-'%>first">
-        <h2 class="footer__title footer__store">
-          <%= footer.description.title || _.settings.name %>
-        </h2>
-        <p><%- footer.description.text || _.settings.description %></p>
-
-        <div class="mt-4 mb-3">
-          <p class="footer__payment-methods">
-            <% Object.keys(footer.payment_methods).forEach(method => { %>
-              <% if (footer.payment_methods[method]) { %>
-                <i class="pay-icon pay-icon--<%= method %>"></i>
-              <% } %>
-            <% }) %>
-          </p>
-          <div class="footer__stamps">
-            <%- await include(`@/sections/stamps`, { _, opt: { stamps: footer.stamps } }) %>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer__credits">
-      <span>
-        <%= footer.credits || `© ${_.store.name} / ${contacts.address} / ${contacts.doc_number}` %>
-      </span>
-      <% if (themeCustom === 'ecom-beauty') { %>
-        <div class="ecom-credits-container">
-          <div class="ecom-credits">
-            <a href="https://e-com.plus" target="_blank" rel="noopener">
-              <img
-                src="https://ecom.nyc3.cdn.digitaloceanspaces.com/storefront/ecom-credits-white.png"
-                alt="E-Com Plus"
-                width="125.42"
-                height="20"
-              >
+          <div class="col-12 col-md-auto">
+            <a
+              class="footer__title"
+              data-toggle="collapse"
+              href="#footer-security"
+              role="button"
+              aria-expanded="false"
+              aria-controls="footer-security"
+            >Segurança
+            
             </a>
+            <div class="footer__stamps collapse" id="footer-security">
+              <%- await include(`@/sections/stamps`, { _, opt: { stamps: footer.stamps } }) %>
+            </div>
           </div>
         </div>
-      <% } %>
-      <button
-        id="go-to-top"
-        class="btn btn-primary ml-3"
-        type="button"
-        aria-label="<%= _.dictionary('goToTop') %>"
-      >
-        <i class="i-chevron-up"></i>
-      </button>
+  
+        
+      </div>
+      
+    <div class="footer__credits">
+      <div class="container">
+        <div class="row align-items-center justify-content-between credits">
+          <div class="col-12 col-md">
+            <span>
+              <small>
+                <%- footer.credits || `© ${_.store.name} / CNPJ: ${contacts.doc_number}` %>
+              </small>
+            </span>
+          </div>
+          <div class="col-auto"><%- await include('@/layout/inc/ecom-credits') %></div>
+        </div>
+      </div>      
     </div>
   </div>  
 </footer>
-
-<%- await include('@/layout/inc/ecom-credits') %>

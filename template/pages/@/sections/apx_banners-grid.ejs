@@ -1,7 +1,8 @@
 
 <% if (Array.isArray(opt.banners) && opt.banners.length) { %>
-
+  
   <div class="apx_banners-grid
+ 
       <%= opt?.visibility || '' %>
       mt-md-<%= opt.spacing?.desktop ? opt.spacing.desktop.margin_top : 0 %>
       mt-<%= opt.spacing?.mobile ? opt.spacing.mobile.margin_top : 0%>
@@ -11,10 +12,10 @@
       pt-<%= opt.spacing?.mobile ? opt.spacing.mobile.padding_top : 0 %>
       pb-md-<%= opt.spacing?.desktop ? opt.spacing.desktop.padding_bottom : 0%>
       pb-<%= opt.spacing?.mobile ? opt.spacing.mobile.padding_bottom : 0 %>">
-      <div class="<%= opt.spacing?.container || `container`%> ">
+      <div class=" px-0 <%= opt.spacing?.container || `container`%> ">
         <div class="row breakline-<%= opt.breakline %> grid-type-<%= opt.grid %>">
           <% for (let i = 0; i < opt.banners.length; i++) { %>
-            <div class="item col-md-auto col-12">
+            <div class="item px-0">
               <%- await include('@/sections/inc/apx_banner', { _, opt: opt.banners[i] }) %>          
             </div>
           <% } %>
