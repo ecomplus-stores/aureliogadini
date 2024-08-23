@@ -502,6 +502,51 @@ export default options => {
           required: false,
           name: 'imagem_margin',
           widget: 'string'
+        },   
+        {
+          label: 'Produtos por linha (Desktop)',
+          required: false,
+          name: 'num_col_md',
+          widget: 'select',
+          default: 3,
+          options: [
+            {label:"4", value:3},
+            {label:"3", value:4},
+            {label:"2", value:6},
+          ]
+        },     
+        {
+          label: 'Produtos por linha (Mobile)',
+          required: false,
+          name: 'num_col_sm',
+          widget: 'select',
+          default: 12,
+          options: [
+            {label:"2", value:6},
+            {label:"1", value:12},
+          ]
+        },    
+        {
+          label: 'É um slider/carrossel? (Desktop)',
+          required: false,
+          name: 'is_slider_md',
+          widget: 'select',
+          default: true,
+          options: [
+            {label:"Sim", value:true},
+            {label:"Não", value:false},
+          ]
+        },   
+        {
+          label: 'É um slider/carrossel? (Mobile)',
+          required: false,
+          name: 'is_slider_sm',
+          widget: 'select',
+          default: true,
+          options: [
+            {label:"Sim", value:true},
+            {label:"Não", value:false},
+          ]
         },        
         {
           label: 'Formato',

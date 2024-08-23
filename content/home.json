@@ -120,7 +120,9 @@
       "title": "SUCESSOS DO SEPULTURA",
       "type": "apx_productList_A",
       "title_img": "/img/uploads/image-22.png",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede."
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.",
+      "imagem_margin": "-2rem",
+      "btn_bg": "#ffffff"
     },
     {
       "btn_color": "#000000",
@@ -135,6 +137,7 @@
       ],
       "btn_bg": "#ffffff",
       "bg_color": "#f2d74b",
+      
       "section_img": "/img/uploads/c82cef9d-e425-48ae-a228-a76ccfb1a9f6-1.png",
       "visibility": "d-block d-md-block",
       "section_type": 3,

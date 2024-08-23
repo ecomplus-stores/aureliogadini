@@ -28,25 +28,41 @@
       data-carrossel_dots_sm="<%= opt.carrossel_dots_sm %>"
       data-carrossel_arrows_sm="<%= opt.carrossel_arrows_sm %>"-->
     <section
-      class="apx_product-list mt-<%= opt.margin_top %> mb-<%= opt.margin_bottom %> pt-<%= opt.padding_top %> pb-<%= opt.padding_bottom %>"
+      class="apx_product-list mt-<%= opt.margin_top %> mb-<%= opt.margin_bottom %> pt-<%= opt.padding_top %> pb-<%= opt.padding_bottom %>
       
-
+      section_type_<%= opt.section_type %>"
+      
+      style="
+      <%= opt.txt_color ? '--txt_color:' +  opt.txt_color + ';' : ''%>
+      <%= opt.imagem_margin ? '--imagem_margin:' +  opt.imagem_margin + ';' : ''%>
+      <%= opt.title_color ? '--title_color:' +  opt.title_color + ';' : ''%>
+      <%= opt.bg_color ? '--bg_color:' +  opt.bg_color + ';' : ''%>
+      <%= opt.btn_color ? '--btn_color:' +  opt.btn_color + ';' : ''%>
+      <%= opt.btn_bg ? '--btn_bg:' +  opt.btn_bg + ';' : ''%>
+      
+      "  
       data-wait-mutation="true"
       data-autoplay="<%= opt.autoplay %>"
      
      >
      <div class="<%= opt.container %> <%= opt.padding_sm %> <%= opt.padding_md %> pb-5 <%= opt.section_img ? 'has_image' : ''%>">
-        <div class="apx_section-title text-center <%= opt.title_img ? 'has_title_image' : ''%>">
-        <%  if(opt.title_img){ %>            
-            <img src="<%= opt.title_img %>" class="d-block mb-3"/>
-        <% } %>
-        <%  if(opt.title){ %>            
-                <h2 class="text-bold text-uppercase"><%- opt.title %></h2>
-        <% } %>
-        <% if(opt.description){ %>
-            <small><%- opt.description %></small>
-        <% } %>
+        <div class="section-text-content">
+            <div class="apx_section-title text-center <%= opt.title_img ? 'has_title_image' : ''%>">
+                <%  if(opt.title_img){ %>            
+                    <img src="<%= opt.title_img %>" class="d-block mb-3"/>
+                <% } %>
+                <%  if(opt.title){ %>            
+                        <h2 class="text-bold text-uppercase"><%- opt.title %></h2>
+                <% } %>
+                <% if(opt.description){ %>
+                    <small><%- opt.description %></small>
+                <% } %>
+            </div>
+            <%  if(opt.section_img){ %>            
+                <img src="<%= opt.section_img %>" class="d-block"/>
+            <% } %>
         </div>
+        
                     
                 
         <div
