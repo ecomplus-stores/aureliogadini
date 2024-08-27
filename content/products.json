@@ -22,17 +22,12 @@
       "show_loading": true
     },
     {
-      "type": "product-description",
-      "title": "Quem comprou este produto, também comprou:",
-      "enabled": true
+      "type": "product-specifications",
+      "enabled": false
     },
     {
       "type": "product-specifications",
-      "enabled": true
-    },
-    {
-      "type": "product-specifications",
-      "enabled": true
+      "enabled": false
     }
   ]
 }

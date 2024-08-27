@@ -23,7 +23,7 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
       </div>
 
       <div class="row">
-        <div class="col-12 col-md-6 mb-4">
+        <div class="col-12 col-md-7 mb-4">
           <!-- Picture(s) gallery will be inserted dynamically within `TheProduct` -->
           <% if (_.state.pictures) { %>
             <% const imgObj = _.ecomUtils.img(_.state, null, 'big') %>
@@ -83,107 +83,187 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
             <% } %>
           <% } %>
           <!-- Custom additional code on bottom of images gallery -->
-        </div>
-
-        <div class="col">
-          <h1 class="product__name">
-            <%= _.ecomUtils.name(_.state) %>
-          </h1>
-          <p class="product__sku">
-            COD: <%= _.state.sku %>
-          </p>
-
-          <div id="product-actions">
-            <div id="product-loading">
-              <% if (_.state.available && _.state.visible && _.ecomUtils.inStock(_.state)) { %>
-                <div class="product__price prices prices--big">
-                  <strong class="prices__value">
-                    <%= _.ecomUtils.formatMoney(_.ecomUtils.price(_.state)) %>
-                  </strong>
-                </div>
-              <% } %>
-
-              <% if (_.state.variations && _.state.variations.length) { %>
-                <div data-slot="variations-info">
-                  <!-- Custom info for products with variations, such as sizes table link -->
-                  <% if (opt.size_guide && opt.size_guide.image) { %>
-                    <% const sizeGuideTitle = opt.size_guide.title || _.dictionary('sizeGuide') %>
-                    <div class="mb-3">
-                      <a 
-                        href="javascript:;"
-                        data-toggle="modal"
-                        data-target="#modal-size-guide"
-                      >
-                        <i class="i-ruler mr-1"></i> <%= sizeGuideTitle %>
-                      </a>
-                    </div>
-                    <div 
-                      class="modal modal-center fade" 
-                      id="modal-size-guide" 
-                      tabindex="-1" 
-                      style="display: none;" 
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header d-flex align-items-center justify-content-between">
-                            <h5 class="modal-title">
-                              <%= sizeGuideTitle %>
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <img 
-                              class="img-fluid" 
-                              src="<%= opt.size_guide.image %>" 
-                              alt="<%= sizeGuideTitle %>"
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  <% } %>
-                </div>
-              <% } %>
-
-              <div class="spinner-border m-4" role="status">
-                <span class="sr-only">Loading...</span>
-              </div>
-
-              <div class="product__buy">
-                <button
-                  type="button"
-                  class="btn btn-lg btn-primary"
-                  onclick="ecomCart.addProduct(storefront.context.body)"
-                  <% if (_.state.variations && _.state.variations.length) { %>
-                    disabled
-                  <% } %>
-                >
-                  <div data-slot="buy-button-content">
-                    <i class="i-shopping-bag mr-1"></i>
-                    <% if (_.state.kit_composition && _.state.kit_composition.length) { %>
-                      <%= _.dictionary('buyKit') %>
-                    <% } else { %> 
-                      <% let buyText %>
-                      <% if (Array.isArray(_.widgets)) { %>
-                        <% const productWidget = _.widgets.find(item => item.pkg === '@ecomplus/widget-product') %>
-                        <% buyText = productWidget && productWidget.options.buyText %>
-                      <% } %>
-                      <%= buyText || _.dictionary('buy') %>
-                    <% } %>
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
-
           <% if (_.state.short_description) { %>
-            <p class="product__info mt-3 lead">
+            <p class="product__info my-5 lead">
               <%= _.state.short_description %>
             </p>
           <% } %>
+          <% if (_.state.body_html) { %>
+            <div id="product-description" class="product-description my-4 my-lg-5">            
+              <div class="html-clearfix">
+                <%- _.state.body_html.replace(
+                  /<img ([^/>]+)?src=['"]([^'"]+)['"]([^/>]+)?\/?>/g,
+                  '<img class="lozad" data-src="$2" $1 $3>'
+                ).replace(
+                  /<img class="lozad" data-src="([^'"]+)"([^>]+)class=['"]([^'"]+)['"]([^/>]+)?>/g,
+                  '<img class="lozad $3" data-src="$1" $2 $4>'
+                ) %>
+              </div>
+            </div>
+          <% } %>
+          
+          <%- await include('@/helpers/widgets-append', {
+            _, opt: {}, field: 'productDescriptionAppend'
+          }) %>
+          
+          <% if (_.state.specifications) { %>
+            <div id="product-specs" class="product-specs my-4 my-lg-5">
+              <div class="row">
+                <% for (const gridId in _.state.specifications) {
+                  if (_.state.specifications[gridId]) {
+                    %>
+                    <div class="col-auto">
+                      <div class="item">
+                        <div class="d-block text-uppercase">
+                          <%= _.ecomUtils.gridTitle(gridId, _.grids) %>
+                        </div>
+                        <div>
+                          <%= _.ecomUtils.specTextValue(_.state, gridId, _.grids) %>
+                        </div>
+                      </div>
+                    </div>
+                    <%
+                  }
+                } %>
+              </div>              
+            </div>
+          <% } %>
+
+          <% 
+          //console.log(_.state) 
+          if (_.state.videos) { 
+            let url = _.state.videos[0].url
+            
+            // Verifica se o link é do Spotify
+            const spotifyRegex = /https:\/\/open\.spotify\.com\/(intl-\w+\/)?(album|track|playlist)\/([a-zA-Z0-9]+)(\?.*)?/;
+            
+            // Executa o regex na URL
+            const match = url.match(spotifyRegex);
+            
+            if (match) {
+                // O ID do álbum, faixa ou playlist estará na terceira captura do regex
+                const spotifyId = match[3];
+                console.log(spotifyId)
+                %>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/<%= spotifyId %>" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <%
+
+            } else {
+                // Tratar youtube aqui
+                %>
+
+                <%
+            }
+
+            %>
+
+          <% } %>
+          
+          <div>
+          <%- await include('@/helpers/widgets-append', {
+            _, opt: {}, field: 'productDescriptionAppend'
+          }) %>
+          </div>
+           
+        </div>
+
+        <div class="col offset-md-1">
+          <div class="sticky p-4">
+            <h1 class="product__name">
+              <%= _.ecomUtils.name(_.state) %>
+            </h1>
+            <p class="product__sku">
+              COD: <%= _.state.sku %>
+            </p>
+
+            <div id="product-actions">
+              <div id="product-loading">
+                <% if (_.state.available && _.state.visible && _.ecomUtils.inStock(_.state)) { %>
+                  <div class="product__price prices prices--big">
+                    <strong class="prices__value">
+                      <%= _.ecomUtils.formatMoney(_.ecomUtils.price(_.state)) %>
+                    </strong>
+                  </div>
+                <% } %>
+
+                <% if (_.state.variations && _.state.variations.length) { %>
+                  <div data-slot="variations-info">
+                    <!-- Custom info for products with variations, such as sizes table link -->
+                    <% if (opt.size_guide && opt.size_guide.image) { %>
+                      <% const sizeGuideTitle = opt.size_guide.title || _.dictionary('sizeGuide') %>
+                      <div class="mb-3">
+                        <a 
+                          href="javascript:;"
+                          data-toggle="modal"
+                          data-target="#modal-size-guide"
+                        >
+                          <i class="i-ruler mr-1"></i> <%= sizeGuideTitle %>
+                        </a>
+                      </div>
+                      <div 
+                        class="modal modal-center fade" 
+                        id="modal-size-guide" 
+                        tabindex="-1" 
+                        style="display: none;" 
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header d-flex align-items-center justify-content-between">
+                              <h5 class="modal-title">
+                                <%= sizeGuideTitle %>
+                              </h5>
+                              <button type="button" class="close" data-dismiss="modal">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <img 
+                                class="img-fluid" 
+                                src="<%= opt.size_guide.image %>" 
+                                alt="<%= sizeGuideTitle %>"
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <% } %>
+                  </div>
+                <% } %>
+
+                <div class="spinner-border m-4" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+
+                <div class="product__buy">
+                  <button
+                    type="button"
+                    class="btn btn-lg btn-primary"
+                    onclick="ecomCart.addProduct(storefront.context.body)"
+                    <% if (_.state.variations && _.state.variations.length) { %>
+                      disabled
+                    <% } %>
+                  >
+                    <div data-slot="buy-button-content">
+                      <i class="i-shopping-bag mr-1"></i>
+                      <% if (_.state.kit_composition && _.state.kit_composition.length) { %>
+                        <%= _.dictionary('buyKit') %>
+                      <% } else { %> 
+                        <% let buyText %>
+                        <% if (Array.isArray(_.widgets)) { %>
+                          <% const productWidget = _.widgets.find(item => item.pkg === '@ecomplus/widget-product') %>
+                          <% buyText = productWidget && productWidget.options.buyText %>
+                        <% } %>
+                        <%= buyText || _.dictionary('buy') %>
+                      <% } %>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
         </div>
       </div>
 

@@ -74,9 +74,9 @@ main ~ iframe{display: none;}
   --font-size:16px;
   --font-size-sm: 13.33px;
   --smallest: 11.11px;
-  --blk:#131313;
+  --blk:var(--primary);
   --wht:#fff;
-  --txt:#131313;
+  --txt:var(--primary);
   --c1:var(--primary);
   --c2:var(--secondary);
   --ff1:"Black Han Sans", sans-serif;;
@@ -102,7 +102,7 @@ main ~ iframe{display: none;}
 }
 body{font-family: var(--ff2);}
 
-.container{max-width: 100%;width: 1320px;}
+.container{max-width: 95%;width: 1320px;}
 .container_90{max-width: 90%;width: 100%;margin-left:auto;margin-right:auto}
 
 .top-bar{
@@ -405,8 +405,7 @@ body .banner-slider{
     small{font-size: var(--font-size);}
   }
 }
-.apx_product-list.section_type_1{
-  
+.apx_product-list.section_type_1{  
   .section-text-content{
     display: flex;
     justify-content: space-between;
@@ -683,4 +682,135 @@ footer.footer{
   }
   .footer__credits{padding: 1.5rem 0;border: 0;}
   .footer__credits a{display: flex;align-items: center;gap: .5rem;}
+}
+
+
+#product-block{
+  h1.product__name{
+    font-family: var(--ff1);
+    font-size: var(--h4);
+  }
+  .sticky{
+    position: sticky;
+    top: calc(var(--header-height) + 2rem ) ;
+    background: #fafafa;
+  }
+  .product__buy{
+    button{
+      background: var(--secondary);
+      border-radius: 0;
+      border: 2px solid;
+      color: var(--primary);
+      padding: .4rem 1.5rem .25rem 1.5rem;
+      span{
+        font-size: var(--h5);
+        text-transform: uppercase;
+        font-family: var(--ff1);
+        
+        i{display: none;}
+      }
+    }
+  }
+  .product__buy + div{display: none;}
+  .product__buy + div + div:before{
+    content: "Compartilhar";
+    display: block;
+    font-family: var(--ff1);
+    font-size: var(--smallest);
+    font-weight: 400;
+  }
+  .product__buy + div + div{
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+    margin-top:1.5rem;
+    > *:first-child span{display: none!important;}
+    > *:first-child{padding-left: 0;}
+    *{color:var(--primary)!important}
+  }
+  .shipping-calculator{
+    margin: 0 -1.5rem -1.5rem -1.5rem;
+    background: #fff;
+    padding: 1rem 0;
+    label[for="shipping-calculator-zip"]{
+      text-transform: uppercase;
+    }
+    .input-group{flex-wrap: nowrap;}
+    input{
+      border: 1px solid #000;
+      border-radius: 0;
+      margin-right: .5rem;
+      width: 100%;
+      max-width: unset;
+    }
+    button{
+      i{display: none;}
+      background: var(--primary);
+      border: 0;
+      border-radius: 0;
+    }
+    button:before{
+      content: "CALCULAR";
+      color: #fff;
+    }
+  }
+
+  .product__info{
+    font-size: var(--h5);
+    color: var(--primary);
+  }
+  
+  #product-specs{
+    .col-auto{
+      > div > div:first-child{
+        color:var(--primary)
+      }
+      > div > div:last-child{
+        color: #4f4f4f;
+      }
+    }
+    .col-auto:not(:last-child) {
+      border-right: 1px solid #f2f2f2;
+      padding-right: 1.5rem;
+      margin-right: .5rem;
+    }
+  }
+  .product__sku{color: var(--primary);}
+  .product__prices{margin: 1.5rem 0;}
+
+  #product-gallery .gallery__item--video{display: none!important;}
+}
+
+.prices--big{
+  .prices__value{
+    font-size: var(--h3);
+    font-weight: normal;
+  }
+}
+
+
+nav[aria-label="breadcrumb"]{
+  border-bottom:1px solid var(--primary);
+    border-top:1px solid var(--primary);
+  ol.breadcrumb{
+      display: flex;
+      align-items: center;
+      
+      border-radius: 0;
+      li{
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          line-height: var(--font-size-sm);
+          *{color: var(--txt);font-size: var(--font-size-sm);line-height: initial;}
+          a{}
+          span{}
+          svg{}
+          
+      }
+      li:not(:first-child){padding-left: 1rem!important;}
+      li:last-child{
+          *{font-weight: 600;color:var(--blk)}
+      }
+      li:before{display: none!important;}
+  }
 }
