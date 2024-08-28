@@ -1,5 +1,9 @@
 // Add your custom JavaScript for storefront pages here.
 document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(() =>{
+    $(window).resize();
+    alert(`a`)
+  }, 3000)
   let h = $(`header.header`).innerHeight();
   $(`body`).css(`--header-height`, h + 'px');
 
@@ -13,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
     $(`.listType button`).removeClass(`active`);
     $(this).closest(`#search-engine`).find(`.product-item`).closest(`div`).removeClass(`col-lg-3`).removeClass(`col-lg-4`).addClass(`col-lg-` + attr)
     $(this).addClass(`active`)
-
-  })
+  });
 });
 
