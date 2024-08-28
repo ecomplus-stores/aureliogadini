@@ -6,6 +6,10 @@
     },
     {
       "type": "page-title"
+    },    
+    {
+      "type": "document-description",
+      "enabled": true
     },
     {
       "type": "document-banner",
@@ -15,10 +19,6 @@
       "type": "category-retail",
       "enabled": true,
       "sort": "sales"
-    },
-    {
-      "type": "document-description",
-      "enabled": true
     }
   ]
 }
