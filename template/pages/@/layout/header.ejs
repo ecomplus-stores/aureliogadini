@@ -123,7 +123,7 @@ const hasAllDepartments = header.menu_all_departments
           role="group"
           aria-label="<%= _.dictionary('myAccount') %>"
         >
-          <button
+          <!-- <button
             class="btn btn-lg"
             id="mobile-search-btn"
             type="button"
@@ -134,8 +134,28 @@ const hasAllDepartments = header.menu_all_departments
             aria-controls="search-bar"
             title="<%= _.dictionary('searchProducts') %>"
           >
+            
+            
+          </button> -->
+          <div class="search___container">
+            <button
+              class="btn btn-lg"
+              id="mobile-search-btn"
+              type="button"
+           
+              aria-controls="search-bar"
+              aria-controls="search-bar"
+              title="<%= _.dictionary('searchProducts') %>"
+            >
             <img src="/img/vp_search.svg"/>
-          </button>
+            </button>
+            <div id="instant-search">
+              <!--
+                `InstantSearch` should be open on input focus:
+                https://developers.e-com.plus/storefront/@ecomplus/storefront-components/docs/InstantSearch.html
+              -->
+            </div>
+          </div>
 
           <a
             id="user-button"

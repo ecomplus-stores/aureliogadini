@@ -5,6 +5,12 @@ module.exports = () => ({
     alias: {
       './base-config': path.resolve(__dirname, 'template/js/netlify-cms/base-config'),
       './html/SearchEngine.html': path.resolve(__dirname, 'template/js/custom-js/html/SearchEngine.html'),   
+      './html/InstantSearch.html': path.resolve(__dirname, 'template/js/custom-js/html/InstantSearch.html'),   
+      './js/InstantSearch.js': path.resolve(__dirname, 'template/js/custom-js/html/InstantSearch.js'), 
+      './html/CartQuickview.html': path.resolve(__dirname, 'template/js/custom-js/html/CartQuickview.html'),   
+      './js/CartQuickview.js': path.resolve(__dirname, 'template/js/custom-js/html/CartQuickview.js'),    
+      './html/CartItem.html': path.resolve(__dirname, 'template/js/custom-js/html/CartItem.html'),   
+      './js/CartItem.js': path.resolve(__dirname, 'template/js/custom-js/html/CartItem.js'),   
       //'./js/SearchEngine.js': path.resolve(__dirname, 'template/js/custom-js/html/SearchEngine.js'),   
     }    
   }

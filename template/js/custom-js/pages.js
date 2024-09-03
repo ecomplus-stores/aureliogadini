@@ -2,7 +2,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   setTimeout(() =>{
     $(window).resize();
-    alert(`a`)
   }, 3000)
   let h = $(`header.header`).innerHeight();
   $(`body`).css(`--header-height`, h + 'px');
@@ -20,3 +19,4 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+$('body').css('--header-vh', ($('header#header').innerHeight()) + 'px');
