@@ -92,11 +92,10 @@
       "type": "apx_productList_A",
       "visibility": "d-block d-md-block",
       "products": [
-        "66c5448e86679971c64c41d7",
-        "66c5449186679971c64c41dc",
-        "66c5449086679971c64c41da",
-        "66c5449286679971c64c41e2",
-        "66c5449686679971c64c41f2"
+        "66c544ca86679971c64c4233",
+        "66d5bb98fc4aac27a2c17659",
+        "66d5bbbbfc4aac27a2c176ea",
+        "66d5bf55fc4aac27a2c17fd4"
       ],
       "title": "Novidades",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.",
@@ -107,11 +106,10 @@
     },
     {
       "products": [
-        "66c5448e86679971c64c41d7",
-        "66c5449086679971c64c41da",
-        "66c5449186679971c64c41dc",
-        "66c5449286679971c64c41e2",
-        "66c5449686679971c64c41f2"
+        "66c544ca86679971c64c4233",
+        "66d5bb98fc4aac27a2c17659",
+        "66d5bbbbfc4aac27a2c176ea",
+        "66d5bf55fc4aac27a2c17fd4"
       ],
       "bg_color": "#f2d74b",
       "section_img": "/img/uploads/db6352ae-2d77-4629-a6ee-67cfb12dca04-1.png",
@@ -128,11 +126,10 @@
       "type": "apx_productList_A",
       "visibility": "d-block d-md-block",
       "products": [
-        "66c5448e86679971c64c41d7",
-        "66c5449186679971c64c41dc",
-        "66c5449086679971c64c41da",
-        "66c5449286679971c64c41e2",
-        "66c5449686679971c64c41f2"
+        "66c544ca86679971c64c4233",
+        "66d5bb98fc4aac27a2c17659",
+        "66d5bbbbfc4aac27a2c176ea",
+        "66d5bf55fc4aac27a2c17fd4"
       ],
       "title": "Toys",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.",
@@ -149,10 +146,10 @@
         "container": "container-fluid"
       },
       "products": [
-        "66c5448e86679971c64c41d7",
-        "66c5449086679971c64c41da",
-        "66c5449186679971c64c41dc",
-        "66c5449286679971c64c41e2"
+        "66c544ca86679971c64c4233",
+        "66d5bb98fc4aac27a2c17659",
+        "66d5bbbbfc4aac27a2c176ea",
+        "66d5bf55fc4aac27a2c17fd4"
       ],
       "btn_bg": "#ffffff",
       "bg_color": "#f2d74b",
