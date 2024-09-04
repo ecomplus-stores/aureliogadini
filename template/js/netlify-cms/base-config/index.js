@@ -510,9 +510,9 @@ export default options => {
           widget: 'select',
           default: 3,
           options: [
-            {label:"4", value:4},
-            {label:"3", value:3},
-            {label:"2", value:2},
+            {label:"4", value:'4'},
+            {label:"3", value:'3'},
+            {label:"2", value:'2'},
           ]
         },     
         {
@@ -522,8 +522,8 @@ export default options => {
           widget: 'select',
           default: 12,
           options: [
-            {label:"2", value:2},
-            {label:"1", value:1},
+            {label:"2", value:'2'},
+            {label:"1", value:'1'},
           ]
         },    
         {
@@ -533,8 +533,8 @@ export default options => {
           widget: 'select',
           default: true,
           options: [
-            {label:"Sim", value:true},
-            {label:"Não", value:false},
+            {label:"Sim", value:'1'},
+            {label:"Não", value:'0'},
           ]
         },   
         {
@@ -554,10 +554,10 @@ export default options => {
           name: 'section_type',
           widget: 'select',
           options: [
-            {label:"Texto Esquerda - Imagem Direita - Produtos Abaixo", value:1},
-            {label:"Texto Direita - Imagem Esquerda - Produtos Abaixo", value:2},
-            {label:"Texto e Imagem Direita - Produtos Esquerda", value:3},
-            {label:"Texto e Imagem Esquerda - Produtos Direita", value:4},
+            {label:"Texto Esquerda - Imagem Direita - Produtos Abaixo", value:'1'},
+            {label:"Texto Direita - Imagem Esquerda - Produtos Abaixo", value:'2'},
+            {label:"Texto e Imagem Direita - Produtos Esquerda", value:'3'},
+            {label:"Texto e Imagem Esquerda - Produtos Direita", value:'4'},
           ]
         },        
         {
@@ -934,110 +934,110 @@ export default options => {
       //getMenuConfig(options),
       getExtraPages(options),
       getWidgets(options),
-      {
-        name: 'apx_categories',        
-        label: '[alpix.dev] - Categorias',
-        description: 'Adicione blocos de conteúdo em categorias especificas',
-        folder: `${options.baseDir}content/apx_categories`,
-        extension: 'json',
-        create: true,
-        slug: '{{slug}}',
-        fields: [
-          {
-            label: "Título",
-            hint:"Apenas para identificação no painel",
-            name: "title",
-            widget: "string"          
-          },
-          {
-            label: 'Identificador',
-            name: 'category_id',
-            widget: 'select',
-                multiple: false,
-                options: [
-                  ...options.state.routes
-                  .filter(el => el.resource === 'categories')
-                  .map((el) => ({
-                    label: 'Categoria - ' + el.name,
-                    value: el._id
-                  }))
-                ]                
-          },
-          {
-            label: 'Seções',
-            name: 'sections',
-            widget: 'list',
-            types: options.sections
-          }
-        ]
-      },
-      {
-        name: 'apx_tags',        
-        label: '[alpix.dev] - Produtos - Tags ',
-        description: 'Adicione tags ou selos nos produtos',
-        folder: `${options.baseDir}content/apx_tags`,
-        extension: 'json',
-        create: true,
-        slug: '{{slug}}',
-        fields: [
-          {
-            label: 'Identificador [SKU] ou [Categoria]',
-            name: 'identificador',
-            widget: 'select',
-                multiple: true,
-                options: [
-                  ...options.state.routes
-                  .filter(({ sku }) => typeof sku === 'string')
-                  .map(({ sku }) => ({
-                    label: 'Produto - ' + sku,
-                    value: sku
-                  })),
-                  ...options.state.routes
-                  .filter(el => el.resource === 'categories')
-                  .map((el) => ({
-                    label: 'Categoria - ' + el.name,
-                    value: 'cat_'+el._id
-                  }))
-                ]                
-          },
-          {
-            label: "Nome da Característica",
-            hint:"Exatamente como cadastrado no painel E-com.plus",
-            name: "title",
-            widget: "string"          
-          }, 
-          {
-            label: "Descrição",
-            name: "description",
-            widget: "string",
-            required:false,          
-          }, 
-          {
-            label: 'Imagem ou ícone',
-            name: 'img',
-            widget: 'image',
-            required:false,
-          },   
-          {
-            label: 'Cor do texto',
-            required: false,
-            name: 'color',
-            widget: 'color'
-          },
-          {
-            label: 'Cor da borda',
-            required: false,
-            name: 'border',
-            widget: 'color'
-          },
-          {
-            label: 'Cor do fundo',
-            required: false,
-            name: 'background_color',
-            widget: 'color'
-          }
-        ]
-      },
+      // {
+      //   name: 'apx_categories',        
+      //   label: '[alpix.dev] - Categorias',
+      //   description: 'Adicione blocos de conteúdo em categorias especificas',
+      //   folder: `${options.baseDir}content/apx_categories`,
+      //   extension: 'json',
+      //   create: true,
+      //   slug: '{{slug}}',
+      //   fields: [
+      //     {
+      //       label: "Título",
+      //       hint:"Apenas para identificação no painel",
+      //       name: "title",
+      //       widget: "string"          
+      //     },
+      //     {
+      //       label: 'Identificador',
+      //       name: 'category_id',
+      //       widget: 'select',
+      //           multiple: false,
+      //           options: [
+      //             ...options.state.routes
+      //             .filter(el => el.resource === 'categories')
+      //             .map((el) => ({
+      //               label: 'Categoria - ' + el.name,
+      //               value: el._id
+      //             }))
+      //           ]                
+      //     },
+      //     {
+      //       label: 'Seções',
+      //       name: 'sections',
+      //       widget: 'list',
+      //       types: options.sections
+      //     }
+      //   ]
+      // },
+      // {
+      //   name: 'apx_tags',        
+      //   label: '[alpix.dev] - Produtos - Tags ',
+      //   description: 'Adicione tags ou selos nos produtos',
+      //   folder: `${options.baseDir}content/apx_tags`,
+      //   extension: 'json',
+      //   create: true,
+      //   slug: '{{slug}}',
+      //   fields: [
+      //     {
+      //       label: 'Identificador [SKU] ou [Categoria]',
+      //       name: 'identificador',
+      //       widget: 'select',
+      //           multiple: true,
+      //           options: [
+      //             ...options.state.routes
+      //             .filter(({ sku }) => typeof sku === 'string')
+      //             .map(({ sku }) => ({
+      //               label: 'Produto - ' + sku,
+      //               value: sku
+      //             })),
+      //             ...options.state.routes
+      //             .filter(el => el.resource === 'categories')
+      //             .map((el) => ({
+      //               label: 'Categoria - ' + el.name,
+      //               value: 'cat_'+el._id
+      //             }))
+      //           ]                
+      //     },
+      //     {
+      //       label: "Nome da Característica",
+      //       hint:"Exatamente como cadastrado no painel E-com.plus",
+      //       name: "title",
+      //       widget: "string"          
+      //     }, 
+      //     {
+      //       label: "Descrição",
+      //       name: "description",
+      //       widget: "string",
+      //       required:false,          
+      //     }, 
+      //     {
+      //       label: 'Imagem ou ícone',
+      //       name: 'img',
+      //       widget: 'image',
+      //       required:false,
+      //     },   
+      //     {
+      //       label: 'Cor do texto',
+      //       required: false,
+      //       name: 'color',
+      //       widget: 'color'
+      //     },
+      //     {
+      //       label: 'Cor da borda',
+      //       required: false,
+      //       name: 'border',
+      //       widget: 'color'
+      //     },
+      //     {
+      //       label: 'Cor do fundo',
+      //       required: false,
+      //       name: 'background_color',
+      //       widget: 'color'
+      //     }
+      //   ]
+      // },
       
       {
         label: "[alpix.dev]",
@@ -1046,49 +1046,49 @@ export default options => {
             preview: false
         },
         files: [
-          {
-              name: "apx_header",
-              label: "Cabeçalho",
-              file: "content/apx_header.json",
-              fields: [
-                  {
-                      label: "Tarja Topo (Acima)",
-                      name: "topbar_1",
-                      widget: "object",
-                      required: false,
-                      fields: [
-                          {
-                              label: "Cor do Texto",
-                              name: "color",
-                              widget: "color"
-                          },
-                          {
-                              label: "Cor do Fundo",
-                              name: "background",
-                              widget: "color"
-                          },
-                          {
-                              label: "Itens",
-                              name: "topbar_1",
-                              widget: "list",
-                              required: false,
-                              fields: [
-                                  {
-                                      label: "Texto ou HTML",
-                                      name: "title",
-                                      widget: "string"
-                                  },
-                                  {
-                                      label: "URL",
-                                      name: "url",
-                                      widget: "string"
-                                  }
-                              ]
-                          }
-                      ]
-                  },                  
-              ]
-          },
+          // {
+          //     name: "apx_header",
+          //     label: "Cabeçalho",
+          //     file: "content/apx_header.json",
+          //     fields: [
+          //         {
+          //             label: "Tarja Topo (Acima)",
+          //             name: "topbar_1",
+          //             widget: "object",
+          //             required: false,
+          //             fields: [
+          //                 {
+          //                     label: "Cor do Texto",
+          //                     name: "color",
+          //                     widget: "color"
+          //                 },
+          //                 {
+          //                     label: "Cor do Fundo",
+          //                     name: "background",
+          //                     widget: "color"
+          //                 },
+          //                 {
+          //                     label: "Itens",
+          //                     name: "topbar_1",
+          //                     widget: "list",
+          //                     required: false,
+          //                     fields: [
+          //                         {
+          //                             label: "Texto ou HTML",
+          //                             name: "title",
+          //                             widget: "string"
+          //                         },
+          //                         {
+          //                             label: "URL",
+          //                             name: "url",
+          //                             widget: "string"
+          //                         }
+          //                     ]
+          //                 }
+          //             ]
+          //         },                  
+          //     ]
+          // },
           {
               name: "popup",
               label: "Popup",
