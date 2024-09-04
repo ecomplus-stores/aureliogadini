@@ -47,7 +47,7 @@ const themeCustom = _.settings.theme.custom || ''
   
   <div class="container">
     <div class="row">
-      <div class="mt-5 mb-5 w-100">
+      <div class="mt-5 mb-md-5 mb-2 w-100">
         <% if (footer.contacts.socials) { %>
           <p class="footer__social text-center justify-content-center">
             <%- await include('@/layout/inc/networks', { _, contacts }) %>
@@ -56,7 +56,7 @@ const themeCustom = _.settings.theme.custom || ''
       </div>
     </div>
     <div class="row justify-content-between">
-      <div class="col-12 col-md-auto order-lg-first order-last mt-md-0 mt-4">
+      <div class="col-12 col-md-auto order-lg-first mt-md-0 mt-4">
         <div class="footer__contacts">
           <a
           class="footer__title"

@@ -49,7 +49,7 @@
         <div class="section-text-content">
             <div class="apx_section-title text-center <%= opt.title_img ? 'has_title_image' : ''%>">
                 <%  if(opt.title_img){ %>            
-                    <img src="<%= opt.title_img %>" class="d-block mb-3"/>
+                    <img src="<%= opt.title_img %>" class="d-none d-md-block mb-3"/>
                 <% } %>
                 <%  if(opt.title){ %>            
                         <h2 class="text-bold text-uppercase"><%- opt.title %></h2>
