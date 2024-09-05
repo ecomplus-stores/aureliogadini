@@ -508,7 +508,7 @@ export default options => {
           required: false,
           name: 'num_col_md',
           widget: 'select',
-          default: 3,
+          default: '3',
           options: [
             {label:"4", value:'4'},
             {label:"3", value:'3'},
@@ -520,7 +520,7 @@ export default options => {
           required: false,
           name: 'num_col_sm',
           widget: 'select',
-          default: 12,
+          default: '2',
           options: [
             {label:"2", value:'2'},
             {label:"1", value:'1'},
@@ -531,22 +531,16 @@ export default options => {
           required: false,
           name: 'is_slider_md',
           widget: 'select',
-          default: true,
-          options: [
-            {label:"Sim", value:'1'},
-            {label:"Não", value:'0'},
-          ]
+          default: "Sim",
+          options: ["Sim","Não"],
         },   
         {
           label: 'É um slider/carrossel? (Mobile)',
           required: false,
           name: 'is_slider_sm',
           widget: 'select',
-          default: true,
-          options: [
-            {label:"Sim", value:true},
-            {label:"Não", value:false},
-          ]
+          default: "Sim",
+          options: ["Sim","Não"],          
         },        
         {
           label: 'Formato',
