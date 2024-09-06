@@ -195,7 +195,7 @@ export default {
 
     productToGallery() {
       let gallery = this.body.pictures
-      if(gallery.length > 1 && this.body.categories.find(el => el.name == "Discos")){
+      if(gallery.length > 1 && this.body.categories && this.body.categories.find(el => el.name == "Discos")){
         gallery = [...gallery.slice(1,gallery.length)]                
       }
       this.refreshGallery = Math.random().toString()
