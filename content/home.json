@@ -103,8 +103,8 @@
       "spacing": {
         "container": "container_90",
         "desktop": {
-          "margin_top": "2",
-          "margin_bottom": "2",
+          "margin_top": "5",
+          "margin_bottom": "5",
           "padding_bottom": "0",
           "padding_top": "0"
         },
@@ -122,13 +122,13 @@
           "margin_top": "0",
           "margin_bottom": "0",
           "padding_top": "2",
-          "padding_bottom": "2"
+          "padding_bottom": "5"
         },
         "mobile": {
           "margin_top": "0",
           "margin_bottom": "0",
           "padding_top": "2",
-          "padding_bottom": "2"
+          "padding_bottom": "4"
         }
       },
       "products": [
@@ -152,12 +152,12 @@
       "spacing": {
         "container": "container_90",
         "desktop": {
-          "margin_top": "3",
-          "margin_bottom": "3"
+          "margin_top": "5",
+          "margin_bottom": "5"
         },
         "mobile": {
-          "margin_top": "3",
-          "margin_bottom": "3"
+          "margin_top": "4",
+          "margin_bottom": "4"
         }
       },
       "products": [
@@ -179,16 +179,16 @@
       "spacing": {
         "container": "container-fluid",
         "desktop": {
-          "margin_top": "1",
-          "margin_bottom": "1",
-          "padding_top": "2",
-          "padding_bottom": "2"
+          "margin_top": "5",
+          "margin_bottom": "0",
+          "padding_top": "5",
+          "padding_bottom": "0"
         },
         "mobile": {
-          "margin_top": "1",
-          "margin_bottom": "1",
-          "padding_top": "2",
-          "padding_bottom": "2"
+          "margin_top": "4",
+          "margin_bottom": "4",
+          "padding_top": "0",
+          "padding_bottom": "0"
         }
       },
       "products": [

@@ -1,5 +1,7 @@
 // Add your custom CSS here.
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Black+Han+Sans&family=Ropa+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap');
 
 .black-han-sans-regular {
   font-family: "Black Han Sans", sans-serif;
@@ -66,11 +68,16 @@
 main ~ iframe{display: none;}
 :root{
   --warning:var(--danger);
-  --h1:39.81px;
-  --h2:33.18px;
-  --h3:27.65px;
-  --h4:23.04px;
-  --h5:19.02px;  
+  // --h1:39.81px;
+  // --h2:33.18px;
+  // --h3:27.65px;
+  // --h4:23.04px;
+  // --h5:19.02px;  
+  --h1:calc(39.81px * 1.05);
+  --h2:calc(33.18px* 1.05);
+  --h3:calc(27.65px* 1.05);
+  --h4:calc(23.04px* 1.05);
+  --h5:calc(19.02px* 1.05);  
   --font-size:16px;
   --font-size-sm: 13.33px;
   --smallest: 11.11px;
@@ -79,8 +86,10 @@ main ~ iframe{display: none;}
   --txt:var(--primary);
   --c1:var(--primary);
   --c2:var(--secondary);
-  --ff1:"Black Han Sans", sans-serif;;
-  --ff2:"Ropa Sans", sans-serif;
+  //--ff1:"Black Han Sans",  "Changa One",sans-serif;;
+  --ff1: "Changa One",sans-serif;;
+  //--ff2:"Ropa Sans", sans-serif;
+  --ff2:"Rajdhani", sans-serif;
   --gray:#4f4f4f;
   --green:#27AE60;
 
@@ -443,9 +452,10 @@ body .banner-slider{
 .apx_product-list.section_type_3{  
   > div {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-direction: row-reverse;
-    align-items: flex-end;
+    
     > *:not(.section-text-content){
       max-width: 50%;
     }
@@ -720,7 +730,7 @@ footer.footer{
     content: "Compartilhar";
     display: block;
     font-family: var(--ff1);
-    font-size: var(--smallest);
+    font-size: var(--font-size-sm);
     font-weight: 400;
   }
   .product__buy + div + div{
@@ -882,9 +892,12 @@ nav[aria-label="breadcrumb"]{
     }
   }
   .listType{
+    margin-left:auto;
+    margin-right:1rem;
     gap: 1rem;
     button{
       display: flex;
+      flex-wrap:wrap;
       background: transparent;
       width: 60px;
       gap: 2px;
@@ -892,11 +905,21 @@ nav[aria-label="breadcrumb"]{
       opacity: .3;
       transition: opacity .2s ease-in-out;
       span{
-        height: 24px;
+        // height: 24px;
+        // background: var(--primary);
+        // display: inline-block;
+        // width: 100%;
+        height:7px;
+        width:7px;
+        border-radius:2px;
         background: var(--primary);
-        display: inline-block;
-        width: 100%;
       }
+    }
+    button:first-child{
+      width:40px;      
+    }
+    button:last-child{
+      width:50px;
     }
     button.active,
     button:hover{
@@ -1758,6 +1781,41 @@ nav.header__submenu[style="display: grid;"]{
         .search__submit{height:39px}
       }
     }
+  }  
+}
+
+.apx_product-list{
+  .glide__slide{
+    margin:0!important;
+    padding:0 15px
   }
+}
+
+#product-actions{
+  .product__payment.card{display: none;}
+}
+
+.product-card{
+  .product-card__buy{display: none!important;}
   
+  .prices__installments:before{
+    content: "em até ";
+  }
+}
+.prices__installments{
+  font-weight:600;
+  
+}
+.prices__discount{
+  margin-top: .5rem;
+  > span{font-weight: 600;}
+  .prices__discount-label{
+    font-size:0px;
+    line-height: 0;
+  }
+  .prices__discount-label:after{
+    content: "à vista via pix";
+    font-size: var(--font-size-sm);
+    line-height: var(--font-size-sm);
+  }
 }
