@@ -101,49 +101,35 @@
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.",
       "title_color": "",
       "spacing": {
-        "container": "container_90"
+        "container": "container_90",
+        "desktop": {
+          "margin_top": "2",
+          "margin_bottom": "2",
+          "padding_bottom": "0",
+          "padding_top": "0"
+        },
+        "mobile": {
+          "margin_top": "2",
+          "margin_bottom": "2",
+          "padding_top": "0",
+          "padding_bottom": "0"
+        }
       }
     },
     {
-      "products": [
-        "66c544ca86679971c64c4233",
-        "66d5bb98fc4aac27a2c17659",
-        "66d5bbbbfc4aac27a2c176ea",
-        "66d5bf55fc4aac27a2c17fd4"
-      ],
-      "bg_color": "#f2d74b",
-      "section_img": "/img/uploads/db6352ae-2d77-4629-a6ee-67cfb12dca04-1.png",
-      "visibility": "d-block d-md-block",
-      "section_type": 1,
-      "title": "SUCESSOS DO SEPULTURA",
-      "type": "apx_productList_A",
-      "title_img": "/img/uploads/image-22.png",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.",
-      "imagem_margin": "-2rem",
-      "btn_bg": "#ffffff"
-    },
-    {
-      "type": "apx_productList_A",
-      "visibility": "d-block d-md-block",
-      "products": [
-        "66c544ca86679971c64c4233",
-        "66d5bb98fc4aac27a2c17659",
-        "66d5bbbbfc4aac27a2c176ea",
-        "66d5bf55fc4aac27a2c17fd4"
-      ],
-      "title": "Toys",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.",
-      "num_col_md": 3,
-      "num_col_sm": 1,
-      "title_color": "",
       "spacing": {
-        "container": "container_90"
-      }
-    },
-    {
-      "btn_color": "#000000",
-      "spacing": {
-        "container": "container-fluid"
+        "desktop": {
+          "margin_top": "0",
+          "margin_bottom": "0",
+          "padding_top": "2",
+          "padding_bottom": "2"
+        },
+        "mobile": {
+          "margin_top": "0",
+          "margin_bottom": "0",
+          "padding_top": "2",
+          "padding_bottom": "2"
+        }
       },
       "products": [
         "66c544ca86679971c64c4233",
@@ -153,12 +139,71 @@
       ],
       "btn_bg": "#ffffff",
       "bg_color": "#f2d74b",
-      
-      "section_img": "/img/uploads/c82cef9d-e425-48ae-a228-a76ccfb1a9f6-1.png",
+      "section_img": "/img/uploads/db6352ae-2d77-4629-a6ee-67cfb12dca04-1.png",
       "visibility": "d-block d-md-block",
-      "section_type": 3,
+      "section_type": 1,
+      "title": "SUCESSOS DO SEPULTURA",
+      "type": "apx_productList_A",
+      "imagem_margin": "-2rem",
+      "title_img": "/img/uploads/image-22.png",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede."
+    },
+    {
+      "spacing": {
+        "container": "container_90",
+        "desktop": {
+          "margin_top": "3",
+          "margin_bottom": "3"
+        },
+        "mobile": {
+          "margin_top": "3",
+          "margin_bottom": "3"
+        }
+      },
+      "products": [
+        "66c544ca86679971c64c4233",
+        "66d5bb98fc4aac27a2c17659",
+        "66d5bbbbfc4aac27a2c176ea",
+        "66d5bf55fc4aac27a2c17fd4"
+      ],
+      "num_col_md": 3,
+      "num_col_sm": 1,
+      "visibility": "d-block d-md-block",
+      "title": "Toys",
+      "type": "apx_productList_A",
+      "title_color": "",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede."
+    },
+    {
+      "btn_color": "#000000",
+      "spacing": {
+        "container": "container-fluid",
+        "desktop": {
+          "margin_top": "1",
+          "margin_bottom": "1",
+          "padding_top": "2",
+          "padding_bottom": "2"
+        },
+        "mobile": {
+          "margin_top": "1",
+          "margin_bottom": "1",
+          "padding_top": "2",
+          "padding_bottom": "2"
+        }
+      },
+      "products": [
+        "66c544ca86679971c64c4233",
+        "66d5bb98fc4aac27a2c17659",
+        "66d5bbbbfc4aac27a2c176ea",
+        "66d5bf55fc4aac27a2c17fd4"
+      ],
+      "btn_bg": "#ffffff",
+      "bg_color": "#f2d74b",
+      "section_img": "/img/uploads/c82cef9d-e425-48ae-a228-a76ccfb1a9f6-1.png",
       "num_col_md": 2,
       "num_col_sm": 1,
+      "visibility": "d-block d-md-block",
+      "section_type": 3,
       "type": "apx_productList_A",
       "title_img": "/img/uploads/image-23.png",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede."
