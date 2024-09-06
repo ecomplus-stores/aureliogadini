@@ -28,7 +28,7 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
           <% if (_.state.pictures) { %>
 
             <%
-            if(_.state.categories.find(el => el.name == "Discos")){
+            if(_.state.pictures.length > 0 && _.state.categories.find(el => el.name == "Discos")){
               _.state.pictures = _.state.pictures.slice(1,_.state.pictures.length)
             }
             const imgObj = _.ecomUtils.img(_.state, null, 'big') %>
