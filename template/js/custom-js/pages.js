@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   setTimeout(() =>{
     $(window).resize();
-  }, 3000)
+  }, 1000)
   let h = $(`header.header`).innerHeight();
   $(`body`).css(`--header-height`, h + 'px');
 
@@ -17,6 +17,17 @@ document.addEventListener("DOMContentLoaded", function() {
     $(this).closest(`#search-engine`).find(`.product-item`).closest(`div`).removeClass(`col-lg-3`).removeClass(`col-lg-4`).addClass(`col-lg-` + attr)
     $(this).addClass(`active`)
   });
+  onLoadOrResize();
+  $(window).resize(function(){
+    onLoadOrResize()
+  })
 });
+
+function onLoadOrResize(){
+  $(`.products-carousel__list`).each(function(){
+    let h = $(this).find(`picture`).first().innerHeight();
+    $(this).closest('.glide__track').css('--cover_height', h + 'px');
+  })
+}
 
 $('body').css('--header-vh', ($('header#header').innerHeight()) + 'px');

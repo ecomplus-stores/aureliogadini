@@ -42,14 +42,15 @@
       "banners": [
         {
           "desktop": {
-            "mask_opacity": 6,
             "img": "/img/uploads/rap_trap.jpg",
             "title": "RAP<br>TRAP<br>R&B",
+            "link": "/rap--trap--rb",
+            "mask_opacity": 6,
             "mask_color": "#000000",
             "content_position": "center_center",
             "content_order": "inside_image",
-            "title_color": "#ffffff",
-            "link": "/rap--trap--rb"
+            "title_color": "#ffffff"
+            
           },
           "mobile": {
             "mask_opacity": 0
@@ -57,9 +58,10 @@
         },
         {
           "desktop": {
-            "mask_opacity": 0,
+            
             "img": "/img/uploads/punk_metal.jpg",
             "title": "PUNK<br>METAL",
+            "mask_opacity": 6,
             "mask_color": "#000000",
             "content_position": "center_center",
             "content_order": "inside_image",
@@ -72,9 +74,10 @@
         },
         {
           "desktop": {
-            "mask_opacity": 0,
+            
             "img": "/img/uploads/funk_soul_jazz.jpg",
             "title": "FUNK<BR>SOUL<BR>JAZZ",
+            "mask_opacity": 6,
             "mask_color": "#000000",
             "content_position": "center_center",
             "content_order": "inside_image",
@@ -87,9 +90,14 @@
         },
         {
           "desktop": {
-            "mask_opacity": 0,
+            
             "img": "/img/uploads/rock_indie.jpg",
             "title": "INDIE<BR>ROCK",
+            "mask_opacity": 6,
+            "mask_color": "#000000",
+            "content_position": "center_center",
+            "content_order": "inside_image",
+            "title_color": "#ffffff",
             "link": "/indie--rock"
           },
           "mobile": {
@@ -98,8 +106,13 @@
         },
         {
           "desktop": {
-            "mask_opacity": 0,
+            
             "img": "/img/uploads/eletronica.jpg",
+            "mask_opacity": 6,
+            "mask_color": "#000000",
+            "content_position": "center_center",
+            "content_order": "inside_image",
+            "title_color": "#ffffff",
             "link": "/eletronico",
             "title": "ELETRÔNICA"
           },
@@ -109,8 +122,13 @@
         },
         {
           "desktop": {
-            "mask_opacity": 0,
+            
             "img": "/img/uploads/brasil.jpg",
+            "mask_opacity": 6,
+            "mask_color": "#000000",
+            "content_position": "center_center",
+            "content_order": "inside_image",
+            "title_color": "#ffffff",
             "title": "BRASIL",
             "link": "/brasil"
           },
@@ -169,10 +187,11 @@
         }
       },
       "products": [
-        "66c544ca86679971c64c4233",
         "66d5bb98fc4aac27a2c17659",
-        "66d5bbbbfc4aac27a2c176ea",
-        "66d5bf55fc4aac27a2c17fd4"
+        "66da37dffc4aac27a2c81f44",
+        "66da3c1bfc4aac27a2c82359",
+        "66da3c32fc4aac27a2c823b0",
+        "66da3c30fc4aac27a2c823a7"
       ],
       "btn_bg": "#ffffff",
       "bg_color": "#f2d74b",
@@ -198,10 +217,11 @@
         }
       },
       "products": [
-        "66c544ca86679971c64c4233",
         "66d5bb98fc4aac27a2c17659",
-        "66d5bbbbfc4aac27a2c176ea",
-        "66d5bf55fc4aac27a2c17fd4"
+        "66da37dffc4aac27a2c81f44",
+        "66da3c1bfc4aac27a2c82359",
+        "66da3c32fc4aac27a2c823b0",
+        "66da3c30fc4aac27a2c823a7"
       ],
       "num_col_md": 3,
       "num_col_sm": 1,
@@ -229,10 +249,11 @@
         }
       },
       "products": [
-        "66c544ca86679971c64c4233",
         "66d5bb98fc4aac27a2c17659",
-        "66d5bbbbfc4aac27a2c176ea",
-        "66d5bf55fc4aac27a2c17fd4"
+        "66da37dffc4aac27a2c81f44",
+        "66da3c1bfc4aac27a2c82359",
+        "66da3c32fc4aac27a2c823b0",
+        "66da3c30fc4aac27a2c823a7"
       ],
       "btn_bg": "#ffffff",
       "bg_color": "#f2d74b",
