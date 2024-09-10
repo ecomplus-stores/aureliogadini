@@ -723,7 +723,7 @@ footer.footer{
       border-radius: 0;
       border: 2px solid;
       color: var(--primary);
-      padding: .4rem 1.5rem .25rem 1.5rem;
+      padding: .25rem 1.5rem .25rem 1.5rem;
       span{
         font-size: var(--h5);
         text-transform: uppercase;
@@ -819,6 +819,7 @@ nav[aria-label="breadcrumb"]{
       
       border-radius: 0;
       li{
+          text-transform: uppercase;
           display: flex;
           align-items: center;
           gap: 1rem;
@@ -828,6 +829,12 @@ nav[aria-label="breadcrumb"]{
           span{}
           svg{}
           
+      }
+      
+      li:nth-child(3),
+      li:nth-child(4){
+        text-transform: initial;
+        *{text-transform: initial;}
       }
       li:not(:first-child){padding-left: 1rem!important;}
       li:last-child{
@@ -872,7 +879,7 @@ nav[aria-label="breadcrumb"]{
 .sections{
   #search-engine-snap,
   .search-engine{
-    .product-item{margin-bottom: 2rem;}
+    .product-card{padding-bottom: 2rem;}
   }
 }
 
@@ -1176,7 +1183,7 @@ body{
                       max-width: 80%;
                       line-height: initial;
                       a{
-                          font-size: var(--font-size-sm);
+                          font-size: var(--font-size);
                           color: var(--blk);
                           font-weight: normal;
 
@@ -1217,7 +1224,7 @@ body{
             text-transform: uppercase;   
             border-radius: 0;
             border: 0;
-            padding: .8rem 1rem .5rem 1rem;           
+            padding: .5rem 1rem .5rem 1rem;           
           }
           a.minicart__btn-checkout{
               
@@ -1820,11 +1827,13 @@ nav.header__submenu[style="display: grid;"]{
   }
 }
 .prices__installments{
-  font-weight:600;
+  font-weight:500!important;
   
 }
 .prices__discount{
   margin-top: .5rem;
+  font-size: calc(var(--font-size-sm) * 1.1);
+  line-height: calc(var(--font-size-sm) * 1.1);
   > span{font-weight: 600;}
   .prices__discount-label{
     font-size:0px;
@@ -1832,8 +1841,9 @@ nav.header__submenu[style="display: grid;"]{
   }
   .prices__discount-label:after{
     content: "à vista via pix";
-    font-size: var(--font-size-sm);
-    line-height: var(--font-size-sm);
+    font-size: calc(var(--font-size-sm) * 1.1);
+    line-height: calc(var(--font-size-sm) * 1.1);
+    font-weight:400;
   }
 }
 
