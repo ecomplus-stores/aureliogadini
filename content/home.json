@@ -43,12 +43,13 @@
         {
           "desktop": {
             "mask_opacity": 6,
-            "img": "/img/uploads/rectangle-9-2x.png",
+            "img": "/img/uploads/rap_trap.jpg",
             "title": "RAP<br>TRAP<br>R&B",
             "mask_color": "#000000",
             "content_position": "center_center",
             "content_order": "inside_image",
-            "title_color": "#ffffff"
+            "title_color": "#ffffff",
+            "link": "/rap--trap--rb"
           },
           "mobile": {
             "mask_opacity": 0
@@ -57,12 +58,13 @@
         {
           "desktop": {
             "mask_opacity": 0,
-            "img": "/img/uploads/rectangle-10-2x.png",
+            "img": "/img/uploads/punk_metal.jpg",
             "title": "PUNK<br>METAL",
             "mask_color": "#000000",
             "content_position": "center_center",
             "content_order": "inside_image",
-            "title_color": "#ffffff"
+            "title_color": "#ffffff",
+            "link": "/punk--metal"
           },
           "mobile": {
             "mask_opacity": 0
@@ -71,12 +73,46 @@
         {
           "desktop": {
             "mask_opacity": 0,
-            "img": "/img/uploads/rectangle-11-2x.png",
-            "title": "POP",
+            "img": "/img/uploads/funk_soul_jazz.jpg",
+            "title": "FUNK<BR>SOUL<BR>JAZZ",
             "mask_color": "#000000",
             "content_position": "center_center",
             "content_order": "inside_image",
-            "title_color": "#ffffff"
+            "title_color": "#ffffff",
+            "link": "/funk--soul--jazz"
+          },
+          "mobile": {
+            "mask_opacity": 0
+          }
+        },
+        {
+          "desktop": {
+            "mask_opacity": 0,
+            "img": "/img/uploads/rock_indie.jpg",
+            "title": "INDIE<BR>ROCK",
+            "link": "/indie--rock"
+          },
+          "mobile": {
+            "mask_opacity": 0
+          }
+        },
+        {
+          "desktop": {
+            "mask_opacity": 0,
+            "img": "/img/uploads/eletronica.jpg",
+            "link": "/eletronico",
+            "title": "ELETRÔNICA"
+          },
+          "mobile": {
+            "mask_opacity": 0
+          }
+        },
+        {
+          "desktop": {
+            "mask_opacity": 0,
+            "img": "/img/uploads/brasil.jpg",
+            "title": "BRASIL",
+            "link": "/brasil"
           },
           "mobile": {
             "mask_opacity": 0
