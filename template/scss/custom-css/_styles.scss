@@ -2004,3 +2004,12 @@ footer{
     }
   }
 }
+
+@media(max-width:990px){
+  header#header{
+    padding-left: .5rem;
+  }
+  .top-bar{
+    *{text-align: center;justify-content: center;}
+  }
+}
