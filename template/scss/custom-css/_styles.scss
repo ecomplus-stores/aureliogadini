@@ -127,14 +127,20 @@ body{font-family: var(--ff2);}
   
   .top-bar__countdown{padding-left:0;padding-right: 0;font-weight:500;}
 }
-.header__container{
-  padding-left: 15px;
-  padding-right: 15px;
-  .header__logo{
-    height: 42px;
+header.header{
+  padding-left: 0;
+  padding-right: 0;
+  .header__container{
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    .header__logo{
+      height: 42px;
+    }
+  
   }
-
 }
+
 header.header{
   background: #fff;
   border: 0;
@@ -1993,8 +1999,8 @@ footer{
     left: 50%;
     translate: -50% -50%;
     .content{
-      padding-left: 30px!important;
-      padding-right: 30px!important;
+      padding-left: 15px!important;
+      padding-right: 15px!important;
     }
   }
 }
