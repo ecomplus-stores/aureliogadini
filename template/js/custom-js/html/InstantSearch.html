@@ -73,7 +73,7 @@
         </header>
       </slot>
 
-      <article class="search__body card-body">
+      <article class="search__body card-body" v-if="searchTerm">
         <slot
           name="search-engine"
           v-bind="{ term: searchTerm }"
