@@ -87,54 +87,6 @@
           "mobile": {
             "mask_opacity": 0
           }
-        },
-        {
-          "desktop": {
-            
-            "img": "/img/uploads/rock_indie.jpg",
-            "title": "INDIE<BR>ROCK",
-            "mask_opacity": 3,
-            "mask_color": "#000000",
-            "content_position": "center_center",
-            "content_order": "inside_image",
-            "title_color": "#ffffff",
-            "link": "/indie--rock"
-          },
-          "mobile": {
-            "mask_opacity": 0
-          }
-        },
-        {
-          "desktop": {
-            
-            "img": "/img/uploads/eletronica.jpg",
-            "mask_opacity": 3,
-            "mask_color": "#000000",
-            "content_position": "center_center",
-            "content_order": "inside_image",
-            "title_color": "#ffffff",
-            "link": "/eletronico",
-            "title": "ELETRÔNICA"
-          },
-          "mobile": {
-            "mask_opacity": 0
-          }
-        },
-        {
-          "desktop": {
-            
-            "img": "/img/uploads/brasil.jpg",
-            "mask_opacity": 3,
-            "mask_color": "#000000",
-            "content_position": "center_center",
-            "content_order": "inside_image",
-            "title_color": "#ffffff",
-            "title": "BRASIL",
-            "link": "/brasil"
-          },
-          "mobile": {
-            "mask_opacity": 0
-          }
         }
       ],
       "grid": "5",
