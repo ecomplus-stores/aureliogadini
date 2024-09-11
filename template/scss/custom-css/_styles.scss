@@ -124,9 +124,16 @@ body{font-family: var(--ff2);}
   background: var(--primary);
   color: var(--primary-yiq);
   *{font-size:var(--font-size-sm)}
-  .top-bar__countdown{padding-left:0;padding-right: 0;}
+  
+  .top-bar__countdown{padding-left:0;padding-right: 0;font-weight:500;}
 }
+.header__container{
+  padding: 0 3px;
+  .header__logo{
+    height: 42px;
+  }
 
+}
 header.header{
   background: #fff;
   border: 0;
@@ -496,7 +503,7 @@ body .banner-slider{
   justify-content: center;
   align-items: center;
   max-width: 100%;
-  width: 800px;
+  // width: 800px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3rem;
@@ -770,6 +777,7 @@ footer.footer{
       background: var(--primary);
       border: 0;
       border-radius: 0;
+      font-weight: 500;
     }
     button:before{
       content: "CALCULAR";
@@ -826,7 +834,7 @@ nav[aria-label="breadcrumb"]{
           gap: 1rem;
           line-height: var(--font-size);
           *{color: var(--txt);font-size: var(--font-size);line-height: initial;}
-          a{}
+          a{font-weight: 500;}
           span{}
           svg{}
           
@@ -839,7 +847,7 @@ nav[aria-label="breadcrumb"]{
       }
       li:not(:first-child){padding-left: 1rem!important;}
       li:last-child{
-          *{font-weight: 600;color:var(--blk)}
+          *{font-weight: 500;color:var(--blk)}
       }
       li:before{display: none!important;}
   }
@@ -880,7 +888,7 @@ nav[aria-label="breadcrumb"]{
 .sections{
   #search-engine-snap,
   .search-engine{
-    .product-card{padding-bottom: 2rem;}
+    .product-card{padding-bottom: 3rem;}
   }
 }
 
@@ -1506,6 +1514,7 @@ nav.header__submenu[style="display: grid;"]{
     --smallest: 11.11px;
   }
   .top-bar{
+    
     padding:.25rem 0;
     > .container-fluid {
       > .d-flex{justify-content: center;}
@@ -1851,7 +1860,7 @@ nav.header__submenu[style="display: grid;"]{
 
 footer{
   .footer__links{
-    text-transform: uppercase;
+    // text-transform: uppercase;
     --font-size:15px;
   }
   .footer__contacts{
@@ -1956,4 +1965,21 @@ footer{
       }
     }
   }
+}
+#mobile-search-btn{margin-right: 4px;}
+.shipping-calculator__services{
+  width: 100%;
+  max-width:100%!important;
+  font-weight:500;
+}
+.shipping-calculator__option>small{
+  top:50%!important;
+  translate: 0 -50%;
+  font-weight: 500;
+  font-size: var(--font-size-sm);
+}
+.share--email,
+.share--sms{display: none;}
+@media(min-width:990px){
+  #product-description{margin-left: 110px;}
 }

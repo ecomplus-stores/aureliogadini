@@ -45,7 +45,7 @@
             "img": "/img/uploads/rap_trap.jpg",
             "title": "RAP<br>TRAP<br>R&B",
             "link": "/rap--trap--rb",
-            "mask_opacity": 6,
+            "mask_opacity": 3,
             "mask_color": "#000000",
             "content_position": "center_center",
             "content_order": "inside_image",
@@ -61,7 +61,7 @@
             
             "img": "/img/uploads/punk_metal.jpg",
             "title": "PUNK<br>METAL",
-            "mask_opacity": 6,
+            "mask_opacity": 3,
             "mask_color": "#000000",
             "content_position": "center_center",
             "content_order": "inside_image",
@@ -77,7 +77,7 @@
             
             "img": "/img/uploads/funk_soul_jazz.jpg",
             "title": "FUNK<BR>SOUL<BR>JAZZ",
-            "mask_opacity": 6,
+            "mask_opacity": 3,
             "mask_color": "#000000",
             "content_position": "center_center",
             "content_order": "inside_image",
@@ -93,7 +93,7 @@
             
             "img": "/img/uploads/rock_indie.jpg",
             "title": "INDIE<BR>ROCK",
-            "mask_opacity": 6,
+            "mask_opacity": 3,
             "mask_color": "#000000",
             "content_position": "center_center",
             "content_order": "inside_image",
@@ -108,7 +108,7 @@
           "desktop": {
             
             "img": "/img/uploads/eletronica.jpg",
-            "mask_opacity": 6,
+            "mask_opacity": 3,
             "mask_color": "#000000",
             "content_position": "center_center",
             "content_order": "inside_image",
@@ -124,7 +124,7 @@
           "desktop": {
             
             "img": "/img/uploads/brasil.jpg",
-            "mask_opacity": 6,
+            "mask_opacity": 3,
             "mask_color": "#000000",
             "content_position": "center_center",
             "content_order": "inside_image",
