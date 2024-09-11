@@ -55,26 +55,32 @@ for (let i=0; i < views.length; i++){
               />        
             </a>
             <% if (opt[views[i]].title) {%>
-              <div class="content">
-                <strong class="h3">
-                  <%- opt[views[i]].title %>
-                </strong>
-                <% if(opt[views[i]].description){ %>
-                  <p><%= opt[views[i]].description %></p>
-                <% } %>
-                <div class="actions d-flex">
-                  <% if(opt[views[i]].btn_text && opt[views[i]].btn_url){ %>
-                    <a href="<%= opt[views[i]].btn_url %>" class="btn_1">
-                      <%= opt[views[i]].btn_text %>
-                    </a>
+              <% if (opt.is_slider) { %>
+                <div class="container apx_banner_container_box">
+              <% } %>
+                <div class="content">
+                  <strong class="h3">
+                    <%- opt[views[i]].title %>
+                  </strong>
+                  <% if(opt[views[i]].description){ %>
+                    <p><%= opt[views[i]].description %></p>
                   <% } %>
-                  <% if(opt[views[i]].btn_text_2 && opt[views[i]].btn_url_2){ %>
-                    <a href="<%= opt[views[i]].btn_url_2 %>" class="btn_2">
-                      <%= opt[views[i]].btn_text_2 %>
-                    </a>
-                  <% } %>
-                </div>              
-              </div>  
+                  <div class="actions d-flex">
+                    <% if(opt[views[i]].btn_text && opt[views[i]].btn_url){ %>
+                      <a href="<%= opt[views[i]].btn_url %>" class="btn_1">
+                        <%= opt[views[i]].btn_text %>
+                      </a>
+                    <% } %>
+                    <% if(opt[views[i]].btn_text_2 && opt[views[i]].btn_url_2){ %>
+                      <a href="<%= opt[views[i]].btn_url_2 %>" class="btn_2">
+                        <%= opt[views[i]].btn_text_2 %>
+                      </a>
+                    <% } %>
+                  </div>              
+                </div>  
+              <% if (opt.is_slider) { %>
+              </div>
+              <% } %>
             <% } %>
           </div>      
         </div>  

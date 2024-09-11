@@ -1985,3 +1985,16 @@ footer{
 @media(min-width:990px){
   #product-description{margin-left: 110px;}
 }
+
+@media(min-width:990px){
+  .apx_banner_container_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    .content{
+      padding-left: 30px!important;
+      padding-right: 30px!important;
+    }
+  }
+}
