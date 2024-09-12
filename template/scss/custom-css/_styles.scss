@@ -1385,6 +1385,7 @@ nav.header__submenu[style="display: grid;"]{
     left: auto;
     translate: 50% 0;
   }
+  
   .product-card__name > div > div:first-child{text-transform: uppercase;}
   .search__box{
     margin: 0;
@@ -1489,7 +1490,7 @@ nav.header__submenu[style="display: grid;"]{
     .search__body{padding-bottom:1rem;min-height:0!important;height:auto!important;
     .backdrop{display:none!important}}
     .search-engine__retail > .row{gap:1rem 0}
-    .product-card{margin-bottom:0rem}
+    .product-card{margin-bottom:1rem!important}
     .search-engine__nav{display: none!important;}
     .search__body::-webkit-scrollbar {
       width: 8px;
