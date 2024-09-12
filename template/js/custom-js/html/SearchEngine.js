@@ -420,6 +420,10 @@ export default {
           }, 100)
         })
       }
+
+      if($(`retail-refresh`)){
+        $(`.listType button.active`).click()
+      }
     },
 
     scheduleFetch () {
@@ -604,6 +608,7 @@ export default {
   },
 
   created () {
+    this.list_cols = window.list_cols ? window.list_cols : 3
     resetEcomSearch(this)
     this.handlePresetedOptions()
     this.fetchItems()

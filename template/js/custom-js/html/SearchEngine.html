@@ -215,7 +215,7 @@
           </div>
 
           <div class="listType d-flex align-items-center">
-            <button type="button" col="4" :class="list_cols == 4 ? 'active' : ''">
+            <button type="button" col="4" :class="list_cols == '4' ? 'active' : ''">
               <span></span>
               <span></span>
               <span></span>
@@ -226,7 +226,7 @@
               <span></span>
               <span></span>
             </button>
-            <button type="button" col="3" :class="list_cols == 3 ? 'active' : ''">
+            <button type="button" col="3" :class="list_cols == '3' ? 'active' : ''">
               <span></span>
               <span></span>
               <span></span>
@@ -387,7 +387,7 @@
         >
           <div class="row">
             <div
-              :class="`col-6 col-md-4 col-lg-${list_cols}`"
+              :class="`col-6 col-lg-${list_cols}`"
               v-for="(product, i) in suggestedItems"
               :key="product._id"
               :ref="i === pageAnchorIndex ? 'pageAnchor' : null"
