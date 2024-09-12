@@ -198,11 +198,14 @@ header.header{
 
 .apx_banners-grid{
   .grid-type-3{
-    .item:nth-child(1){flex: 0 0 66.6666667%;}
-    .item:nth-child(2){flex: 0 0 33.3333333%;}
+    // .item:nth-child(1){flex: 0 0 66.6666667%;}
+    // .item:nth-child(2){flex: 0 0 33.3333333%;}
+    >li:nth-child(1){flex: 0 0 66.6666667%;}
+    >li.item:nth-child(2){flex: 0 0 33.3333333%;}
   }
   .grid-type-5{
-    .item{flex: 0 0 33.33333333%;max-width:33.33333333%}
+    // .item{flex: 0 0 33.33333333%;max-width:33.33333333%}
+    >li{flex: 0 0 33.33333333%;max-width:33.33333333%}
 
   }
 }
@@ -1556,13 +1559,15 @@ nav.header__submenu[style="display: grid;"]{
     }
   }
   .apx_banners-grid{
+    .glide__arrows{display: none;}
     .grid-type-5{
       margin:0;
       overflow-x: scroll;
       width: 100vw;
       flex-wrap: nowrap;
       img{width: 100%;}
-      .item{
+      // .item{
+      > li{
         flex: 0 0 40%;
         max-width: 40%;
         width: 40%; 
@@ -1578,6 +1583,20 @@ nav.header__submenu[style="display: grid;"]{
             }
           }          
         }
+      }
+    }
+    [attr-grid="grid-type-5"]{
+      .banner{        
+        .inside_image.center_center{          
+          .content{
+            padding: 0;
+            strong.h3{
+              padding: .5rem .75rem;
+              --h1:16px;
+              border-width: 4px;
+            }
+          }
+        }          
       }
     }
   }
@@ -2027,6 +2046,10 @@ footer{
   .top-bar{
     *{text-align: center;justify-content: center;}
   }
+
+  // .apx_banners-grid{
+  //   .glide__slides { transform : initial !important; }
+  // }
 }
 
 #page-categories{
@@ -2035,7 +2058,32 @@ footer{
     position: sticky;
     top: var(--header-vh);
     background: #fff;
-    z-index: 99;
+    z-index: 10;
     box-shadow: var(--box-shadow-sm);
+  }
+}
+.apx_banners-grid{
+  .glide__slides{
+    
+    width: 100vw;
+  }
+  .glide__slide{
+    > .item{
+      margin: 0 -5px;
+    }
+  }
+  .glide__arrows--insider{
+    *{opacity: 1;}
+    .glide__arrow--left{}
+    .glide__arrow--right{
+      
+    }
+  }
+}
+
+
+@media(max-width:990px){
+  header#header{
+    padding-left: 0;
   }
 }

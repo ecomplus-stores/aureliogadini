@@ -1,5 +1,13 @@
 
-<% if (Array.isArray(opt.banners) && opt.banners.length) { %>
+<%
+
+let gridStyle = {
+  "1":1,
+  "2":2,  
+  "5":3
+}
+
+if (Array.isArray(opt.banners) && opt.banners.length) { %>
   
   <div class="apx_banners-grid
  
@@ -13,12 +21,53 @@
       pb-md-<%= opt.spacing?.desktop ? opt.spacing.desktop.padding_bottom : 0%>
       pb-<%= opt.spacing?.mobile ? opt.spacing.mobile.padding_bottom : 0 %>">
       <div class=" px-0 <%= opt.spacing?.container || `container`%> ">
-        <div class="row breakline-<%= opt.breakline %> grid-type-<%= opt.grid %>">
-          <% for (let i = 0; i < opt.banners.length; i++) { %>
-            <div class="item px-0">
-              <%- await include('@/sections/inc/apx_banner', { _, opt: opt.banners[i] }) %>          
+        <div class="row mx-0">
+          <div class="glide" 
+            data-autoplay="6000"
+            data-per-view="<%= gridStyle[opt.grid] %>"
+            data-per-view-md="3"
+            data-per-view-sm="2"
+            data-peek-left-sm="0"      
+            data-peek-right-sm="60"      
+            attr-grid="grid-type-<%= opt.grid %>"
+            >
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides ">              
+                <% for (let i = 0; i < opt.banners.length; i++) { %>
+                  <li class="glide__slide">
+                    <div class="item px-0">
+                      <%- await include('@/sections/inc/apx_banner', { _, opt: opt.banners[i] }) %>          
+                    </div>
+                  </li>
+                <% } %>              
+              </ul>
             </div>
-          <% } %>
+            <div
+              class="glide__arrows glide__arrows--insider"
+              data-glide-el="controls"
+            >
+              <button
+                class="btn glide__arrow glide__arrow--left"
+                data-glide-dir="<"
+                aria-label="<%= _.dictionary('previous') %>"
+              >
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.5 27L13.5 18L22.5 9" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+              </button>
+              <button
+                class="btn glide__arrow glide__arrow--right"
+                data-glide-dir=">"
+                aria-label="<%= _.dictionary('next') %>"
+              >
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.5 27L22.5 18L13.5 9" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+              </button>
+            </div>
+          </div>
         </div>
       </div>
   </div>

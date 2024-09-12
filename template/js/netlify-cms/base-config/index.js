@@ -620,15 +620,7 @@ export default options => {
             {
               label: '[6][6]',
               value: "2"
-            },
-            {
-              label: '[8][4]',
-              value: "3"
-            },
-            {
-              label: '[4][8]',
-              value: "4"
-            },
+            },            
             {
               label: '[4][4][4]',
               value: "5"

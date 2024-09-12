@@ -23,11 +23,21 @@ document.addEventListener("DOMContentLoaded", function() {
   })
 });
 
+
 function onLoadOrResize(){
-  $(`.products-carousel__list`).each(function(){
-    let h = $(this).find(`picture`).first().innerHeight();
-    $(this).closest('.glide__track').css('--cover_height', h + 'px');
-  })
+  if($(`.products-carousel__list`).length > 0){
+    $(window).scroll(function(){
+      $(`.products-carousel__list`).each(function(){
+        let h = $(this).find(`picture`).first().innerHeight();
+        $(this).closest('.glide__track').css('--cover_height', h + 'px');
+      })
+    })
+    $(`.products-carousel__list`).each(function(){
+      let h = $(this).find(`picture`).first().innerHeight();
+      $(this).closest('.glide__track').css('--cover_height', h + 'px');
+    })
+  }
+  
 }
 
 $('body').css('--header-vh', ($('header#header').innerHeight()) + 'px');

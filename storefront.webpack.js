@@ -15,7 +15,8 @@ module.exports = () => ({
       './js/CartItem.js': path.resolve(__dirname, 'template/js/custom-js/html/CartItem.js'),   
       //'./js/SearchEngine.js': path.resolve(__dirname, 'template/js/custom-js/html/SearchEngine.js'), 
       
-      './html/ProductCard.html': path.resolve(__dirname, 'template/js/custom-js/html/ProductCard.html'),   
+      './html/ProductCard.html': path.resolve(__dirname, 'template/js/custom-js/html/ProductCard.html'), 
+      './lib/glide-slides': path.resolve(__dirname, 'template/js/custom-js/html/glide-slides.js'),     
       // './js/ProductCard.js': path.resolve(__dirname, 'template/js/custom-js/html/ProductCard.js'),   
 
       // './html/TheCart.html': path.resolve(__dirname, 'template/js/custom-js/html/TheCart.html'),   
