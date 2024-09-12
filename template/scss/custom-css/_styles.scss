@@ -130,10 +130,11 @@ body{font-family: var(--ff2);}
 header.header{
   padding-left: 0;
   padding-right: 0;
+  padding-top: 0;
   .header__container{
     padding-left: 15px;
     padding-right: 15px;
-    
+    padding-top: 8px;
     .header__logo{
       height: 42px;
     }
@@ -156,7 +157,8 @@ header.header{
     margin-right: 3rem;
     > div{
       > a{
-        font-size:var(--h5);
+        // font-size:var(--h5);
+        font-size:calc(var(--h5) * .95);
         padding: 0;
         margin: 0;
         background: transparent;
@@ -1500,7 +1502,8 @@ nav.header__submenu[style="display: grid;"]{
     }
     .product-card{
       .product-card__name{
-        font-size:var(--font-size-sm)
+        // font-size:var(--font-size-sm)
+        font-size:calc(var(--h5)*.9)
       }
     }
     .product-card__prices{justify-content:flex-start;margin-top:.5rem}
@@ -1846,12 +1849,17 @@ nav.header__submenu[style="display: grid;"]{
 }
 .prices__installments{
   font-weight:500!important;
+  span:last-child:before{
+    content:"de "
+  }
   
 }
 .prices__discount{
   margin-top: .5rem;
-  font-size: calc(var(--font-size-sm) * 1.1);
-  line-height: calc(var(--font-size-sm) * 1.1);
+  // font-size: calc(var(--font-size-sm) * 1.1);
+  // line-height: calc(var(--font-size-sm) * 1.1);
+  font-size: var(--font-size-sm);
+  line-height: var(--font-size-sm);
   > span{font-weight: 600;}
   .prices__discount-label{
     font-size:0px;
@@ -1859,9 +1867,11 @@ nav.header__submenu[style="display: grid;"]{
   }
   .prices__discount-label:after{
     content: "à vista via pix";
-    font-size: calc(var(--font-size-sm) * 1.1);
-    line-height: calc(var(--font-size-sm) * 1.1);
-    font-weight:400;
+    // font-size: calc(var(--font-size-sm) * 1.1);
+    // line-height: calc(var(--font-size-sm) * 1.1);
+    font-weight:500;
+    font-size: var(--font-size-sm);
+    line-height: var(--font-size-sm);
   }
 }
 
@@ -1985,7 +1995,12 @@ footer{
   font-weight: 500;
   font-size: var(--font-size-sm);
 }
-.shipping-line > small{max-width:80%}
+.shipping-line > small{
+  max-width:80%;
+  color:var(--c1)!important;
+  font-weight:500;
+  text-transform: initial;
+}
 .share--email,
 .share--sms{display: none;}
 @media(min-width:990px){
@@ -2011,5 +2026,16 @@ footer{
   }
   .top-bar{
     *{text-align: center;justify-content: center;}
+  }
+}
+
+#page-categories{
+  header.header{box-shadow: 0px 0px 0px;z-index: 99;}
+  nav[aria-label="breadcrumb"]{
+    position: sticky;
+    top: var(--header-vh);
+    background: #fff;
+    z-index: 99;
+    box-shadow: var(--box-shadow-sm);
   }
 }
