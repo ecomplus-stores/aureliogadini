@@ -1,4 +1,5 @@
 // Add your custom JavaScript for storefront pages here.
+window.list_cols = sessionStorage.getItem(`list_cols`) || "3";
 document.addEventListener("DOMContentLoaded", function() {
   setTimeout(() =>{
     $(window).resize();
@@ -11,10 +12,13 @@ document.addEventListener("DOMContentLoaded", function() {
     $(`.category-text, .category-text +  .category-banner`).wrapAll(`<div class=category-brick></div>`)
   }
 
+  
   $(`body`).on(`click`,`.listType button`, function(){
     let attr = $(this).attr(`col`);
     $(`.listType button`).removeClass(`active`);
-    $(this).closest(`#search-engine`).find(`.product-item`).closest(`div`).removeClass(`col-lg-3`).removeClass(`col-lg-4`).addClass(`col-lg-` + attr)
+    $(`#content #search-engine`).find(`.search-engine__item`).closest(`.col-6`).removeClass(`col-lg-3`).removeClass(`col-lg-4`).addClass(`col-lg-` + attr)
+    window.list_cols = attr;
+    sessionStorage.setItem(`list_cols`,attr)
     $(this).addClass(`active`)
   });
   onLoadOrResize();

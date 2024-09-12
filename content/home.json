@@ -230,6 +230,41 @@
       "type": "apx_productList_A",
       "title_color": "",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede."
+    },
+    {
+      "btn_color": "#000000",
+      "spacing": {
+        "container": "container-fluid",
+        "desktop": {
+          "margin_top": "5",
+          "margin_bottom": "0",
+          "padding_top": "5",
+          "padding_bottom": "0"
+        },
+        "mobile": {
+          "margin_top": "4",
+          "margin_bottom": "4",
+          "padding_top": "0",
+          "padding_bottom": "0"
+        }
+      },
+      "products": [
+        "66d5bb98fc4aac27a2c17659",
+        "66da37dffc4aac27a2c81f44",
+        "66da3c1bfc4aac27a2c82359",
+        "66da3c32fc4aac27a2c823b0",
+        "66da3c30fc4aac27a2c823a7"
+      ],
+      "btn_bg": "#ffffff",
+      "bg_color": "#f2d74b",
+      "section_img": "/img/uploads/c82cef9d-e425-48ae-a228-a76ccfb1a9f6-1.png",
+      "num_col_md": 2,
+      "num_col_sm": 1,
+      "visibility": "d-block d-md-block",
+      "section_type": 3,
+      "type": "apx_productList_A",
+      "title_img": "/img/uploads/image-23.png",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede."
     }
   ]
 }

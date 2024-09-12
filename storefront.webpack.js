@@ -13,7 +13,7 @@ module.exports = () => ({
       './js/CartQuickview.js': path.resolve(__dirname, 'template/js/custom-js/html/CartQuickview.js'),    
       './html/CartItem.html': path.resolve(__dirname, 'template/js/custom-js/html/CartItem.html'),   
       './js/CartItem.js': path.resolve(__dirname, 'template/js/custom-js/html/CartItem.js'),   
-      //'./js/SearchEngine.js': path.resolve(__dirname, 'template/js/custom-js/html/SearchEngine.js'), 
+      './js/SearchEngine.js': path.resolve(__dirname, 'template/js/custom-js/html/SearchEngine.js'), 
       
       './html/ProductCard.html': path.resolve(__dirname, 'template/js/custom-js/html/ProductCard.html'), 
       './lib/glide-slides': path.resolve(__dirname, 'template/js/custom-js/html/glide-slides.js'),     

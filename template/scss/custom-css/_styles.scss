@@ -804,8 +804,11 @@ footer.footer{
   
   #product-specs{
     .col-auto{
+      margin-bottom: 1rem;
       > div > div:first-child{
-        color:var(--primary)
+        color:var(--primary);
+        text-transform: initial;
+        font-weight: 600;
       }
       > div > div:last-child{
         color: #4f4f4f;
@@ -921,11 +924,13 @@ nav[aria-label="breadcrumb"]{
     > .dropdown > button{
       background: #fff;
       border: 1px solid #000;
-      color: var(--primary);
       border-radius: 0;
+      color: var(--primary);
+      font-weight: 500;
       margin-left: 1rem;
       text-transform: uppercase;
-      font-weight: 500;
+      font-size: var(--font-size-sm);
+      padding: 3px 9px;
     }
   }
   .listType{
@@ -1364,7 +1369,9 @@ nav.header__submenu[style="display: grid;"]{
   a{
     font-family: var(--ff2);
     text-transform: uppercase;
-    font-size: var(--h5);
+    // font-size: var(--h5);
+    font-size:calc(var(--h5) * .85);
+    padding: 0;
   }
 }
 
@@ -1506,7 +1513,7 @@ nav.header__submenu[style="display: grid;"]{
     .product-card{
       .product-card__name{
         // font-size:var(--font-size-sm)
-        font-size:calc(var(--h5)*.9)
+        font-size:calc(var(--font-size) * 1)
       }
     }
     .product-card__prices{justify-content:flex-start;margin-top:.5rem}
@@ -1868,6 +1875,9 @@ nav.header__submenu[style="display: grid;"]{
 }
 .prices__installments{
   font-weight:500!important;
+  *{
+    font-weight:500!important;
+  }
   span:last-child:before{
     content:"de "
   }
@@ -1891,6 +1901,19 @@ nav.header__submenu[style="display: grid;"]{
     font-weight:500;
     font-size: var(--font-size-sm);
     line-height: var(--font-size-sm);
+  }
+}
+.prices--big{
+  .prices__discount{
+    *,
+    .prices__discount-label:after{
+      font-size: var(--font-size);
+      line-height: var(--font-size);
+    }
+    .prices__discount-label{
+      font-size:0px;
+      line-height: 0;
+    }
   }
 }
 
@@ -2023,7 +2046,11 @@ footer{
 .share--email,
 .share--sms{display: none;}
 @media(min-width:990px){
-  #product-description{margin-left: 110px;}
+  #spotify,
+  #product-description,
+  #product-specs{margin-left: 110px;}
+  #spotify{width: calc(100% - 110px);}
+
 }
 
 @media(min-width:990px){
@@ -2085,5 +2112,12 @@ footer{
 @media(max-width:990px){
   header#header{
     padding-left: 0;
+  }
+}
+
+#instant-search{
+  .product-card{
+    .product-card__prices{display:none!important}
+    
   }
 }
