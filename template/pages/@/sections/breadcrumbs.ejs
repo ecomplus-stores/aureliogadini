@@ -1,11 +1,35 @@
 <%
+let bc = _.breadcrumbs.map(item => ({
+  ...item,
+  name:  _.route.resource == 'categories' ? item.name.toUpperCase() : item.name
+}));
+
+console.log(bc);
+
+
 const breadcrumbs = opt.breadcrumbs && opt.breadcrumbs.length
   ? opt.breadcrumbs
-  : _.breadcrumbs || (_.state.title && [{
-    name: _.state.title,
+  : bc || (_.state.title && [{
+    name: _.route.resource == 'categories' ? _.state.title.toUpperCase() : _.state.title,
     link: _.route.path
   }])
 
+
+  
+  console.log(_.route.resource == 'categories')
+  if(_.state.categories){
+    _.state.categories.forEach(({ name, slug }, index) => { 
+      const exists = breadcrumbs.find(el => el.name === name);
+    
+      if (!exists) {
+        // Insere o novo breadcrumb antes do último item
+        breadcrumbs.splice(breadcrumbs.length - 1, 0, {
+          name: name.toUpperCase(),
+          link: `/${slug}`
+        });
+      }
+    })
+  }
 if (Array.isArray(breadcrumbs) && breadcrumbs.length) {
   %>
   
@@ -29,9 +53,9 @@ if (Array.isArray(breadcrumbs) && breadcrumbs.length) {
               <% } %>
             >
                 
-<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M6.75 13.5L11.25 9L6.75 4.5" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.75 13.5L11.25 9L6.75 4.5" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
   
               <a href="<%= link %>">
                 <%= name %>

@@ -105,7 +105,19 @@
           v-else-if="item.slug"
           :href="`/${item.slug}`"
         >
-          {{ name }}
+          <div v-if="name.split(` -`).length > 0">
+            <div>{{name.split(` -`)[0].toUpperCase()}}</div>
+            <span v-if="name.replace(name.split(` -`)[0],``).startsWith(' - ')">
+              {{name.replace(name.split(` -`)[0],``).substring(3)}}
+            </span>
+            <span v-else>
+              {{name.replace(name.split(` -`)[0],``)}}
+            </span>
+          </div>
+          <div v-else>
+            {{ name }}
+          </div>
+          
         </a-link>
         <template v-else>
           {{ name }}

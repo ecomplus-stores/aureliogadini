@@ -169,7 +169,9 @@
           "padding_top": "0",
           "padding_bottom": "0"
         }
-      }
+      },
+      "num_col_md": 3,
+      "num_col_sm": 1
     },
     {
       "spacing": {
@@ -223,7 +225,7 @@
         "66da3c32fc4aac27a2c823b0",
         "66da3c30fc4aac27a2c823a7"
       ],
-      "num_col_md": 4,
+      "num_col_md": 3,
       "num_col_sm": 1,
       "visibility": "d-block d-md-block",
       "title": "Toys",

@@ -223,17 +223,21 @@ const themeCustom = _.settings.theme.custom || ''
                 aria-controls="footer-payments"
               >Pagamento                
               </a>
-              <p class="footer__payment-methods collapse" id="footer-payments">
+              <div class="footer__payment-methods collapse" id="footer-payments">
                 <span class="d-flex">
                 <% Object.keys(footer.payment_methods).forEach(method => { %>
                   <% if (footer.payment_methods[method]) { %>
-                    <span class="pay-icon_">
+                    <!-- <span class="pay-icon_">
                     <i class="pay-icon pay-icon--<%= method %>"></i>
-                    </span>
+                    
+                    </span> -->
+                    <div class="icon">
+                      <i class="icon-dc-<%= method %>"></i>
+                    </div>
                   <% } %>
                 <% }) %>
                 </span>
-              </p>
+              </div>
               
             </div>
             

@@ -125,7 +125,7 @@ body{font-family: var(--ff2);}
   color: var(--primary-yiq);
   *{font-size:var(--font-size-sm)}
   
-  .top-bar__countdown{padding-left:0;padding-right: 0;font-weight:500;}
+  .top-bar__countdown{padding-left:0;padding-right: 0;font-weight:500;line-height: 22px;}
 }
 header.header{
   padding-left: 0;
@@ -440,7 +440,8 @@ body .banner-slider{
 .apx_product-list.section_type_4{
   .apx_section-title{
     h2{font-size: var(--h2);}
-    small{font-size: var(--font-size);}
+    //small{font-size: var(--font-size);}
+    small{font-size: calc(var(--h5) * .9);}
   }
 }
 .apx_product-list.section_type_1{  
@@ -674,7 +675,7 @@ footer.footer{
   .footer__credits{padding: 1.5rem 0;border-color:var(--color-border)}
   
   .footer__credits a{display: flex;align-items: center;gap: .5rem;}
-  #footer-payments > .d-flex{max-width: 205px;flex-wrap:wrap}
+  #footer-payments > .d-flex{max-width: 205px;flex-wrap:wrap;gap: 5px;}
   .pay-icon_{
     background: #fff;
     border: 1px solid #e6e4e4;
@@ -812,6 +813,8 @@ footer.footer{
       }
       > div > div:last-child{
         color: #4f4f4f;
+        font-size: var(--font-size-sm);
+        line-height: var(--font-size-sm);
       }
     }
     .col-auto:not(:last-child) {
@@ -1521,7 +1524,7 @@ nav.header__submenu[style="display: grid;"]{
     .product-card__prices{justify-content:flex-start;margin-top:.5rem}
   }
 }
-
+.product-card__prices{justify-content:flex-start;}
 
 @media(max-width:990px){
   :root{
@@ -2123,3 +2126,113 @@ footer{
     
   }
 }
+
+@font-face {
+  font-family: 'DoocaCommerce-Flags';
+  src: url('../../public/assets/flags.ttf');
+  src:  url('../../public/assets/flags.ttf') format('truetype'), url('../../public/assets/flags.woff') format('woff'), url('../../public/assets/flags.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.footer [class^="icon-"], [class*=" icon-"], .footer [class^="icon-"]{
+  font-family: 'DoocaCommerce-Flags' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  font-size: 36px;
+  line-height: 36px;
+}
+.footer .icon{line-height: 16px;}
+.icon-dc-ssl:before {
+  content: "\e901";
+}
+
+.icon-dc-googlesf:before {
+  content: "\e900";
+}
+
+.icon-dc-ame:before {
+  content: "\e902";
+}
+
+.icon-dc-amex:before {
+  content: "\e903";
+}
+
+.icon-dc-aura:before {
+  content: "\e904";
+}
+
+.icon-bancodobrasil:before {
+  content: "\e905";
+}
+
+.icon-dc-boleto:before {
+  content: "\e906";
+}
+
+.icon-dc-dinners:before {
+  content: "\e907";
+}
+
+.icon-dc-discover:before {
+  content: "\e908";
+}
+
+.icon-dc-elo:before {
+  content: "\e909";
+}
+
+.icon-dc-hiper:before {
+  content: "\e90a";
+}
+
+.icon-dc-hipercard:before {
+  content: "\e90b";
+}
+
+.icon-dc-inter:before {
+  content: "\e90c";
+}
+
+.icon-dc-itau:before {
+  content: "\e90d";
+}
+
+.icon-dc-jcb:before {
+  content: "\e90e";
+}
+
+.icon-dc-mastercard:before {
+  content: "\e90f";
+}
+
+.icon-dc-mercadopago:before {
+  content: "\e910";
+}
+
+.icon-dc-paypal:before {
+  content: "\e911";
+}
+
+.icon-dc-picpay:before {
+  content: "\e912";
+}
+
+.icon-dc-visa:before {
+  content: "\e913";
+}
+
+.icon-dc-pix:before {
+  content: "\e914";
+}
+
+.sections .search-engine .product-card{margin-bottom: 0;}
