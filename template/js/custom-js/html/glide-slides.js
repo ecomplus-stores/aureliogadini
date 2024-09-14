@@ -19,7 +19,7 @@ const setupGlide = $glide => {
   options.breakpoints = {}
   for (const label in grid) {
     const maxSize = grid[label]
-    console.log(label)
+    //console.log(label)
     if (maxSize) {
       const perView = $glide.dataset['perView' + label]
       const peekLeft = $glide.dataset['peekLeft' + label]

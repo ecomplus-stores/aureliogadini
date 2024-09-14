@@ -164,10 +164,10 @@
           "padding_top": "0"
         },
         "mobile": {
-          "margin_top": "2",
-          "margin_bottom": "2",
+          "margin_top": "4",
+          "margin_bottom": "5",
           "padding_top": "0",
-          "padding_bottom": "0"
+          "padding_bottom": "4"
         }
       },
       "num_col_md": 3,
@@ -185,7 +185,7 @@
           "margin_top": "0",
           "margin_bottom": "0",
           "padding_top": "2",
-          "padding_bottom": "4"
+          "padding_bottom": "5"
         }
       },
       "products": [
@@ -215,7 +215,8 @@
         },
         "mobile": {
           "margin_top": "4",
-          "margin_bottom": "4"
+          "margin_bottom": "4",
+          "padding_bottom": "5"
         }
       },
       "products": [
@@ -245,9 +246,9 @@
         },
         "mobile": {
           "margin_top": "4",
-          "margin_bottom": "4",
+          "margin_bottom": "0",
           "padding_top": "0",
-          "padding_bottom": "0"
+          "padding_bottom": "5"
         }
       },
       "products": [

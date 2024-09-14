@@ -31,15 +31,15 @@
         >
           <slot name="header"/>
 
-          <div class="product-card__pictures">
+          <div class="product-card__pictures ">
             <template v-if="body.pictures && body.pictures.length">
               <a-picture
-                class="product-card__picture"
+                class="product-card__picture a__picture"
                 v-for="(picture, index) in body.pictures.slice(0, 2).reverse()"
-                v-if="body.pictures.length === 1 || index === 1 || isHovered"
                 :key="index"
                 :src="picture"
                 :can-calc-height="false"
+                :lozad-options="{rootMargin:'0px 0px',threshold:0}"
               />
             </template>
             <a-picture

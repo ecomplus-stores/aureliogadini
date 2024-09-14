@@ -129,7 +129,7 @@ export default {
 
     localTerm: {
       handler (term) {
-        const nextSearchTerm = term.length > 2 ? term : ''
+        const nextSearchTerm = term.length > 1 ? term : ''
         if (nextSearchTerm !== this.searchTerm) {
           clearTimeout(this.searchTriggerTimer)
           this.searchTriggerTimer = setTimeout(() => {

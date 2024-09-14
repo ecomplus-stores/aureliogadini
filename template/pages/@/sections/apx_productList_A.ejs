@@ -83,6 +83,9 @@
             data-per-view-sm="<%= opt.num_col_sm %>"
             data-per-view-xs="<%= opt.num_col_sm %>"
         >
+            <div class="loading">
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            </div>
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides products-carousel__list">
                 <% for (let i = 0; i < items.length; i++) { %>
