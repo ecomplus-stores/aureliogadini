@@ -22,11 +22,11 @@ module.exports = () => ({
       './lib/lazy-load': path.resolve(__dirname, 'template/js/custom-js/html/lazy-load.js'),     
       // './js/ProductCard.js': path.resolve(__dirname, 'template/js/custom-js/html/ProductCard.js'),   
 
-      // './html/TheCart.html': path.resolve(__dirname, 'template/js/custom-js/html/TheCart.html'),   
-      // './html/EcCheckout.html': path.resolve(__dirname, 'template/js/custom-js/html/EcCheckout.html'),   
-      // './js/EcCheckout.js': path.resolve(__dirname, 'template/js/custom-js/html/EcCheckout.js'),   
-      // './html/PaymentMethods.html': path.resolve(__dirname, 'template/js/custom-js/html/PaymentMethods.html'),   
-      // './App.vue': path.resolve(__dirname, 'template/js/custom-js/html/App.vue'), 
+      './html/TheCart.html': path.resolve(__dirname, 'template/js/custom-js/html/TheCart.html'),   
+      './html/EcCheckout.html': path.resolve(__dirname, 'template/js/custom-js/html/EcCheckout.html'),   
+      './js/EcCheckout.js': path.resolve(__dirname, 'template/js/custom-js/html/EcCheckout.js'),   
+      './html/PaymentMethods.html': path.resolve(__dirname, 'template/js/custom-js/html/PaymentMethods.html'),   
+      './App.vue': path.resolve(__dirname, 'template/js/custom-js/html/App.vue'), 
     }    
   }
 })
