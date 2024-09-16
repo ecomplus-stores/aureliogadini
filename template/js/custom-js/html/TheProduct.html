@@ -461,7 +461,18 @@
               :src="thumbnail"
               class="product__sticky-picture"
             />
-            <h5>{{ name }}</h5>
+            <div class="product__sticky-name  pl-md-3" v-if="name.split(` -`).length > 0">
+              <div class="text-uppercase">{{name.split(` -`)[0]}}</div>
+              <span v-if="name.replace(name.split(` -`)[0],``).startsWith(' - ')">
+                {{name.replace(name.split(` -`)[0],``).substring(3)}}
+              </span>
+              <span v-else>
+                {{name.replace(name.split(` -`)[0],``)}}
+              </span>
+            </div>
+            <div v-else>
+              {{ name }}
+            </div>
           </div>
 
           <div class="product__sticky-buy">
@@ -475,7 +486,6 @@
               href="#"
               @click.prevent="buyOrScroll"
             >
-              <i class="i-shopping-bag mr-1"></i>
               {{ strBuy }}
             </a>
           </div>

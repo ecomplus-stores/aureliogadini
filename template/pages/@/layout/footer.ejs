@@ -254,6 +254,11 @@ const themeCustom = _.settings.theme.custom || ''
             
             </a>
             <div class="footer__stamps collapse" id="footer-security">
+              <span class="icon-dc-ssl"></span>
+              <a href="https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fwww.vapordiscos.com.br%2F&hl=en" target="_blank">
+                <span class="icon-dc-googlesf"></span>
+              </a>
+              
               <%- await include(`@/sections/stamps`, { _, opt: { stamps: footer.stamps } }) %>
             </div>
           </div>

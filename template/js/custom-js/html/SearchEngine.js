@@ -138,7 +138,7 @@ export default {
       hasSetPopularItems: false,
       isAsideVisible: false,
       searchFilterId: 0,
-      list_cols: window.list_cols ? window.list_cols : 3
+      list_cols: window.list_cols ? window.list_cols : 4
     }
   },
 

@@ -1,5 +1,5 @@
 // Add your custom JavaScript for storefront pages here.
-window.list_cols = sessionStorage.getItem(`list_cols`) || "3";
+window.list_cols = sessionStorage.getItem(`list_cols`) || "4";
 document.addEventListener("DOMContentLoaded", function() {
   
   setTimeout(() =>{
