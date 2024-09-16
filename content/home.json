@@ -50,7 +50,6 @@
             "content_position": "center_center",
             "content_order": "inside_image",
             "title_color": "#ffffff"
-            
           },
           "mobile": {
             "mask_opacity": 0
@@ -58,7 +57,6 @@
         },
         {
           "desktop": {
-            
             "img": "/img/uploads/punk_metal.jpg",
             "title": "PUNK<br>METAL",
             "mask_opacity": 3,
@@ -74,7 +72,6 @@
         },
         {
           "desktop": {
-            
             "img": "/img/uploads/funk_soul_jazz.jpg",
             "title": "FUNK<BR>SOUL<BR>JAZZ",
             "mask_opacity": 3,
@@ -90,7 +87,6 @@
         },
         {
           "desktop": {
-            
             "img": "/img/uploads/rock_indie.jpg",
             "title": "ROCK<BR>INDIE",
             "mask_opacity": 3,
@@ -106,7 +102,6 @@
         },
         {
           "desktop": {
-            
             "img": "/img/uploads/eletronica.jpg",
             "mask_opacity": 3,
             "mask_color": "#000000",
@@ -122,7 +117,6 @@
         },
         {
           "desktop": {
-            
             "img": "/img/uploads/brasil.jpg",
             "mask_opacity": 3,
             "mask_color": "#000000",
@@ -135,6 +129,17 @@
           "mobile": {
             "mask_opacity": 0
           }
+        },
+        {
+          "desktop": {
+            "mask_opacity": 0,
+            "img": "/img/uploads/pop.jpg",
+            "title": "POP",
+            "link": "/pop"
+          },
+          "mobile": {
+            "mask_opacity": 0
+          }
         }
       ],
       "grid": "5",
@@ -143,18 +148,6 @@
       }
     },
     {
-      "type": "apx_productList_A",
-      "visibility": "d-block d-md-block",
-      "products": [
-        "66d5bb98fc4aac27a2c17659",
-        "66da37dffc4aac27a2c81f44",
-        "66da3c1bfc4aac27a2c82359",
-        "66da3c32fc4aac27a2c823b0",
-        "66da3c30fc4aac27a2c823a7"
-      ],
-      "title": "Novidades",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.",
-      "title_color": "",
       "spacing": {
         "container": "container_90",
         "desktop": {
@@ -170,8 +163,20 @@
           "padding_bottom": "4"
         }
       },
+      "products": [
+        "66d5bb98fc4aac27a2c17659",
+        "66da37dffc4aac27a2c81f44",
+        "66da3c1bfc4aac27a2c82359",
+        "66da3c32fc4aac27a2c823b0",
+        "66da3c30fc4aac27a2c823a7"
+      ],
       "num_col_md": 3,
-      "num_col_sm": 1
+      "num_col_sm": 1,
+      "visibility": "d-block d-md-block",
+      "title": "Novidades",
+      "type": "apx_productList_A",
+      "title_color": "",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede."
     },
     {
       "spacing": {
