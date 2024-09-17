@@ -180,7 +180,7 @@
       "title": "Novidades",
       "type": "apx_productList_A",
       "title_color": "",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede."
+      "description": "Nossos discos mais recentes, lançamentos e reposições, que acabaram de chegar ao nosso catálogo!"
     },
     {
       "spacing": {
@@ -205,15 +205,15 @@
         "66da3c30fc4aac27a2c823a7"
       ],
       "btn_bg": "#ffffff",
-      "bg_color": "#f2d74b",
-      "section_img": "/img/uploads/db6352ae-2d77-4629-a6ee-67cfb12dca04-1.png",
+      "bg_color": "#8ec4e6",
+      "section_img": "/img/uploads/azymuth_foto1.png",
       "visibility": "d-block d-md-block",
       "section_type": 1,
-      "title": "SUCESSOS DO SEPULTURA",
+      "title": "",
       "type": "apx_productList_A",
       "imagem_margin": "-6rem",
-      "title_img": "/img/uploads/image-22.png",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede."
+      "title_img": "/img/uploads/azymuth_logo.png",
+      "description": "Banda lendária de funk-jazz brasileiro fundado no início dos anos 70 e que influenciou gerações de músicos e djs por todo o planeta! Originalmente composto por José Roberto Bertrami no piano e teclados, Alex Malheiros no baixo e Ivan Conti na bateria, e em parcerias com compositores de peso, como Marcos Valle e Airto Moreira, Azymuth conquistou o reconhecimento de sua originalidade por artistas proeminentes, sendo das bandas mais sampleadas de todos os tempos. Tiveram trechos de suas músicas presentes nas produções de Madlib, Jay-Z, Dr. Dre, Kanye West e no trabalho de djs consagrados da cena de house e drum and bass. Atualmente, o Azymuth conta com a parceria do pianista Kiko Continentino, que dá continuidade ao som do saudoso Bertrami, falecido em 2012, e do baterista Renato Massa, que honra o som do inesquecível Ivan Conti (Mamão). "
     },
     {
       "spacing": {

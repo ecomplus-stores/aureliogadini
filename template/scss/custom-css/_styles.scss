@@ -427,7 +427,7 @@ body .banner-slider{
   a.col-image:hover {
     + .content{
       strong.h3{
-        color: var(--secondary);
+        // color: var(--secondary);
       }
     }
     img{scale: 1.25;filter:grayscale(0);}
@@ -443,6 +443,12 @@ body .banner-slider{
     h2{font-size: var(--h2);}
     //small{font-size: var(--font-size);}
     small{font-size: calc(var(--h5) * .9);}
+  }
+  .has_title_image{
+    img{
+      max-height: 120px;
+      
+    }
   }
 }
 .apx_product-list.section_type_1{  
@@ -661,6 +667,10 @@ footer.footer{
           flex-wrap: wrap;
           li{padding: 0;margin: 0;}
       }
+      [class^=icon-], [class*=" icon-"]{
+        font-size: 50px;
+      }
+      .icon-dc-googlesf{font-size: 60px;    margin-left: -10px;}
       
   }
   .credits{
@@ -744,8 +754,10 @@ footer.footer{
     button{
       background: var(--secondary);
       border-radius: 0;
-      border: 2px solid;
-      color: var(--primary);
+      // border: 2px solid;
+      // color: var(--primary);
+      border: 0;
+      color: #fff;
       padding: .25rem 1.5rem .25rem 1.5rem;
       span{
         font-size: var(--h5);
@@ -878,8 +890,9 @@ nav[aria-label="breadcrumb"]{
     color: var(--primary);
     font-family: var(--ff1);
     text-transform: uppercase;
-    font-size: var(--h3);
+    font-size: var(--h4);
   }
+  
 }
 
 .category-brick{
@@ -903,6 +916,7 @@ nav[aria-label="breadcrumb"]{
     .html-clearfix{margin: 0;}
   }
   .hero-banner{margin: 0;}
+  .category-text{margin-bottom: -3rem;}
 }
 
 .sections{
@@ -1020,7 +1034,12 @@ nav[aria-label="breadcrumb"]{
       .minicart__btn-cart{
         
       }
-      a{color: var(--blk);border: 2px solid!important;}
+      a{
+        // color: var(--blk);
+        color: #fff;
+        // border: 2px solid!important;
+        border: 0;
+      }
       a:hover{
         background: var(--blk);
         color: #fff!important;
@@ -1884,15 +1903,17 @@ nav.header__submenu[style="display: grid;"]{
   
   .prices__installments:before{
     content: "em até ";
+    font-weight: 500;
   }
 }
 .prices__installments{
-  font-weight:500!important;
+  font-weight:600!important;
   *{
-    font-weight:500!important;
+    font-weight:600!important;
   }
   span:last-child:before{
-    content:"de "
+    content:"de ";
+    font-weight: 500;
   }
   
 }
@@ -1934,6 +1955,7 @@ footer{
   .footer__links{
     // text-transform: uppercase;
     --font-size:15px;
+    --h5:17.72px;
   }
   .footer__contacts{
     --font-size:18px;
@@ -2329,6 +2351,20 @@ footer{
 //APP DAQUI PRA BAIXO
 */
 .app{
+  .btn-primary{
+    --primary:var(--secondary);
+    border: 0;
+    font-family: var(--ff1);    
+    font-weight: 400 !important;
+    font-size: calc(var(--h5)* .90);
+    i{display: none!important;}
+    span{
+      font-size: calc(var(--h5)* .90);
+    }
+  }
+  .btn-primary:hover{
+    background-color:var(--secondary)!important
+  }
   .app__footer{
     background: #000;
     .footer__payment-methods{
@@ -2344,7 +2380,7 @@ footer{
 }
 .app__header{
   box-shadow: 0px 0px 0px;
-  border-bottom: 3px solid var(--c1);
+  border-bottom: 1px solid var(--c1);
   padding-left: 0;
   padding-right: 0;
 }
@@ -2718,7 +2754,7 @@ ul.app_contacts{
               }
           }
           .login__info{
-              border-radius:1rem;
+              border-radius:0;
               background: #fff;
               border: 0;
               max-width: 100%;
@@ -2811,12 +2847,14 @@ ul.app_contacts{
           }
       }
       .payment{
+        label{font-weight: 500;color: var(--primary);}
           .payment__pay,
           .btn-success{
-              background: var(--c1);
+              background: var(--secondary);
               border-radius: 0;
+              font-family: var(--ff1);
               font-size: var(--h5);
-              font-weight: 600;
+              font-weight: 400;
               text-transform: capitalize;
               height: 48px;
               display: flex;
@@ -3177,9 +3215,11 @@ body.app{padding-bottom: 0;}
   }
   .btn-primary{
     background: var(--secondary);
-    border: 2px solid;
+    // border: 2px solid;
+    border: 0;
     border-radius: 0;
-    color: var(--primary);
+    // color: var(--primary);
+    color: #fff;
     padding: .25rem 1.5rem;
     font-family: var(--ff1);
     font-size: var(--h5);

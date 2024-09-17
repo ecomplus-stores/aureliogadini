@@ -64,7 +64,7 @@
                 <%  if(opt.title){ %>            
                         <h2 class="text-bold text-uppercase"><%- opt.title %></h2>
                 <% } %>
-                <% if(opt.description){ %>
+                <% if(opt.description && !opt.title_img){ %>
                     <small><%- opt.description %></small>
                 <% } %>
             </div>
@@ -72,7 +72,11 @@
                 <img src="<%= opt.section_img %>" class="d-block"/>
             <% } %>
         </div>
-        
+        <% if(opt.description && opt.title_img){ %>
+        <div class="mb-5">
+            <p><%- opt.description %></p>
+        </div>
+        <% } %>
                     
                 
         <div
