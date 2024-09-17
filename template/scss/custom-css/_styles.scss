@@ -826,9 +826,10 @@ footer.footer{
         font-weight: 600;
       }
       > div > div:last-child{
-        color: #4f4f4f;
-        font-size: var(--font-size-sm);
-        line-height: var(--font-size-sm);
+        color: var(--primary);
+        font-size: var(--font-size);
+        line-height: var(--font-size);
+        max-width: 80%;
       }
     }
     .col-auto:not(:last-child) {

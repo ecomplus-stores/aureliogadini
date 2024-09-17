@@ -112,12 +112,12 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
           }) %>
           
           <% if (_.state.specifications) { %>
-            <div id="product-specs" class="product-specs my-4 my-lg-4">
+            <div id="product-specs" class="product-specs my-4 mt-lg-5 mb-lg-5">
               <div class="row">
                 <% for (const gridId in _.state.specifications) {
                   if (_.state.specifications[gridId]) {
                     %>
-                    <div class="col-auto col-md">
+                    <div class="col-auto col-md-auto">
                       <div class="item">
                         <div class="d-block text-uppercase">
                           <%= _.ecomUtils.gridTitle(gridId, _.grids).replace('País de Fabricação','Fabricação') %>
