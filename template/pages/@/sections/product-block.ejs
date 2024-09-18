@@ -135,7 +135,7 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
           <% } %>
 
           <% 
-          console.log(_.state) 
+          //console.log(_.state) 
           if (_.state.videos) { 
             let url = _.state.videos[0].url
             console.log(url)
@@ -150,7 +150,7 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
                 const spotifyId = match[3];
                 console.log(spotifyId)
                 %>
-                <iframe id="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/album/<%= spotifyId %>" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe id="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/album/<%= spotifyId %>" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="mt-5" loading="lazy"></iframe>
                 <%
 
             } else {

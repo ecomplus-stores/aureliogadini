@@ -1,7 +1,7 @@
 <%
 const stamps = _.cms('stamps') || {}
 const itemData = {}
-let itemDataFields = ['_id', 'sku', 'slug', 'quantity']
+let itemDataFields = ['_id', 'sku', 'slug', 'quantity','created_at']
 if (Array.isArray(_.itemDataFields)) {
   itemDataFields = itemDataFields.concat(_.itemDataFields)
 }
@@ -63,6 +63,20 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
       -->
 
       <div class="product-card__pictures">
+        <%
+        let d = new Date()
+        let nd = new Date(itemData.created_at)
+        let ndm = nd - d
+        let dd = ndm / (1000 * 60 * 60 * 24);
+
+        if(dd < 30){
+          %>
+          <div>
+            Lançamento
+          </div>
+        <%
+        }
+        %>
         <!-- Picture(s) will be inserted and loaded dynamically within `ProductCard` -->
         <% if (imgObj && imgObj.url) { %>
           <picture class="product-card__picture">

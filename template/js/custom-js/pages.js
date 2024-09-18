@@ -2,13 +2,16 @@
 window.list_cols = sessionStorage.getItem(`list_cols`) || "4";
 document.addEventListener("DOMContentLoaded", function() {
   
+  if(storefront.context.resource == "categories"){
+    sessionStorage.setItem('last_category',storefront.context.body.name)
+  }
   setTimeout(() =>{
     $(window).resize();    
   }, 1000)
   let h = $(`header.header`).innerHeight();
   $(`body`).css(`--header-height`, h + 'px');
 
-  if($(`.page--categories`)){
+  if($(`.page--categories`).length > 0){
     $(`.page-title, .page-title + .category-description`).wrapAll(`<div class=category-text></div>`);
     $(`.category-text, .category-text +  .category-banner`).wrapAll(`<div class=category-brick></div>`)
   }

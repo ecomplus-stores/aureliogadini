@@ -4,7 +4,7 @@ let bc = _.breadcrumbs.map(item => ({
   name:  _.route.resource == 'categories' ? item.name.toUpperCase() : item.name
 }));
 
-console.log(bc);
+//console.log(bc);
 
 
 const breadcrumbs = opt.breadcrumbs && opt.breadcrumbs.length
@@ -16,7 +16,7 @@ const breadcrumbs = opt.breadcrumbs && opt.breadcrumbs.length
 
 
   
-  console.log(_.route.resource == 'categories')
+  //console.log(_.route.resource == 'categories')
   if(_.state.categories){
     _.state.categories.forEach(({ name, slug }, index) => { 
       const exists = breadcrumbs.find(el => el.name === name);

@@ -87,18 +87,7 @@ const themeCustom = _.settings.theme.custom || ''
                   </a>
                 </li>
               <% } %> 
-              <% if (contacts.phone) { %>
-                <li>
-                  <a
-                    href="tel:+<%= contacts.phone.replace(/\D/g, '') %>"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <small>Telefone</small>
-                    <%= contacts.phone %>
-                  </a>
-                </li>
-              <% } %>
+              
             <% } %>
             <% if (footer.contacts.email) { %>
               <li>

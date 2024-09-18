@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Black+Han+Sans&family=Ropa+Sans:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400&display=swap');
 
 .black-han-sans-regular {
   font-family: "Black Han Sans", sans-serif;
@@ -198,6 +199,10 @@ header.header{
 
 
 .apx_banners-grid{
+  .glide__arrow{
+    background: rgba(0,0,0,.5);
+    border-radius: 50%;
+  }
   .grid-type-3{
     // .item:nth-child(1){flex: 0 0 66.6666667%;}
     // .item:nth-child(2){flex: 0 0 33.3333333%;}
@@ -2807,6 +2812,12 @@ ul.app_contacts{
   .checkout__app{
       // width: 83.3333%;
       max-width: 100%;
+      #checkout{
+        max-width: 90%;
+        width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
+      }
       .checkout__back a{
         border-radius: 0;
           width: 100%;
@@ -2822,6 +2833,7 @@ ul.app_contacts{
       .checkout-left-col{
           border-right:1px solid var(--border-color);
           padding-right: 2rem;
+          padding-left: 2rem;
       }
       .first_step{
           display: flex;
@@ -2839,7 +2851,7 @@ ul.app_contacts{
       }
       .checkout__col{
           h3, h6{
-              font-size: var(--h4); 
+              font-size: var(--h5); 
               font-weight: 400;
               color: var(--blk);
               font-family: var(--ff1);
@@ -3233,10 +3245,119 @@ body.app{padding-bottom: 0;}
     font-family: var(--ff1);
     text-transform: uppercase;
     font-size: var(--h4);
-    margin: 3rem 0 1rem 0;
+    margin: 2rem 0 1rem 0;
   }
 }
 
 .description-full{
   p{font-weight: 500;}
+}
+
+.login__oauth{
+  .login__btn{
+    padding: 0;
+    line-height: 0;
+    background: transparent;
+    color: var(--c1);
+    border: 0;
+    margin-right: 1rem;
+    small{display: none;}
+    font-size: 0!important;
+    i{font-size: 30px;margin: 0;}
+  }
+  .login__btn:hover{
+    color: var(--c1);
+    background: transparent;
+    opacity: .7;
+  }
+}
+
+#product-specs{
+  .row{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    .col-auto:nth-child(odd){
+      background: #fafafa;
+    }
+    .col-auto{
+      width: 100%;
+      margin: 0!important;
+      padding: .25rem .5rem!important;
+      border: 0!important;
+      .item{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: .5rem;
+      }
+    }
+  }
+  
+}
+
+[data-cms-collection="pages"]{
+  .extra-page .container,
+  .page-title.container{
+    width: 800px;
+  }
+  .page-title{margin-bottom: 0rem;}
+  .md-content{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: var(--font-size);
+    p{margin-bottom: .5rem;}
+    ol strong,
+    h2{
+      font-family: Lato;
+      text-transform: none;
+      font-weight: bold;
+      font-size: calc(var(--font-size) * 1.1);
+    }
+    h2:first-child{margin-top: 0;}
+    color: #000;
+    ul{
+      li{margin-bottom: 1rem;}
+    }
+    ol:not([start]){
+      padding-left: 2.5rem;
+      li{margin: .75rem 0;}
+    }
+    ol{
+      padding-left: 1rem;
+      strong{
+        line-height: 1.2;
+        margin-bottom: .5rem;
+        margin: 1.5rem 0 1rem 0;
+        display: block;
+      }
+    }
+  }
+}
+
+.login__oauth{
+  > .lead:first-child{
+    font-size:0!important;
+    line-height: 0;
+  }
+  > .lead:first-child:before{
+    content: "ou entre com:";
+    color: var(--txt);
+    font-size: var(--font-size);
+    line-height: var(--font-size);
+    font-weight: 500;
+  }
+}
+
+#storefront-app .account .login, #storefront-app .checkout .login{
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#page-products{
+  .breadcrumb{
+    > li:last-child{
+      text-transform: initial;
+    }
+  }
 }
