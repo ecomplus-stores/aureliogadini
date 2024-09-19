@@ -14,18 +14,18 @@
           "desktop": {
             "description_color": "#ffffff",
             "animate": "fadeInDown",
-            "img": "/img/uploads/rectangle-3-2-.png",
+            "img": "/img/uploads/banner-diiv.jpg",
             "content_order": "inside_image",
-            "btn_url": "/",
+            "btn_url": "/diiv---oshin---10th-anniversary",
             "content_position": "center_right",
             "mask_color": "#000000",
-            "btn_text": "VER DISCOGRAFIA",
+            "btn_text": "",
             "btn_background": "#000000",
             "btn_text_color": "#ffffff",
             "mask_opacity": 3,
-            "title": "SLIPKNOT",
+            "title": "",
             "title_color": "#ffffff",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede."
+            "description": ""
           },
           "mobile": {
             "mask_opacity": 0,
