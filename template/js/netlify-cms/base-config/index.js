@@ -963,73 +963,49 @@ export default options => {
       //     }
       //   ]
       // },
-      // {
-      //   name: 'apx_tags',        
-      //   label: '[alpix.dev] - Produtos - Tags ',
-      //   description: 'Adicione tags ou selos nos produtos',
-      //   folder: `${options.baseDir}content/apx_tags`,
-      //   extension: 'json',
-      //   create: true,
-      //   slug: '{{slug}}',
-      //   fields: [
-      //     {
-      //       label: 'Identificador [SKU] ou [Categoria]',
-      //       name: 'identificador',
-      //       widget: 'select',
-      //           multiple: true,
-      //           options: [
-      //             ...options.state.routes
-      //             .filter(({ sku }) => typeof sku === 'string')
-      //             .map(({ sku }) => ({
-      //               label: 'Produto - ' + sku,
-      //               value: sku
-      //             })),
-      //             ...options.state.routes
-      //             .filter(el => el.resource === 'categories')
-      //             .map((el) => ({
-      //               label: 'Categoria - ' + el.name,
-      //               value: 'cat_'+el._id
-      //             }))
-      //           ]                
-      //     },
-      //     {
-      //       label: "Nome da Característica",
-      //       hint:"Exatamente como cadastrado no painel E-com.plus",
-      //       name: "title",
-      //       widget: "string"          
-      //     }, 
-      //     {
-      //       label: "Descrição",
-      //       name: "description",
-      //       widget: "string",
-      //       required:false,          
-      //     }, 
-      //     {
-      //       label: 'Imagem ou ícone',
-      //       name: 'img',
-      //       widget: 'image',
-      //       required:false,
-      //     },   
-      //     {
-      //       label: 'Cor do texto',
-      //       required: false,
-      //       name: 'color',
-      //       widget: 'color'
-      //     },
-      //     {
-      //       label: 'Cor da borda',
-      //       required: false,
-      //       name: 'border',
-      //       widget: 'color'
-      //     },
-      //     {
-      //       label: 'Cor do fundo',
-      //       required: false,
-      //       name: 'background_color',
-      //       widget: 'color'
-      //     }
-      //   ]
-      // },
+      {
+        name: 'apx_tags',        
+        label: '[alpix.dev] - Produtos - Tags ',
+        description: 'Adicione tags nos produtos',
+        folder: `${options.baseDir}content/apx_tags`,
+        extension: 'json',
+        create: true,
+        slug: '{{slug}}',
+        fields: [
+          {
+            label: 'Identificador [SKU]',
+            name: 'identificador',
+            widget: 'select',
+                multiple: true,
+                options: [
+                  ...options.state.routes
+                  .filter(({ sku }) => typeof sku === 'string')
+                  .map(({ sku }) => ({
+                    label: 'Produto - ' + sku,
+                    value: sku
+                  }))
+                ]                
+          },  
+          {
+            label: 'Texto da tag',
+            required: false,
+            name: 'title',
+            widget: 'text'
+          },        
+          {
+            label: 'Cor do texto',
+            required: false,
+            name: 'color',
+            widget: 'color'
+          },
+          {
+            label: 'Cor do fundo',
+            required: false,
+            name: 'background_color',
+            widget: 'color'
+          }
+        ]
+      },
       
       {
         label: "[alpix.dev]",

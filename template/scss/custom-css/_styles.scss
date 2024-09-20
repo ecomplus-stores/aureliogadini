@@ -3491,7 +3491,10 @@ body.app{padding-bottom: 0;}
           }
         }
       }
-    }
-    
+    }    
+  }
+
+  .breadcrumb{
+    .breadcrumb-item:last-child{display: none!important;}
   }
 }
