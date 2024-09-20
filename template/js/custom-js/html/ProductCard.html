@@ -24,7 +24,7 @@
 
       
 
-      <slot name="stamps" />
+      
 
       <slot name="body">
         <a-link
@@ -35,11 +35,10 @@
           <slot name="header"/>
 
           <div class="product-card__pictures ">
-            <div class="apx-tags">
-              <div v-if="isNew" class="new">
-                Lançamento
-              </div>
-            </div>
+            
+             <slot name="stamps"  />
+            
+            
             <template v-if="body.pictures && body.pictures.length">
               <a-picture
                 class="product-card__picture a__picture"
