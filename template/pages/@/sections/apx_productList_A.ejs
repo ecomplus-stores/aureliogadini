@@ -58,11 +58,17 @@
      <div class="<%= opt.container %>  <%= opt.section_img ? 'has_image' : ''%>">
         <div class="section-text-content">
             <div class="apx_section-title text-center <%= opt.title_img ? 'has_title_image' : ''%>">
-                <%  if(opt.title_img){ %>            
-                    <img src="<%= opt.title_img %>" class="d-none d-md-block mb-3"/>
+                <% if (opt.link) { %>
+                    <a href="<%= opt.link %>">
                 <% } %>
-                <%  if(opt.title){ %>            
-                        <h2 class="text-bold text-uppercase"><%- opt.title %></h2>
+                    <%  if(opt.title_img){ %>            
+                        <img src="<%= opt.title_img %>" class="d-md-block mb-md-3 mb-0"/>
+                    <% } %>
+                    <%  if(opt.title){ %>            
+                            <h2 class="text-bold text-uppercase"><%- opt.title %></h2>
+                    <% } %>
+                <% if (opt.link) { %>
+                    </a>
                 <% } %>
                 <% if(opt.description && !opt.title_img){ %>
                     <small><%- opt.description %></small>

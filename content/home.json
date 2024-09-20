@@ -14,7 +14,7 @@
           "desktop": {
             "description_color": "#ffffff",
             "animate": "fadeInDown",
-            "img": "/img/uploads/banner-diiv.jpg",
+            "img": "/img/uploads/banner_DIIV_oshin.png",
             "content_order": "inside_image",
             "btn_url": "/diiv---oshin---10th-anniversary",
             "content_position": "center_right",
@@ -22,14 +22,14 @@
             "btn_text": "",
             "btn_background": "#000000",
             "btn_text_color": "#ffffff",
-            "mask_opacity": 3,
+            "mask_opacity": 0,
             "title": "",
             "title_color": "#ffffff",
             "description": ""
           },
           "mobile": {
             "mask_opacity": 0,
-            "img": "/img/uploads/rectangle-3-3-.png"
+            "img": ""
           },
           "start": "",
           "end": ""
@@ -175,7 +175,7 @@
         "66da3c30fc4aac27a2c823a7"
       ],
       "num_col_md": 3,
-      "num_col_sm": 1,
+      "num_col_sm": 2,
       "visibility": "d-block d-md-block",
       "title": "Novidades",
       "type": "apx_productList_A",
@@ -233,9 +233,10 @@
         "66e618be9e4b2e07f50bd963"
       ],
       "num_col_md": 3,
-      "num_col_sm": 1,
+      "num_col_sm": 2,
       "visibility": "d-block d-md-block",
       "title": "Toys",
+      "link": "/toys",
       "type": "apx_productList_A",
       "title_color": "",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede."

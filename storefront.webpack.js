@@ -18,6 +18,7 @@ module.exports = () => ({
       './js/APicture.js': path.resolve(__dirname, 'template/js/custom-js/html/APicture.js'), 
       
       './html/ProductCard.html': path.resolve(__dirname, 'template/js/custom-js/html/ProductCard.html'), 
+      './js/ProductCard.js': path.resolve(__dirname, 'template/js/custom-js/html/ProductCard.js'), 
       './lib/glide-slides': path.resolve(__dirname, 'template/js/custom-js/html/glide-slides.js'),     
       './lib/lazy-load': path.resolve(__dirname, 'template/js/custom-js/html/lazy-load.js'),     
       // './js/ProductCard.js': path.resolve(__dirname, 'template/js/custom-js/html/ProductCard.js'),   

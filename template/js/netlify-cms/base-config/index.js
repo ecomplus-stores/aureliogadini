@@ -486,6 +486,12 @@ export default options => {
           widget: 'text'
         },
         {
+          label: 'Link do Título',
+          required: false,
+          name: 'link',
+          widget: 'string'
+        },
+        {
           required: false,
           label: 'Imagem Sessão',
           name: 'section_img',

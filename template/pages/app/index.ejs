@@ -17,7 +17,7 @@ const logo = _.settings.logo
   <header class="app__header">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-sm-auto mb-2 mb-sm-0">
+        <div class="col-auto col-md-auto  mb-sm-0">
           <a href="/">
             <% if (logo && logo.url) { %>
               <img class="app__logo" src="<%= logo.url %>" alt="<%= logo.alt %>">
@@ -28,7 +28,7 @@ const logo = _.settings.logo
         </div>
 
         <div class="col">
-          <ul class="list-unstyled app_contacts d-none d-md-flex">
+          <ul class="list-unstyled app_contacts  d-md-flex">
             <% if (footer.contacts.phone_wpp) { %>
               <% if (contacts.whatsapp) { %>
                 <li>

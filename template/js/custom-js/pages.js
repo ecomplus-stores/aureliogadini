@@ -1,5 +1,5 @@
 // Add your custom JavaScript for storefront pages here.
-window.list_cols = sessionStorage.getItem(`list_cols`) || "4";
+window.list_cols = sessionStorage.getItem(`list_cols`) || "3";
 document.addEventListener("DOMContentLoaded", function() {
   
   if(storefront.context.resource == "categories"){
@@ -28,7 +28,11 @@ document.addEventListener("DOMContentLoaded", function() {
   onLoadOrResize();
   $(window).resize(function(){
     onLoadOrResize()
-  })
+  });
+
+  if($(`#product-block`).length > 0 && window.innerWidth < 990){
+    $(`#product-block .sticky`).insertAfter(`#product-gallery`)
+  }
 });
 
 
