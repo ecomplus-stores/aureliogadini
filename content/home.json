@@ -14,7 +14,7 @@
           "desktop": {
             "description_color": "#ffffff",
             "animate": "fadeInDown",
-            "img": "/img/uploads/banner_DIIV_oshin.png",
+            "img": "/img/uploads/diiv-oshin.png",
             "content_order": "inside_image",
             "btn_url": "/diiv---oshin---10th-anniversary",
             "content_position": "center_right",
@@ -24,6 +24,7 @@
             "btn_text_color": "#ffffff",
             "mask_opacity": 0,
             "title": "",
+            "link": "https://vapordiscos.com.br/diiv---oshin---10th-anniversary",
             "title_color": "#ffffff",
             "description": ""
           },
@@ -33,6 +34,42 @@
           },
           "start": "",
           "end": ""
+        },
+        {
+          "desktop": {
+            "mask_opacity": 0,
+            "img": "/img/uploads/mdou-moctar-funeral.png",
+            "link": "https://vapordiscos.com.br/mdou-moctar---funeral-for-justice"
+          },
+          "mobile": {
+            "mask_opacity": 0
+          },
+          "start": "2024-09-21T22:52:05.870Z",
+          "end": "2024-09-21T22:52:05.900Z"
+        },
+        {
+          "desktop": {
+            "mask_opacity": 0,
+            "img": "/img/uploads/charli-xcx.png",
+            "link": "https://vapordiscos.com.br/charli-xcx---brat"
+          },
+          "mobile": {
+            "mask_opacity": 0
+          },
+          "start": "2024-09-21T22:54:21.267Z",
+          "end": "2024-09-21T22:54:21.319Z"
+        },
+        {
+          "desktop": {
+            "mask_opacity": 0,
+            "img": "/img/uploads/funko-pop.png",
+            "link": "https://vapordiscos.com.br/toys"
+          },
+          "mobile": {
+            "mask_opacity": 0
+          },
+          "start": "2024-09-21T22:55:12.957Z",
+          "end": "2024-09-21T22:55:12.996Z"
         }
       ]
     },
@@ -236,8 +273,8 @@
       "num_col_sm": 2,
       "visibility": "d-block d-md-block",
       "title": "Toys",
-      "link": "/toys",
       "type": "apx_productList_A",
+      "link": "/toys",
       "title_color": "",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede."
     }
