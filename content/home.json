@@ -57,7 +57,9 @@
             "link": "https://vapordiscos.com.br/charli-xcx---brat"
           },
           "mobile": {
-            "mask_opacity": 0
+            "mask_opacity": 0,
+            "img": "/img/uploads/4.png",
+            "link": "https://vapordiscos.com.br/charli-xcx---brat"
           },
           "start": "2024-09-21T22:54:21.267Z",
           "end": "2025-09-21T22:54:00.000Z"
@@ -69,7 +71,9 @@
             "link": "https://vapordiscos.com.br/toys"
           },
           "mobile": {
-            "mask_opacity": 0
+            "mask_opacity": 0,
+            "img": "/img/uploads/3.png",
+            "link": "https://vapordiscos.com.br/toys"
           },
           "start": "2024-09-21T22:55:12.957Z",
           "end": "2025-09-21T22:55:00.000Z"
