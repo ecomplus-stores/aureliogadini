@@ -219,7 +219,7 @@
         "66da3c30fc4aac27a2c823a7"
       ],
       "num_col_md": 3,
-      "num_col_sm": 2,
+      "num_col_sm": "1",
       "visibility": "d-block d-md-block",
       "title": "Novidades",
       "type": "apx_productList_A",
@@ -250,6 +250,7 @@
       "btn_bg": "#ffffff",
       "bg_color": "#c7edfd",
       "section_img": "/img/uploads/azymuth_foto1.png",
+      "num_col_sm": "1",
       "visibility": "d-block d-md-block",
       "section_type": 1,
       "title": "",
@@ -277,7 +278,7 @@
         "66e618be9e4b2e07f50bd963"
       ],
       "num_col_md": 3,
-      "num_col_sm": 2,
+      "num_col_sm": "1",
       "visibility": "d-block d-md-block",
       "title": "Toys",
       "type": "apx_productList_A",
