@@ -5,7 +5,7 @@
     {
       "type": "apx_banner-slider",
       "visibility": "d-block d-md-block",
-      "autoplay": 9000,
+      "autoplay": 18000,
       "spacing": {
         "container": "container-fluid"
       },
@@ -30,7 +30,8 @@
           },
           "mobile": {
             "mask_opacity": 0,
-            "img": ""
+            "img": "/img/uploads/diiv-oshin_mobile.png",
+            "link": "https://vapordiscos.com.br/diiv---oshin---10th-anniversary"
           },
           "start": "",
           "end": ""
@@ -42,7 +43,9 @@
             "link": "https://vapordiscos.com.br/mdou-moctar---funeral-for-justice"
           },
           "mobile": {
-            "mask_opacity": 0
+            "mask_opacity": 0,
+            "img": "/img/uploads/mdou-moctar_funaral_mobile.png",
+            "link": "https://vapordiscos.com.br/mdou-moctar---funeral-for-justice"
           },
           "start": "2024-09-21T22:52:05.870Z",
           "end": "2025-09-21T23:09:00.000Z"
