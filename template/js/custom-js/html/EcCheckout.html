@@ -227,7 +227,7 @@
           v-if="!canHideSummary"
           class="col-lg-4 checkout__info"
         >
-          <button type="button" @click="toggleSummarySm" class="d-md-none d-flex checkout-toggle-resume" :class="summaryVisible ? 'inactive' : 'active'">
+          <button type="button" @click="toggleSummarySm" class="d-lg-none d-flex checkout-toggle-resume" :class="summaryVisible ? 'inactive' : 'active'">
             {{cart.items.length}} produto(s)
             <small>{{summaryVisible ? 'Fechar' : 'Ver Resumo'}}</small>
           </button>

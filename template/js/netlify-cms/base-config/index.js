@@ -69,7 +69,7 @@ const spacer = [
       },
       {
         label: 'Apenas Mobile',
-        value: "d-block d-md-none"
+        value: "d-block d-lg-none"
       },
     ]
   },
