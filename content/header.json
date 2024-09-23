@@ -1,25 +1,23 @@
 {
-  "marketing_stripe": {
-    "text": "GANHE FRETE GRÁTIS EM SUAS COMPRAS ACIMA DE R$ 499",
-    "link": "/promotion"
-  },
-  "contacts_stripe": {
-    "pages": [
-      
-    ],
-    "phone_wpp": false,
-    "socials": true
-  },
   "categories_list": {
     "featured": [],
     "random": 3,
     "full_width": false
   },
-  "centralized_logo": false,
-  "desktop_megamenu": true,
-  "search_input": true,
-  "alphabetical_order_submenu": false,
-  "full_width_submenu": false,
   "menu_all_departments": false,
-  "name_all_departments": ""
+  "centralized_logo": false,
+  "marketing_stripe": {
+    "text": "PAGUE COM PIX E GANHE 5% DE DESCONTO",
+    "link": "/pagamentos"
+  },
+  "alphabetical_order_submenu": false,
+  "name_all_departments": "",
+  "search_input": true,
+  "desktop_megamenu": true,
+  "full_width_submenu": false,
+  "contacts_stripe": {
+    "pages": [],
+    "phone_wpp": false,
+    "socials": true
+  }
 }
