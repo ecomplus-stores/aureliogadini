@@ -1,7 +1,15 @@
 // Add your custom JavaScript for storefront pages here.
 window.list_cols = sessionStorage.getItem(`list_cols`) || "3";
 document.addEventListener("DOMContentLoaded", function() {
-  
+const loadedScreenSize = window.innerWidth;
+
+window.addEventListener('resize', function(event) {
+  console.log(loadedScreenSize, window.innerWidth)
+  if((loadedScreenSize > 990 && window.innerWidth < 990) || (loadedScreenSize < 990 && window.innerWidth > 990)){
+    window.location.reload()
+  }
+}, true);
+
   if(storefront.context.resource == "categories"){
     sessionStorage.setItem('last_category',storefront.context.body.name)
   }
@@ -59,7 +67,7 @@ function refreshGlideProductList(){
       let h = $(this).find(`.glide__slide--active picture`).first().innerHeight();
       $(this).closest('.glide__track').css('--cover_height', h + 'px');
     })
-    console.log('refreshed')
+    //console.log('refreshed')
   },200) 
   
 }

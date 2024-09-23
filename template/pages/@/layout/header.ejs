@@ -332,6 +332,13 @@ const hasAllDepartments = header.menu_all_departments
                       }
                     %>
                     <nav class="header__submenu<%= fullWidthSubmenu ? ' header__submenu--full' : '' %>" id="<%= `s-${slug.replace(/\//g, '_')}` %>">
+                      <% if (name == "Discos") {%>
+                        <div> 
+                          <a href="<%- slug %>">
+                            Todos os Discos
+                          </a>
+                        </div>
+                      <% } %>
                       <% subcategories.forEach(subcategory => { %>
                         <div>               
                           <a id="sd-<%= subcategory._id %>" href="/<%= subcategory.slug %>"><%= subcategory.name %></a>

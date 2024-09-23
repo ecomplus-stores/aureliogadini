@@ -631,7 +631,7 @@ export default {
       };
     }).get();
 
-    console.log(`lastCat`, lastCat);
+    //console.log(`lastCat`, lastCat);
 
     // Verifica se o lastCat existe nas categorias e não está no breadcrumb
     if (lastCatExistInProduct && !breadcrumbs.find(el => el.name.toLowerCase() === lastCat.toLowerCase())) {

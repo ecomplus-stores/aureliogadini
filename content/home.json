@@ -103,7 +103,7 @@
           "desktop": {
             "img": "/img/uploads/funk.jpg",
             "title": "FUNK<BR>SOUL<BR>JAZZ",
-            "mask_opacity": 5,
+            "mask_opacity": 7,
             "mask_color": "#000000",
             "content_position": "center_center",
             "content_order": "inside_image",

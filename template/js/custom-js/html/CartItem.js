@@ -121,7 +121,7 @@ export default {
     },
 
     validateQuantity () {
-      console.log(this.quantity);
+      //console.log(this.quantity);
       if (this.minQuantity <= this.maxQuantity) {
         if (this.quantity < this.minQuantity) {
           this.quantity = this.minQuantity
@@ -132,8 +132,8 @@ export default {
     },
 
     itemKitData(_id){
-      //console.log(`xxxxx`,window.ecomCart.data.items)
-      //console.log(`aaaaaaa`,this.cart.find(el => el.product_id == _id))
+      ////console.log(`xxxxx`,window.ecomCart.data.items)
+      ////console.log(`aaaaaaa`,this.cart.find(el => el.product_id == _id))
       return window.ecomCart.data.items.find(el => el.product_id == _id)
     },
 
@@ -158,11 +158,11 @@ export default {
   watch: {
     'item.quantity': {
       handler(qnt) {
-        console.log('Watcher - item.quantity:', qnt);
+        //console.log('Watcher - item.quantity:', qnt);
         if (!isNaN(qnt) && qnt >= 0) {
           this.quantity = qnt;
         }
-        console.log(`Item _id: ${this.item._id}, Name: ${this.item.name}, Type: ${typeof this.item._id}`);
+        //console.log(`Item _id: ${this.item._id}, Name: ${this.item.name}, Type: ${typeof this.item._id}`);
       },
       immediate: true
     },

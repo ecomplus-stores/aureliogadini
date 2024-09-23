@@ -60,16 +60,16 @@ if (slides && slides.length) {
         </ul>
 
         <% if (slides.length > 1) { %>
-          <div class="glide__arrows" data-glide-el="controls">
+          <div class="glide__arrows glide__arrows--insider" data-glide-el="controls">
             <button
               class="btn glide__arrow glide__arrow--left"
               data-glide-dir="<"
               aria-label="<%= _.dictionary('previous') %>"
             >
               
-<svg width="60" height="66" viewBox="0 0 60 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M37.5 48.9404L22.5 32.6269L37.5 16.3135" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.5 27L13.5 18L22.5 9" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
   
             </button>
             <button
@@ -78,8 +78,9 @@ if (slides && slides.length) {
               aria-label="<%= _.dictionary('next') %>"
             >
             
-<svg width="60" height="66" viewBox="0 0 60 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M22.5 48.9404L37.5 32.6269L22.5 16.3135" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.5 27L22.5 18L13.5 9" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
   </svg>
   
             </button>

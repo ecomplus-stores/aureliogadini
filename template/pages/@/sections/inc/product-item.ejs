@@ -54,12 +54,12 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
 
         
         <% if (Array.isArray(apx_tags) && apx_tags.length) { 
-          console.log(apx_tags)
+          ////console.log(apx_tags)
           let productStamps = []
           
           apx_tags.forEach(slug => { 
             const post = (_.cms(`apx_tags/${slug}`))
-            console.log(post)
+            ////console.log(post)
             if(post.identificador.includes(itemData.sku)){
               productStamps.push(post)
             }            

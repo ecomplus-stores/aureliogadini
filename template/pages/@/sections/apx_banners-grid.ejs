@@ -4,7 +4,7 @@
 let gridStyle = {
   "1":1,
   "2":2,  
-  "5":3
+  "5":4
 }
 
 if (Array.isArray(opt.banners) && opt.banners.length) { %>
@@ -23,9 +23,9 @@ if (Array.isArray(opt.banners) && opt.banners.length) { %>
       <div class=" px-0 <%= opt.spacing?.container || `container`%> ">
         <div class="row mx-0">
           <div class="glide" 
-            data-autoplay="6000"
+            data-autoplay="0"
             data-per-view="<%= gridStyle[opt.grid] %>"
-            data-per-view-md="3"
+            
             data-per-view-sm="2"
             data-peek-left-sm="0"      
             data-peek-right-sm="00"      

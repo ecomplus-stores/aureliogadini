@@ -197,7 +197,7 @@ header.header{
   }
 }
 
-
+.banner-slider,
 .apx_banners-grid{
   .glide__arrow{
     background: rgba(0,0,0,.5);
@@ -366,6 +366,9 @@ header.header{
     translate: -50% -50%;
     width: fit-content;
     top: 50%;
+    max-width: 95%;
+    padding-left: 1rem;
+    padding-right: 1rem;
     *{
       text-align: center;
       justify-content: center;
@@ -404,7 +407,7 @@ body .banner-slider{
     strong.h3{
       border: 7px solid;
       font-family: var(--ff1);
-      font-size: var(--h1);
+      font-size: var(--h3);
       font-weight: 400;
       line-height: normal;
       margin: 0;
@@ -2130,6 +2133,7 @@ footer{
     box-shadow: var(--box-shadow-sm);
   }
 }
+.banner-slider,
 .apx_banners-grid{
   .glide__slides{
     
@@ -3502,3 +3506,130 @@ body.app{padding-bottom: 0;}
     .breadcrumb-item:last-child{display: none!important;}
   }
 }
+
+.lgpd {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.15);
+  z-index: 1000;
+  max-width: 50%;
+  margin: 0 auto
+}
+.lgpd #lgpd-btn {
+  border-radius: 0;
+  text-transform: uppercase;
+  font-family: var(--ff1);
+  
+}
+@media (max-width: 991.98px) {
+  .lgpd {
+      bottom:.5rem;
+      left: .5rem;
+      right: .5rem;
+      padding: 1.5rem
+  }
+
+  
+}
+
+.lgpd .text {
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  line-height: 1;
+  color: #000000;
+  font-family: 'Lato';
+}
+
+.lgpd .text a {
+  text-decoration: underline
+}
+
+#account{
+  .account{
+    .account__logged{
+      .account__nav{
+        border: 0;
+        gap: 1rem;
+        .nav-item{
+          a{
+            background: var(--border-color);
+            text-transform: uppercase;
+            border-radius: 0;
+            border: 0;
+            font-weight: 500;
+          }
+          .active{
+            background: var(--c2);
+            color: #fff;
+          }
+        }
+        
+      }
+    }
+    .form-group{
+      label{font-weight: 500;}
+      input{border-radius: 0;}
+    }
+    .btn,
+    button{border-radius: 0;text-transform: uppercase;}
+    .btn-outline-secondary{
+      background: var(--border-color);
+      color: #000;
+      border: 0;
+      font-weight: 400;
+    }
+    .recommended-items{
+      > div > .row{
+        justify-content: flex-start!important;
+        gap: 2rem;
+
+      }
+    }
+    .orders-list{max-width: 100%;}    
+  }
+  
+}
+#order{
+  .order-info{
+    .card-body{
+      background: #fff;
+      border-radius: 0;}
+    .btn{
+      background: var(--border-color);
+      color: #000;
+      border: 0;
+      font-weight: 500;
+      border-radius: 0;
+      text-transform: uppercase;
+      font-family: var(--ff2);
+    }
+  }
+}
+[data-page-title="Minha conta"]{
+  max-width: 100%;
+  width: 900px;
+}
+@media(max-width:990px){
+  .category-brick{
+    margin: -.5rem 0 -1rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .category-text{margin: 0;}
+  }
+  footer.footer{
+    > .container{
+      > .row.justify-content-between{
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+body{overflow-y: visible!important;}
