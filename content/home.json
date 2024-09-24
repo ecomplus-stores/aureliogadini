@@ -14,7 +14,7 @@
           "desktop": {
             "description_color": "#ffffff",
             "animate": "fadeInDown",
-            "img": "/img/uploads/diiv-oshin.png",
+            "img": "/img/uploads/diiv-oshin_ok.png",
             "content_order": "inside_image",
             "btn_url": "/diiv---oshin---10th-anniversary",
             "content_position": "center_right",
@@ -39,7 +39,7 @@
         {
           "desktop": {
             "mask_opacity": 0,
-            "img": "/img/uploads/mdou-moctar-funeral.png",
+            "img": "/img/uploads/mdou-moctar-funeral_ok.png",
             "link": "https://vapordiscos.com.br/mdou-moctar---funeral-for-justice"
           },
           "mobile": {
@@ -53,7 +53,7 @@
         {
           "desktop": {
             "mask_opacity": 0,
-            "img": "/img/uploads/charli-xcx_brat.png",
+            "img": "/img/uploads/charli-xcx_ok.png",
             "link": "https://vapordiscos.com.br/charli-xcx---brat"
           },
           "mobile": {
@@ -67,12 +67,12 @@
         {
           "desktop": {
             "mask_opacity": 0,
-            "img": "/img/uploads/funko-pop.png",
+            "img": "/img/uploads/funko-pop_ok.png",
             "link": "https://vapordiscos.com.br/toys"
           },
           "mobile": {
             "mask_opacity": 0,
-            "img": "/img/uploads/3.png",
+            "img": "/img/uploads/funko.png",
             "link": "https://vapordiscos.com.br/toys"
           },
           "start": "2024-09-21T22:55:12.957Z",
