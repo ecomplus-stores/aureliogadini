@@ -3672,6 +3672,13 @@ body.app{padding-bottom: 0;}
       left: auto;
     }
   }
+
+  .extra-page{
+    .container{
+      width: 100%!important;
+    }
+  }
 }
 
 body{overflow-y: visible!important;}
+
