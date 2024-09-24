@@ -8,7 +8,7 @@
   "centralized_logo": false,
   "marketing_stripe": {
     "text": "PAGUE COM PIX E GANHE 5% DE DESCONTO",
-    "link": "/pagamentos"
+    "link": "/pages/pagamentos"
   },
   "alphabetical_order_submenu": false,
   "name_all_departments": "",
