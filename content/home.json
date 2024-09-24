@@ -58,7 +58,7 @@
           },
           "mobile": {
             "mask_opacity": 0,
-            "img": "/img/uploads/charli-xcx_brat-mobile.png",
+            "img": "/img/uploads/brat.png",
             "link": "https://vapordiscos.com.br/charli-xcx---brat"
           },
           "start": "2024-09-21T22:54:21.267Z",
@@ -101,7 +101,7 @@
         },
         {
           "desktop": {
-            "img": "/img/uploads/funk.jpg",
+            "img": "/img/uploads/funk2.jpg",
             "title": "FUNK<BR>SOUL<BR>JAZZ",
             "mask_opacity": 7,
             "mask_color": "#000000",
