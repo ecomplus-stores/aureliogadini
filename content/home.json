@@ -67,12 +67,12 @@
         {
           "desktop": {
             "mask_opacity": 0,
-            "img": "/img/uploads/funko-pop_ok.png",
+            "img": "/img/uploads/funko-pop_set.png",
             "link": "https://vapordiscos.com.br/toys"
           },
           "mobile": {
             "mask_opacity": 0,
-            "img": "/img/uploads/funko.png",
+            "img": "/img/uploads/funko_mobile_set.png",
             "link": "https://vapordiscos.com.br/toys"
           },
           "start": "2024-09-21T22:55:12.957Z",
