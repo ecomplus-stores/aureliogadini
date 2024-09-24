@@ -28,10 +28,22 @@ const themeCustom = _.settings.theme.custom || ''
   lgpd.style.maxWidth = screen.width <= mobileScreen ? '85%' : lgpd.style.maxWidth;
   var isPreview = new URLSearchParams(window.location.search).get('preview');
   if (!localStorage.getItem('lgpd')) {
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        analytics_storage: "denied",
+        ad_personalization: "denied",
+        ad_user_data: "denied",
+      }) 
       lgpd.classList.remove("d-none");
   }
   document.getElementById('lgpd-btn').onclick = function() {
-      localStorage.setItem('lgpd', true);
+    gtag("consent", "update", {
+      ad_storage: "granted",
+      analytics_storage: "granted",
+      ad_personalization: "granted",
+      ad_user_data: "granted",
+    })  
+    localStorage.setItem('lgpd', true);
       lgpd.classList.add('d-none');
   };
 </script>
