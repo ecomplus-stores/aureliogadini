@@ -3682,3 +3682,57 @@ body.app{padding-bottom: 0;}
 
 body{overflow-y: visible!important;}
 
+.header{
+  .header__buttons{
+    > a,
+     > .search___container{
+      display: flex;
+      align-items: center;
+    }
+  }
+  #user-button{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    div > div:first-child{
+      font-size: var(--font-size-sm);
+      line-height: var(--font-size);
+      text-align: left;
+      color: var(--c1);
+      font-weight: 500;
+      span{font-weight: 600;}
+     
+    }
+    div > div:not(:first-child){
+      font-size: var(--smallest);
+      line-height: var(--font-size-sm);
+      font-weight: normal;
+      color: var(--c1);
+      a{text-decoration: underline;}    
+    }
+  }
+}
+
+.menu-user{
+  display: flex;
+  background: #f8f8f8;
+  padding: 1rem 1rem;
+  gap: .5rem;
+  >div{
+    justify-content: space-between;
+    width: 100%;
+    > div {
+      font-weight: 500;
+      > span{font-weight: 600;}
+      a{
+        background: var(--c1);
+        color: #fff;
+        text-decoration: none;
+        font-size: var(--font-size);
+        padding: .25rem .5rem;
+        font-weight: 500;
+      }
+    }
+  }
+  
+}

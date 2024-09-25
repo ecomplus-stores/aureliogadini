@@ -72,3 +72,22 @@ function refreshGlideProductList(){
   
 }
 $('body').css('--header-vh', ($('header#header').innerHeight()) + 'px');
+
+const { toggleFavorite, checkFavorite } = require('@ecomplus/storefront-components/src/js/helpers/favorite-products');
+const EcomPassport = require('@ecomplus/passport-client');
+const client = EcomPassport.ecomPassport.getCustomer();   
+
+if(client.display_name){
+  $('[data-username]').text(client.display_name || `Visitante` )
+  $(`[data-isnotlogged]`).hide()
+}else{
+  $(`[data-islogged]`).hide()
+}
+
+$(`#logout`).click(function(){
+  localStorage.removeItem(`ecomShippingCart`);
+  localStorage.removeItem(`ecomPassportClient`);
+  sessionStorage.removeItem(`ecomCustomerAccount`);
+  sessionStorage.removeItem(`ecomCustomerAddress`);
+  window.location.reload()
+})
