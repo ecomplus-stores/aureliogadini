@@ -3741,6 +3741,7 @@ body{overflow-y: visible!important;}
   body #instant-search .search__box.card{
     overflow:hidden;
     left: auto!important;
+    width: 100dvw!important;
   }
   #instant-search .backdrop{
     position: fixed !important;
@@ -3749,5 +3750,6 @@ body{overflow-y: visible!important;}
     translate: unset;
     width: 100dvw;
     height: 100dvh;
+    display: none!important;
   }
 }
