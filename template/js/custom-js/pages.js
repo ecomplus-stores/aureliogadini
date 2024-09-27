@@ -84,10 +84,34 @@ if(client.display_name){
   $(`[data-islogged]`).hide()
 }
 
-$(`#logout`).click(function(){
-  localStorage.removeItem(`ecomShippingCart`);
+const getDefaultState = () => {
+  return {
+    customer: {
+      _id: '',
+      locale: '',
+      main_email: '',
+      accepts_marketing: false,
+      display_name: '',
+      name: {},
+      birth_date: {},
+      gender: '',
+      photos: [],
+      phones: [],
+      registry_type: 'p',
+      doc_country: '',
+      doc_number: '',
+      inscription_type: '',
+      inscription_number: '',
+      corporate_name: '',
+      addresses: [],
+      loyalty_points_entries: []
+    },
+    orders: []
+  }
+}
+
+window.logout = function(){
   localStorage.removeItem(`ecomPassportClient`);
-  sessionStorage.removeItem(`ecomCustomerAccount`);
-  sessionStorage.removeItem(`ecomCustomerAddress`);
+  document.cookie = "ecomPassportClient=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
   window.location.reload()
-})
+}

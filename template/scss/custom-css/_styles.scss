@@ -3736,3 +3736,11 @@ body{overflow-y: visible!important;}
   }
   
 }
+
+@media(max-width:768px){
+  body #instant-search .search__box.card{
+    max-width:320px!important;
+    overflow:hidden;
+    left: auto!important;
+  }
+}

@@ -28,6 +28,9 @@ module.exports = () => ({
       './js/EcCheckout.js': path.resolve(__dirname, 'template/js/custom-js/html/EcCheckout.js'),   
       './html/PaymentMethods.html': path.resolve(__dirname, 'template/js/custom-js/html/PaymentMethods.html'),   
       './App.vue': path.resolve(__dirname, 'template/js/custom-js/html/App.vue'), 
+      './html/TheAccount.html': path.resolve(__dirname, 'template/js/custom-js/html/TheAccount.html'), 
+      //'./modules/account': path.resolve(__dirname, 'template/js/custom-js/html/account.js'), 
+      
     }    
   }
 })
