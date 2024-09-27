@@ -3738,18 +3738,16 @@ body{overflow-y: visible!important;}
 }
 
 @media(max-width:768px){
+  html,
+  body{
+    width: var(--window-width)!important;    
+  }
   body #instant-search .search__box.card{
     overflow:hidden;
     left: auto!important;
-    width: 100dvw!important;
+    width: var(--window-width)!important;
   }
   #instant-search .backdrop{
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    translate: unset;
-    width: 100dvw;
-    height: 100dvh;
     display: none!important;
   }
 }

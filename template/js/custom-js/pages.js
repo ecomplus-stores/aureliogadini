@@ -18,6 +18,8 @@ window.addEventListener('resize', function(event) {
   }, 1000)
   let h = $(`header.header`).innerHeight();
   $(`body`).css(`--header-height`, h + 'px');
+  let w = window.innerWidth;
+  $(`body`).css(`--window-width`, w + 'px');
 
   if($(`.page--categories`).length > 0){
     $(`.page-title, .page-title + .category-description`).wrapAll(`<div class=category-text></div>`);
