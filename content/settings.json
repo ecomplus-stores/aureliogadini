@@ -9,8 +9,8 @@
   "bg_color": "#ffffff",
   "repository": "ecomplus-stores/aureliogadini",
   "logo": "/img/uploads/group-1.svg",
-  "name": "VAPOR Discos",
-  "short_name": "VAPOR Discos",
+  "name": "Vapor Discos",
+  "short_name": "Vapor Discos",
   "lang": "pt_br",
   "currency": "BRL",
   "mini_logo": "",
@@ -19,8 +19,8 @@
   "icons_font": "font-awesome",
   "country_code": "BR",
   "secondary_color": "#38B0FA",
-  "icon": "/img/icon.png",
+  "icon": "/img/uploads/icone-navegador.png",
   "store_id": 51543,
-  "description": "VAPOR DISCOS",
+  "description": "Vapor é uma loja especializada na venda de LPs novos, toys e acessórios para colecionadores. Trabalhamos com todos tipos de pagamento e enviamos para todo território nacional.",
   "large_icon": "/img/uploads/icone-navegador.png"
 }
