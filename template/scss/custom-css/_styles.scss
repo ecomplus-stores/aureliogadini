@@ -3741,6 +3741,8 @@ body{overflow-y: visible!important;}
   html,
   body{
     width: var(--window-width)!important;    
+    overflow-x:hidden;
+    position: relative;
   }
   body #instant-search .search__box.card{
     overflow:hidden;
