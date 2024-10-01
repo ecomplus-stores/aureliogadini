@@ -3742,7 +3742,7 @@ body{overflow-y: visible!important;}
   body{
     // width: var(--window-width)!important;    
     width: 100vw!important;
-    max-width: 100vw!important;
+    max-width: var(--window-width)!important;
     overflow-x:hidden;
     position: relative;
   }
@@ -3750,8 +3750,10 @@ body{overflow-y: visible!important;}
     overflow:hidden;
     left: auto!important;
     // width: var(--window-width)!important;
-    width: 100vw!important;
-    max-width: 100vw!important;
+    width: var(--window-width)!important;
+    max-width:  var(--window-width)!important;
+    right: 0;
+    margin: 0;
   }
   #instant-search .backdrop{
     display: none!important;

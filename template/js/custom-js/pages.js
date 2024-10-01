@@ -8,7 +8,7 @@ window.addEventListener('resize', function(event) {
   if((loadedScreenSize > 990 && window.innerWidth < 990) || (loadedScreenSize < 990 && window.innerWidth > 990)){
     window.location.reload()
   }
-  $(`body`).append(`<p>${loadedScreenSize}</p>`)
+  //$(`body`).append(`<p>${loadedScreenSize}</p>`)
 }, true);
 
   if(storefront.context.resource == "categories"){
