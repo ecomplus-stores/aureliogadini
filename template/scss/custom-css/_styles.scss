@@ -3740,14 +3740,18 @@ body{overflow-y: visible!important;}
 @media(max-width:768px){
   html,
   body{
-    width: var(--window-width)!important;    
+    // width: var(--window-width)!important;    
+    width: 100vw!important;
+    max-width: 100vw!important;
     overflow-x:hidden;
     position: relative;
   }
   body #instant-search .search__box.card{
     overflow:hidden;
     left: auto!important;
-    width: var(--window-width)!important;
+    // width: var(--window-width)!important;
+    width: 100vw!important;
+    max-width: 100vw!important;
   }
   #instant-search .backdrop{
     display: none!important;
