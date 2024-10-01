@@ -1,7 +1,7 @@
 // Add your custom JavaScript for storefront pages here.
 window.list_cols = sessionStorage.getItem(`list_cols`) || "3";
 document.addEventListener("DOMContentLoaded", function() {
-const loadedScreenSize = window.innerWidth;
+const loadedScreenSize = screen.width;
 
 window.addEventListener('resize', function(event) {
   console.log(loadedScreenSize, window.innerWidth)
@@ -19,7 +19,7 @@ window.addEventListener('resize', function(event) {
   }, 1000)
   let h = $(`header.header`).innerHeight();
   $(`body`).css(`--header-height`, h + 'px');
-  let w = window.innerWidth;
+  let w = screen.width;
   $(`body`).css(`--window-width`, w + 'px');
 
   if($(`.page--categories`).length > 0){
