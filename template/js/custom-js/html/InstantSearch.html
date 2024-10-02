@@ -2,6 +2,7 @@
   <a-backdrop
     :is-visible="isVisible"
     :class="isVisible ? 'd-block' : 'd-none'"
+    v-if="!isMobile_"
     @hide="hide"
   />
 
