@@ -3745,15 +3745,15 @@ body{overflow-y: visible!important;}
     max-width: var(--screen-width)!important;
     overflow: scroll!important;
     height: 100dvh!important;
-    
+
     position: relative;
   }
   body #instant-search .search__box.card{
     overflow:hidden;
     left: auto!important;
     // width: var(--window-width)!important;
-    width: var(--screen-width)!important;
-    max-width:  var(--screen-width)!important;
+    width: 90%!important;
+    max-width:  90%!important;
     right: 0;
     margin: 0;
   }
