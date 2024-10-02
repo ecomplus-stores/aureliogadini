@@ -19,8 +19,10 @@ window.addEventListener('resize', function(event) {
   }, 1000)
   let h = $(`header.header`).innerHeight();
   $(`body`).css(`--header-height`, h + 'px');
-  let w = screen.width;
-  $(`body`).css(`--window-width`, w + 'px');
+  
+  $(`body`).css(`--screen-width`, screen.width + 'px');
+  $(`body`).css(`--screen-width`, screen.width + 'px');
+  $(`body`).css(`--avail-width`, screen.availWidth + 'px');
 
   if($(`.page--categories`).length > 0){
     $(`.page-title, .page-title + .category-description`).wrapAll(`<div class=category-text></div>`);
