@@ -3810,8 +3810,9 @@ body{overflow-y: visible!important;}
     margin: 0 !important;
     left: auto;
     position: relative;
-    width: var(--screen-width); 
-    max-width: var(--screen-width); 
+    // width: var(--screen-width); 
+    // max-width: var(--screen-width); 
+    width: 300px!important;
     // display: none!important;
     *{
       -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
