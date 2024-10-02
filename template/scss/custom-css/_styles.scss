@@ -3802,27 +3802,11 @@ body{overflow-y: visible!important;}
   // }
 
   #instant-search .search__box .search__header{
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;
-    display: block;
-    padding: 1rem 1.5rem;
-    margin: 0 !important;
-    left: auto;
-    position: relative;
-    // width: var(--screen-width); 
-    // max-width: var(--screen-width); 
-    width: 300px!important;
-    // display: none!important;
-    .apx-side-heading{display: none!important;}
     .search__input-group{
       input{font-size:16px}
     }
-    *{
-      -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-      -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-      box-sizing: border-box;         /* Opera/IE 8+ */
-    }
   }
-  
+  input[type="text"],
+  input[type="password"],
+  textarea{font-size:16px}
 }
