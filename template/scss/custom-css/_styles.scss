@@ -3741,7 +3741,7 @@ body{overflow-y: visible!important;}
   html{overflow:hidden}
   body{
     // width: var(--window-width)!important;    
-    width: 100vw!important;
+    width: 100dvw!important;
     max-width: var(--screen-width)!important;
     overflow: scroll!important;
     height: 100dvh!important;
@@ -3750,15 +3750,23 @@ body{overflow-y: visible!important;}
   }
   body #instant-search .search__box.card{
     overflow:hidden;
-    left: auto!important;
+    left: 0!important;
     // width: var(--window-width)!important;
-    width: var(--screen-width)!important;
-    max-width:  var(--screen-width)!important;
-    right: 0;
+    // width: var(--screen-width)!important;
+    width: 100dvw!important;
+    // max-width:  var(--screen-width)!important;
     margin: 0;
   }
   #instant-search .backdrop{
     display: none!important;
+  }
+  #instant-search{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100dvw;
+    
   }
   #overlay{display:none!important}
 }
