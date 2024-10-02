@@ -3777,6 +3777,8 @@ body{overflow-y: visible!important;}
     box-sizing: border-box;         /* Opera/IE 8+ */
     padding:0;
     margin:1rem 1.5rem;
+    position: relative;
+    display: block;
     *{
       -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
       -moz-box-sizing: border-box;    /* Firefox, other Gecko */
