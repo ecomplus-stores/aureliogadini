@@ -2,17 +2,16 @@
   <a-backdrop
     :is-visible="isVisible"
     :class="isVisible ? 'd-block' : 'd-none'"
-    v-if="!isMobile_"
     @hide="hide"
   />
 
   <transition
-    :enter-active-class="!isMobile_ ? 'animated fadeIn slow' : 'animated slideInLeft'"
-    :leave-active-class="!isMobile_ ? 'animated fadeOut slow' : 'animated slideOutLeft'"
+    :enter-active-class="!isMobile_ ? 'animated fadeIn slow' : 'animated slideInRight'"
+    :leave-active-class="!isMobile_ ? 'animated fadeOut slow' : 'animated slideOutRight'"
   >
     <div
       class="search__box card"
-      v-if="isVisible || hasSearched || isMobile_"
+      v-if="isVisible || hasSearched"
       v-show="isVisible"
     >
       <slot
