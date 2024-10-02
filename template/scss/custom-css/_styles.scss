@@ -3762,15 +3762,15 @@ body{overflow-y: visible!important;}
   }
   #overlay{display:none!important}
 }
-@supports (-webkit-touch-callout: none) {
-  /* CSS specific to iOS devices */ 
-  body #instant-search .search__box.card{
-    overflow:hidden;
-    left: auto!important;
-    // width: var(--window-width)!important;
-    width: 320px!important;
-    max-width:  320px!important;
-    right: 0;
-    margin: 0;
-  }
-}
+// @supports (-webkit-touch-callout: none) {
+//   /* CSS specific to iOS devices */ 
+//   body #instant-search .search__box.card{
+//     overflow:hidden;
+//     left: auto!important;
+//     // width: var(--window-width)!important;
+//     width: 320px!important;
+//     max-width:  320px!important;
+//     right: 0;
+//     margin: 0;
+//   }
+// }
