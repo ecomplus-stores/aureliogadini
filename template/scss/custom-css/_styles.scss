@@ -3742,16 +3742,17 @@ body{overflow-y: visible!important;}
   body{
     // width: var(--window-width)!important;    
     width: 100vw!important;
-    max-width: var(--window-width)!important;
-    overflow: scroll;
+    max-width: var(--screen-width)!important;
+    overflow: scroll!important;
+    height: 100dvh!important;
     position: relative;
   }
   body #instant-search .search__box.card{
     overflow:hidden;
     left: auto!important;
     // width: var(--window-width)!important;
-    width: var(--window-width)!important;
-    max-width:  var(--window-width)!important;
+    width: var(--screen-width)!important;
+    max-width:  var(--screen-width)!important;
     right: 0;
     margin: 0;
   }
