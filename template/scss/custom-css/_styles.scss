@@ -3800,5 +3800,24 @@ body{overflow-y: visible!important;}
   //   right: 0;
   //   margin: 0;
   // }
+
+  #instant-search .search__box .search__header{
+    max-width: 100%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    display: block;
+    padding: 1rem 1.5rem;
+    max-width: 100%;
+    margin: 0 !important;
+    left: auto;
+    position: relative;
+    width: -webkit-fill-available; 
+    *{
+      -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+      -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+      box-sizing: border-box;         /* Opera/IE 8+ */
+    }
+  }
   
 }
