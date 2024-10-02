@@ -3816,9 +3816,10 @@ body{overflow-y: visible!important;}
     // display: none!important;
     .apx-side-heading{display: none!important;}
     .search__input-group{
-      display: flex !important;
+      
       flex-direction: column;
       width: -webkit-fill-available; 
+      display: none!important;
     }
     *{
       -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
