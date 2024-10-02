@@ -3762,3 +3762,30 @@ body{overflow-y: visible!important;}
   }
   #overlay{display:none!important}
 }
+
+@supports (-webkit-touch-callout: none) {
+  /* CSS specific to iOS devices */ 
+  html{overflow:hidden}
+  body{
+    // width: var(--window-width)!important;    
+    width: 100vw!important;
+    max-width: var(--screen-width)!important;
+    overflow: scroll!important;
+    height: 100dvh!important;
+
+    position: relative;
+  }
+  body #instant-search .search__box.card{
+    overflow:hidden;
+    left: auto!important;
+    // width: var(--window-width)!important;
+    width: 90%!important;
+    max-width:  90%!important;
+    right: 0;
+    margin: 0;
+  }
+  #instant-search .backdrop{
+    display: none!important;
+  }
+  #overlay{display:none!important}
+}
