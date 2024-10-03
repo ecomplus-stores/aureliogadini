@@ -3738,14 +3738,14 @@ body{overflow-y: visible!important;}
 }
 
 @media(max-width:990px){
-  html{overflow:hidden}
+  // html{overflow:hidden}
   body{
     // width: var(--window-width)!important;    
     width: 100dvw!important;
     // max-width: var(--screen-width)!important;
-    overflow: scroll!important;
+    // overflow: scroll!important;
     overflow-x: hidden!important;
-    height: 100dvh!important;
+    // height: 100dvh!important;
     
     position: relative;
   }
