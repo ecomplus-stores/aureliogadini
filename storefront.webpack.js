@@ -30,7 +30,9 @@ module.exports = () => ({
       './App.vue': path.resolve(__dirname, 'template/js/custom-js/html/App.vue'), 
       './html/TheAccount.html': path.resolve(__dirname, 'template/js/custom-js/html/TheAccount.html'), 
       //'./modules/account': path.resolve(__dirname, 'template/js/custom-js/html/account.js'), 
-      
+      './helpers/favorite-products': path.resolve(__dirname, 'template/js/custom-js/html/favorite-products.js'),   
+      './helpers/favorite-products.js': path.resolve(__dirname, 'template/js/custom-js/html/favorite-products.js'),   
+      '@ecomplus/storefront-components/src/js/helpers/favorite-products': path.resolve(__dirname, 'template/js/custom-js/html/favorite-products.js'), 
     }    
   }
 })
