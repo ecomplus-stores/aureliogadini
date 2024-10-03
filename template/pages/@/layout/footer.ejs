@@ -191,7 +191,7 @@ const themeCustom = _.settings.theme.custom || ''
                   <ul class="footer__links">
                     <% (_.cms('pages') || []).forEach(slug => { %>
                       <% const { title } = _.cms(`pages/${slug}`) %>
-                      <li>
+                      <li data-title="<%= title %>">
                         <i class="i-chevron-right"></i>
                         <a href="/pages/<%= slug %>">
                           <%= title %>

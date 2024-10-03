@@ -19,68 +19,84 @@
   %>
 
   <section
-    class="products-carousel"
+    class="apx_product-list carousel mt-md-5 pt-md-5 mb-md-5"
     data-size="<%= opt.items.length %>"
     <% if (opt.collection) { %>
       data-collection-id="<%= opt.collection._id %>"
     <% } %>
     data-title="<%= title %>"
   >
-    <% if (!opt.headless) { %>
-      <h4 class="products-carousel__title">
-        <% if (opt.title || opt.collection) { %>
-          <% if (link) { %>
-            <a href="<%= link %>">
+    <div class="container_90">
+      <% if (!opt.headless) { %>
+        <div class="apx_section-title text-center <%= opt.title_img ? 'has_title_image' : ''%>">
+            <% if (opt.link) { %>
+                <a href="<%= opt.link %>">
+            <% } %>
+            <%  if(opt.title){ %>            
+                    <h2 class="text-bold text-uppercase"><%- opt.title %></h2>
+            <% } %>
+            <% if (opt.link) { %>
+                </a>
+            <% } %>
+          <% if(opt.description && !opt.title_img){ %>
+              <small><%- opt.description %></small>
+          <% } %>
+        </div>
+        <!-- <h4 class="products-carousel__title">
+          <% if (opt.title || opt.collection) { %>
+            <% if (link) { %>
+              <a href="<%= link %>">
+                <%= title %>
+              </a>
+            <% } else { %>
+              <span><%= title %></span>
+            <% } %>
+          <% } else { %>
+            <a href="/search">
               <%= title %>
             </a>
-          <% } else { %>
-            <span><%= title %></span>
           <% } %>
-        <% } else { %>
-          <a href="/search">
-            <%= title %>
-          </a>
-        <% } %>
-      </h4>
-    <% } %>
+        </h4> -->
+      <% } %>
 
-    <div
-      class="glide"
-      data-wait-mutation="true"
-      data-autoplay="<%= opt.autoplay %>"
-      data-per-view="4"
-      data-per-view-md="3"
-      data-per-view-sm="2"
-    >
-      <div class="glide__track" data-glide-el="track">
-        <ul class="glide__slides products-carousel__list">
-          <% for (let i = 0; i < opt.items.length; i++) { %>
-            <li class="glide__slide products-carousel__item">
-              <%- await include('@/sections/inc/product-item', {
-                _, opt: { item: opt.items[i] }
-              }) %>
-            </li>
-          <% } %>
-        </ul>
+      <div
+        class="glide"
+        data-wait-mutation="true"
+        data-autoplay="<%= opt.autoplay %>"
+        data-per-view="3"
+        data-per-view-md="3"
+        data-per-view-sm="2"
+      >
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides products-carousel__list">
+            <% for (let i = 0; i < opt.items.length; i++) { %>
+              <li class="glide__slide products-carousel__item">
+                <%- await include('@/sections/inc/product-item', {
+                  _, opt: { item: opt.items[i] }
+                }) %>
+              </li>
+            <% } %>
+          </ul>
 
-        <div
-          class="glide__arrows glide__arrows--outer"
-          data-glide-el="controls"
-        >
-          <button
-            class="btn glide__arrow glide__arrow--left"
-            data-glide-dir="<"
-            aria-label="<%= _.dictionary('previous') %>"
+          <div
+            class="glide__arrows glide__arrows--outer"
+            data-glide-el="controls"
           >
-            <img src="/img/vp_chevron_l.svg"/>
-          </button>
-          <button
-            class="btn glide__arrow glide__arrow--right"
-            data-glide-dir=">"
-            aria-label="<%= _.dictionary('next') %>"
-          >
-          <img src="/img/vp_chevron_r.svg"/>
-          </button>
+            <button
+              class="btn glide__arrow glide__arrow--left"
+              data-glide-dir="<"
+              aria-label="<%= _.dictionary('previous') %>"
+            >
+              <img src="/img/vp_chevron_l.svg"/>
+            </button>
+            <button
+              class="btn glide__arrow glide__arrow--right"
+              data-glide-dir=">"
+              aria-label="<%= _.dictionary('next') %>"
+            >
+            <img src="/img/vp_chevron_r.svg"/>
+            </button>
+          </div>
         </div>
       </div>
     </div>
