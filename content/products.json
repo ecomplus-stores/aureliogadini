@@ -21,10 +21,7 @@
       "title": "Quem comprou este produto, também comprou:",
       "show_loading": true
     },
-    {
-      "type": "product-specifications",
-      "enabled": false
-    },
+    
     {
       "type": "product-specifications",
       "enabled": false
