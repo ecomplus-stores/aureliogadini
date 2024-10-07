@@ -4,7 +4,7 @@
   "sections": [
     {
       "type": "apx_banner-slider",
-      "visibility": "d-block d-md-block",
+      "visibility": "d-none d-md-block",
       "autoplay": 18000,
       "spacing": {
         "container": "container-fluid"
