@@ -4,7 +4,7 @@
       {
         "destination": "/",
         "source": "/posts/**",
-        "type": 301
+        "type": 301 
       }
     ],
     "public": "dist",
