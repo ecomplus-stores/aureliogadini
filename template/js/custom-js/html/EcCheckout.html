@@ -63,21 +63,21 @@
                 
 
                 <div class="mb-md-5 mb-4">
+                
                   <h3>
                     Endereço de entrega
                   </h3>
                   <account-addresses
                     :customer.sync="localCustomer"
                     :zip-code="shippingZipCode"
-                    :form-btn-text="i19proceed"
+                    :form-btn-text="'Salvar Endereço'"
                     :can-show-form="1 === 1"
                     @select-address="selectAddress"
                     @show-form="isAddrForm => isEditingAddr = isAddrForm"
                   />
                 </div>
-                
                 <div
-                  v-if="shippingAddress"
+                  v-if="localZipCode"
                   class="checkout__shipping mb-md-5 mb-4"
                 >
                   <h3>
@@ -86,7 +86,7 @@
                   
                   <transition-group enter-active-class="animated fadeInDown">
                     <div
-                      v-if="1 != 1 && hippingService && !editShippingService && !skipShippingApps.length"
+                      v-if="1 != 1 && shippingService && !editShippingService && !skipShippingApps.length "
                       key="shipping"
                     >
                       <div class="checkout__shipping-method">
@@ -141,7 +141,9 @@
                 </div> -->
               </div>
 
-              <div class="mb-md-5 mb-4">
+              <div class="mb-md-5 mb-4"
+              v-if="localZipCode"
+              >
                 <h3>Observações</h3>
                 <div class="checkout__notes">
                   <div class="form-group">
@@ -157,7 +159,8 @@
                   </div>
                 </div>
               </div>
-              <div class="mb-md-5 mb-4">
+              <div class="mb-md-5 mb-4"
+              v-if="shippingService">
                 <discount-applier
                   
                   class="checkout__discount mt-4"
@@ -172,6 +175,7 @@
             </div>
 
             <div class="checkout__col col-md-12 pt-0"
+            v-if="enabledCheckoutStep >= 2"
             :class="enabledCheckoutStep ? 'ativao' : 'desativao'">
               <h3>
                 Forma de pagamento
