@@ -1,10 +1,10 @@
 {
   "pkg": "@ecomplus/widget-tag-manager",
-  "active": false,
+  "active": true,
   "desktopOnly": false,
   "enableCheckout": true,
   "options": {
-    "gtmContainerId": "G-94E7QRGD8V",
+    "gtmContainerId": "GTM-NL2RT8L4",
     "dataLayerVar": "dataLayer",
     "partytown": false,
     "isDebug": true
