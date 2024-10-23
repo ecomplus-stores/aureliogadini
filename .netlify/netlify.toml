@@ -3,6 +3,16 @@
   functions = "functions-zip"
 
 [[redirects]]
+  from = "/posts/discos"
+  to = "/discos"
+  status = 301
+
+[[redirects]]
+  from = "/posts/*"
+  to = "/"
+  status = 302
+
+[[redirects]]
   from = "/*"
   to = "/.netlify/functions/ssr?slug=:splat"
   status = 200
