@@ -2,9 +2,14 @@
   "hosting": {
     "redirects": [
       {
-        "destination": "/",
         "source": "/posts/**",
-        "type": 301 
+        "destination": "/",
+        "type": 302
+      },
+      {
+        "source": "/posts/discos",
+        "destination": "/discos",
+        "type": 301
       }
     ],
     "public": "dist",
