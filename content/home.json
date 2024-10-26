@@ -98,10 +98,10 @@
       "banners": [
         {
           "desktop": {
-            "img": "/img/uploads/rock_indie.jpg",
+            "img": "/img/uploads/rock-indie.jpg",
             "title": "ROCK<BR>INDIE",
-            "mask_opacity": 3,
-            "mask_color": "#000000",
+            "mask_opacity": 0,
+            "mask_color": "",
             "content_position": "center_center",
             "content_order": "inside_image",
             "title_color": "#ffffff",
