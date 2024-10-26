@@ -108,7 +108,11 @@
             "link": "/indie--rock"
           },
           "mobile": {
-            "mask_opacity": 0
+            "mask_opacity": 10,
+            "img": "/img/uploads/rock-indie.jpg",
+            "title": "ROCK<BR>INDIE",
+            "link": "/indie--rock",
+            "mask_color": "#38b0fa"
           }
         },
         {
