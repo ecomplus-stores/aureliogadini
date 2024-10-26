@@ -100,8 +100,8 @@
           "desktop": {
             "img": "/img/uploads/rock-indie.jpg",
             "title": "ROCK<BR>INDIE",
-            "mask_opacity": 0,
-            "mask_color": "",
+            "mask_opacity": 10,
+            "mask_color": "#38b0fa",
             "content_position": "center_center",
             "content_order": "inside_image",
             "title_color": "#ffffff",
