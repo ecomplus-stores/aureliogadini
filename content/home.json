@@ -98,7 +98,7 @@
       "banners": [
         {
           "desktop": {
-            "img": "/img/uploads/rock-indie.jpg",
+            "img": "/img/uploads/rock-indie10.jpg",
             "title": "ROCK<BR>INDIE",
             "mask_opacity": 10,
             "mask_color": "#38b0fa",
@@ -109,7 +109,7 @@
           },
           "mobile": {
             "mask_opacity": 10,
-            "img": "/img/uploads/rock-indie.jpg",
+            "img": "/img/uploads/rock-indie10.jpg",
             "title": "ROCK<BR>INDIE",
             "link": "/indie--rock",
             "mask_color": "#38b0fa"
@@ -117,7 +117,7 @@
         },
         {
           "desktop": {
-            "img": "/img/uploads/funksoul.jpg",
+            "img": "/img/uploads/funksoul10.jpg",
             "title": "FUNK<BR>SOUL<BR>JAZZ",
             "mask_opacity": 10,
             "mask_color": "#38b0fa",
@@ -127,27 +127,34 @@
             "link": "/funk--soul--jazz"
           },
           "mobile": {
-            "mask_opacity": 0
+            "mask_opacity": 10,
+            "img": "/img/uploads/funksoul10.jpg",
+            "link": "/funk--soul--jazz",
+            "mask_color": "#38b0fa"
           }
         },
         {
           "desktop": {
-            "img": "/img/uploads/raptrap.jpg",
+            "img": "/img/uploads/raptrap10.jpg",
+            "content_order": "inside_image",
+            "alt": "",
+            "content_position": "center_center",
+            "mask_color": "#38b0fa",
+            "mask_opacity": 10,
             "title": "RAP<br>TRAP<br>R&B",
             "link": "/rap--trap--rb",
-            "mask_opacity": 10,
-            "mask_color": "#38b0fa",
-            "content_position": "center_center",
-            "content_order": "inside_image",
             "title_color": "#ffffff"
           },
           "mobile": {
-            "mask_opacity": 0
+            "mask_opacity": 10,
+            "img": "/img/uploads/raptrap10.jpg",
+            "mask_color": "#38b0fa",
+            "link": "/rap--trap--rb"
           }
         },
         {
           "desktop": {
-            "img": "/img/uploads/rock-indie.jpg",
+            "img": "/img/uploads/punkmetal10.jpg",
             "title": "PUNK<br>METAL",
             "mask_opacity": 10,
             "mask_color": "#38b0fa",
@@ -157,12 +164,15 @@
             "link": "/punk--metal"
           },
           "mobile": {
-            "mask_opacity": 0
+            "mask_opacity": 10,
+            "mask_color": "#38b0fa",
+            "img": "/img/uploads/punkmetal10.jpg",
+            "link": "/punk--metal"
           }
         },
         {
           "desktop": {
-            "img": "/img/uploads/raptrap.jpg",
+            "img": "/img/uploads/eletronica10.jpg",
             "mask_opacity": 10,
             "mask_color": "#38b0fa",
             "content_position": "center_center",
@@ -172,12 +182,15 @@
             "title": "ELETRÔNICA"
           },
           "mobile": {
-            "mask_opacity": 0
+            "mask_opacity": 10,
+            "img": "/img/uploads/eletronica10.jpg",
+            "link": "/eletronica",
+            "mask_color": "#38b0fa"
           }
         },
         {
           "desktop": {
-            "img": "/img/uploads/brasil.jpg",
+            "img": "/img/uploads/brasil10.jpg",
             "mask_opacity": 10,
             "mask_color": "#38b0fa",
             "content_position": "center_center",
@@ -187,7 +200,10 @@
             "link": "/brasil"
           },
           "mobile": {
-            "mask_opacity": 0
+            "mask_opacity": 10,
+            "img": "/img/uploads/brasil10.jpg",
+            "link": "/brasil",
+            "mask_color": "#38b0fa"
           }
         },
         {
@@ -197,12 +213,15 @@
             "content_position": "center_center",
             "content_order": "inside_image",
             "title_color": "#ffffff",
-            "img": "/img/uploads/pop.jpg",
+            "img": "/img/uploads/pop10.jpg",
             "title": "POP",
             "link": "/pop"
           },
           "mobile": {
-            "mask_opacity": 0
+            "mask_opacity": 10,
+            "img": "/img/uploads/pop10.jpg",
+            "link": "/pop",
+            "mask_color": "#38b0fa"
           }
         }
       ],
