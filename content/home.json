@@ -282,23 +282,21 @@
         }
       },
       "products": [
-        "66da3c5cfc4aac27a2c82468",
-        "66da3c53fc4aac27a2c82441",
-        "66da3c67fc4aac27a2c82496",
-        "66da3c57fc4aac27a2c82451",
-        "66da3c68fc4aac27a2c8249b"
+        "66e247ad9e4b2e07f5087460",
+        "66dfbb099e4b2e07f50557ad",
+        "66e247a89e4b2e07f5087454"
       ],
       "btn_bg": "#ffffff",
-      "bg_color": "#c7edfd",
-      "section_img": "/img/uploads/azymuth_foto1.png",
+      "bg_color": "#fdfbc7",
+      "section_img": "/img/uploads/fela-banner.png",
       "num_col_sm": "1",
       "visibility": "d-block d-md-block",
       "section_type": 1,
       "title": "",
       "type": "apx_productList_A",
       "imagem_margin": "-6rem",
-      "title_img": "/img/uploads/azymuth_logo.png",
-      "description": "Azymuth, lendária banda de funk-jazz brasileiro formada nos anos 70, influenciou gerações de músicos e DJs ao redor do mundo. Originalmente composta por José Roberto Bertrami, Alex Malheiros e Ivan Conti, a banda colaborou com artistas como Marcos Valle e Airto Moreira, tornando-se uma das mais sampleadas da história. Suas músicas foram utilizadas por produtores como Madlib, Jay-Z, Dr. Dre e Kanye West. Atualmente, Kiko Continentino e Renato Massa mantêm viva a sonoridade dos saudosos Bertrami e Ivan Conti (Mamão)."
+      "title_img": "/img/uploads/fela-lettering-ok.png",
+      "description": "É praticamente impossível dimensionar o efeito e a relevância de Fela Anikulapo (Ransome) Kuti — ou simplesmente Fela, para o cenário da música mundial. Produtor, multi-instrumentista e líder de banda de personalidade inigualável, uniu as guitarras cruas e as sutilezas do highlife a arranjos de metais refinados e letras politicamente engajadas para fundar o Afrobeat: nome escolhido por Fela para esse som híbrido, em parte como uma crítica a artistas africanos que haviam abandonado suas raízes para emular as tendências da música pop americana da época. \nSua carreira começou a ganhar força nos anos 1970, quando fundou a banda Africa '70, que colaborou com ele na criação de clássicos como Zombie e Water No Get Enemy. Esses trabalhos não apenas influenciaram musicalmente gerações futuras, mas também marcaram o início de seu ativismo político."
     },
     {
       "spacing": {
