@@ -13,7 +13,8 @@
         {
           "desktop": {
             "mask_opacity": 0,
-            "img": "/img/uploads/vapor-embalagem-4-.png"
+            "img": "/img/uploads/amyl-1-.png",
+            "link": "https://vapordiscos.com.br/amyl-and-the-sniffers---confort-me"
           },
           "mobile": {
             "mask_opacity": 0,
@@ -26,9 +27,9 @@
           "desktop": {
             "description_color": "#ffffff",
             "animate": "fadeInDown",
-            "img": "/img/uploads/diiv-oshin_set.png",
+            "img": "/img/uploads/idles-1-.png",
             "content_order": "inside_image",
-            "btn_url": "/diiv---oshin---10th-anniversary",
+            "btn_url": "https://vapordiscos.com.br/idles---crawler",
             "content_position": "center_right",
             "mask_color": "#000000",
             "btn_text": "",
@@ -36,7 +37,7 @@
             "btn_text_color": "#ffffff",
             "mask_opacity": 0,
             "title": "",
-            "link": "https://vapordiscos.com.br/diiv---oshin---10th-anniversary",
+            "link": "https://vapordiscos.com.br/idles---crawler",
             "title_color": "#ffffff",
             "description": ""
           },
@@ -47,20 +48,6 @@
           },
           "start": "",
           "end": ""
-        },
-        {
-          "desktop": {
-            "mask_opacity": 0,
-            "img": "/img/uploads/mdou-moctar-funeral_set.png",
-            "link": "https://vapordiscos.com.br/mdou-moctar---funeral-for-justice"
-          },
-          "mobile": {
-            "mask_opacity": 0,
-            "img": "/img/uploads/mdou-moctar_funaral_mobile_set.png",
-            "link": "https://vapordiscos.com.br/mdou-moctar---funeral-for-justice"
-          },
-          "start": "2024-09-21T22:52:05.870Z",
-          "end": "2025-09-21T23:09:00.000Z"
         },
         {
           "desktop": {
