@@ -84,7 +84,8 @@ export default {
       isWaitingBuy: false,
       isHovered: false,
       isFavorite: false,
-      error: ''
+      error: '',
+      productStamps : []
     }
   },
 
@@ -234,9 +235,22 @@ export default {
       if (this.product.visible === undefined) {
         this.body.visible = true
       }
+
+      
     }
     if (!this.isLoaded) {
       this.fetchItem()
+    }
+  },
+  mounted(){
+    if(window.apx_tags && this.body.sku){
+      console.log(this.body.sku)
+      for (let i = 0; i < window.apx_tags.length; i++) {      
+        console.log(window.apx_tags[i].identificador.includes(this.body.sku))
+        if(window.apx_tags[i].identificador.includes(this.body.sku)){
+          this.productStamps.push(window.apx_tags[i])
+        }      
+      }
     }
   }
 }

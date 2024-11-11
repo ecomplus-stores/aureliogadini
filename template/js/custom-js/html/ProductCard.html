@@ -36,8 +36,13 @@
 
           <div class="product-card__pictures ">
             
-            <slot name="stamps"  />
-            
+            <slot name="stamps">
+              <div class="apx-tags">
+                  <div v-for="stamp of productStamps" :style="'background-color:<%- stamp.background_color %>;color:<%- stamp.color %>;'">
+                    {{stamp.title}} 
+                  </div>
+                </div>
+            </slot>
             
             <template v-if="body.pictures && body.pictures.length">
               <a-picture

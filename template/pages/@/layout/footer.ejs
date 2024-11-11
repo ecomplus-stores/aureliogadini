@@ -4,9 +4,17 @@ const apx_popup = _.cms('apx_popup') || {}
 const footer = _.cms('footer') || {}
 const contacts = _.cms('contacts') || {}
 const themeCustom = _.settings.theme.custom || ''
-
+const apx_tags = _.cms('apx_tags') || {}
+let productStamps = []
+apx_tags.forEach(slug => { 
+  const post = (_.cms(`apx_tags/${slug}`))
+  productStamps.push(post)
+             
+})
 %>
-<!--  -->
+<script>
+  window.apx_tags = JSON.parse(<%- JSON.stringify(JSON.stringify(productStamps)) %>);  
+</script>
 <div id="message-container"></div>
 <div id="favorites-quickview">
   <div class="backdrop"></div>
