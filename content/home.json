@@ -12,20 +12,6 @@
       "slides": [
         {
           "desktop": {
-            "mask_opacity": 0,
-            "img": "/img/uploads/amyl-1-.png",
-            "link": "https://vapordiscos.com.br/amyl-and-the-sniffers---confort-me"
-          },
-          "mobile": {
-            "mask_opacity": 0,
-            "img": "/img/uploads/amyl-mobile.png",
-            "link": "https://vapordiscos.com.br/amyl-and-the-sniffers---confort-me"
-          },
-          "start": "2024-10-07T11:02:07.531Z",
-          "end": "2025-05-10T11:02:07.583Z"
-        },
-        {
-          "desktop": {
             "description_color": "#ffffff",
             "animate": "fadeInDown",
             "img": "/img/uploads/idles-1-.png",
