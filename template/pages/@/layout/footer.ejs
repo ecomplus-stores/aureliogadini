@@ -12,6 +12,18 @@ apx_tags.forEach(slug => {
              
 })
 %>
+<% if (contacts.whatsapp) { %>   
+  <a
+    href="https://wa.me/55<%= contacts.whatsapp.replace(/\D/g, '') %>"
+    target="_blank"
+    rel="noopener"
+    class="floating-whatsapp-link"
+    data-tel="<%= contacts.whatsapp.replace(/\D/g, '') %>"
+  >
+    <i class="i-whatsapp"></i>
+  </a>
+
+<% } %>
 <script>
   window.apx_tags = JSON.parse(<%- JSON.stringify(JSON.stringify(productStamps)) %>);  
 </script>
