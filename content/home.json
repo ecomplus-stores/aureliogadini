@@ -5,11 +5,25 @@
     {
       "type": "apx_banner-slider",
       "visibility": "d-block d-md-block",
-      "autoplay": 18000,
+      "autoplay": 200000,
       "spacing": {
         "container": "container-fluid"
       },
       "slides": [
+        {
+          "desktop": {
+            "mask_opacity": 0,
+            "img": "/img/uploads/week-desktop-1-.png",
+            "link": "https://vapordiscos.com.br/vaporweek"
+          },
+          "mobile": {
+            "mask_opacity": 0,
+            "img": "/img/uploads/week-mobile.png",
+            "link": "https://vapordiscos.com.br/vaporweek"
+          },
+          "start": "2024-11-25T01:28:18.906Z",
+          "end": "2024-12-02T01:28:18.951Z"
+        },
         {
           "desktop": {
             "description_color": "#ffffff",
@@ -63,20 +77,6 @@
           },
           "start": "2024-09-21T22:55:12.957Z",
           "end": "2025-09-21T22:55:00.000Z"
-        },
-        {
-          "desktop": {
-            "mask_opacity": 0,
-            "img": "/img/uploads/week-desktop-1-.png",
-            "link": "https://vapordiscos.com.br/vaporweek"
-          },
-          "mobile": {
-            "mask_opacity": 0,
-            "img": "/img/uploads/week-mobile.png",
-            "link": "https://vapordiscos.com.br/vaporweek"
-          },
-          "start": "2024-11-25T01:28:18.906Z",
-          "end": "2024-12-02T01:28:18.951Z"
         }
       ]
     },
