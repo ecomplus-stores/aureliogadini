@@ -1,0 +1,37 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.de6105adfa60e622556b9c21104f4cf1.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.f742d6a5fb3b8ded40f9d38a6e2189c2.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.5444677b99e07a40ddf8da47fd833fbc.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.4fcda6eb9bafd8578cc283e165e8564f.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.8d6cc9fa3550936239440b4adf0e940d.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Vapor Discos",
+  "short_name": "Vapor Discos",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Vapor é uma loja especializada na venda de LPs novos, toys e acessórios para colecionadores. Trabalhamos com todos tipos de pagamento e enviamos para todo território nacional.",
+  "background_color": "#ffffff",
+  "theme_color": "#131313"
+}
