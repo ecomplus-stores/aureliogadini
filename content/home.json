@@ -12,20 +12,6 @@
       "slides": [
         {
           "desktop": {
-            "mask_opacity": 0,
-            "img": "/img/uploads/week-desktop-1-.png",
-            "link": "https://vapordiscos.com.br/vaporweek"
-          },
-          "mobile": {
-            "mask_opacity": 0,
-            "img": "/img/uploads/week-mobile.png",
-            "link": "https://vapordiscos.com.br/vaporweek"
-          },
-          "start": "2024-11-25T01:28:18.906Z",
-          "end": "2024-12-02T01:28:18.951Z"
-        },
-        {
-          "desktop": {
             "description_color": "#ffffff",
             "animate": "fadeInDown",
             "img": "/img/uploads/idles-1-.png",
