@@ -14,7 +14,7 @@
           "desktop": {
             "description_color": "#ffffff",
             "animate": "fadeInDown",
-            "img": "/img/uploads/idles-1-.png",
+            "img": "/img/uploads/fontaines_romance_2.png",
             "content_order": "inside_image",
             "btn_url": "https://vapordiscos.com.br/idles---crawler",
             "content_position": "center_right",
@@ -24,7 +24,7 @@
             "btn_text_color": "#ffffff",
             "mask_opacity": 0,
             "title": "",
-            "link": "https://vapordiscos.com.br/idles---crawler",
+            "link": "https://vapordiscos.com.br/fontaines-d-c---romance",
             "title_color": "#ffffff",
             "description": ""
           },
