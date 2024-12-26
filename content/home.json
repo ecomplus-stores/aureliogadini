@@ -12,32 +12,6 @@
       "slides": [
         {
           "desktop": {
-            "description_color": "#ffffff",
-            "animate": "fadeInDown",
-            "img": "/img/uploads/fontaines_romance_2.png",
-            "content_order": "inside_image",
-            "btn_url": "https://vapordiscos.com.br/idles---crawler",
-            "content_position": "center_right",
-            "mask_color": "#000000",
-            "btn_text": "",
-            "btn_background": "#000000",
-            "btn_text_color": "#ffffff",
-            "mask_opacity": 0,
-            "title": "",
-            "link": "https://vapordiscos.com.br/fontaines-d-c---romance",
-            "title_color": "#ffffff",
-            "description": ""
-          },
-          "mobile": {
-            "mask_opacity": 0,
-            "img": "/img/uploads/romance_mobile.png",
-            "link": "https://vapordiscos.com.br/fontaines-d-c---romance"
-          },
-          "start": "",
-          "end": ""
-        },
-        {
-          "desktop": {
             "mask_opacity": 0,
             "img": "/img/uploads/silvia-machete-banner.jpg",
             "link": "https://vapordiscos.com.br/silvia-machete---invisible-woman"
