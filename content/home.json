@@ -5,11 +5,23 @@
     {
       "type": "apx_banner-slider",
       "visibility": "d-block d-md-block",
-      "autoplay": 1000,
+      "autoplay": 20000,
       "spacing": {
         "container": "container-fluid"
       },
       "slides": [
+        {
+          "desktop": {
+            "mask_opacity": 0,
+            "img": "/img/uploads/kim-deal.png",
+            "link": "https://vapordiscos.com.br/kim-deal---nobody-loves-you-more"
+          },
+          "mobile": {
+            "mask_opacity": 0
+          },
+          "start": "",
+          "end": ""
+        },
         {
           "desktop": {
             "mask_opacity": 0,
@@ -37,18 +49,6 @@
           },
           "start": "2024-09-21T22:55:12.957Z",
           "end": "2025-09-21T22:55:00.000Z"
-        },
-        {
-          "desktop": {
-            "mask_opacity": 0,
-            "img": "/img/uploads/kim-deal.png",
-            "link": "https://vapordiscos.com.br/kim-deal---nobody-loves-you-more"
-          },
-          "mobile": {
-            "mask_opacity": 0
-          },
-          "start": "",
-          "end": ""
         }
       ]
     },
