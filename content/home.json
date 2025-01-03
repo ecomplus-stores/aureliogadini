@@ -5,7 +5,7 @@
     {
       "type": "apx_banner-slider",
       "visibility": "d-block d-md-block",
-      "autoplay": 200000,
+      "autoplay": 1000,
       "spacing": {
         "container": "container-fluid"
       },
@@ -47,8 +47,8 @@
           "mobile": {
             "mask_opacity": 0
           },
-          "start": "2025-01-03T11:55:14.394Z",
-          "end": "2025-01-03T11:55:14.427Z"
+          "start": "",
+          "end": ""
         }
       ]
     },
