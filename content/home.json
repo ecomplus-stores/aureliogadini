@@ -17,7 +17,9 @@
             "link": "https://vapordiscos.com.br/kim-deal---nobody-loves-you-more"
           },
           "mobile": {
-            "mask_opacity": 0
+            "mask_opacity": 0,
+            "img": "/img/uploads/kim-mobile.png",
+            "link": "https://vapordiscos.com.br/kim-deal---nobody-loves-you-more"
           },
           "start": "",
           "end": ""
