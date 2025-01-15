@@ -134,7 +134,7 @@ export default {
       customerEmail: this.customer.main_email,
       isUserIdentified: Boolean(this.customer.main_email),
       editAccount: false,
-      editShippingService: !this.shippingService,
+      editShippingService: this.shippingService ? false : true,
       localZipCode: this.shippingZipCode,
       selectedAddressId: null,
       isEditingAddr: false,
@@ -368,9 +368,9 @@ export default {
       }
     },
 
-    localZipCode () {
-      this.editShippingService = true
-    },
+    // localZipCode () {
+    //   this.editShippingService = true
+    // },
 
     skipShippingApps () {
       this.toCheckoutStep = 1

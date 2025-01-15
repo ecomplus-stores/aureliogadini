@@ -2914,8 +2914,8 @@ ul.app_contacts{
               padding: .75rem;
               margin-bottom: .5rem;
               font-weight: 600;
-              .payment__intermediator,
-              > img{display: none;}
+              // .payment__intermediator,
+              // > img{display: none;}
               
               .payment__title + span{display: none;}
               .payment__title:before{
@@ -4008,4 +4008,11 @@ body{overflow-y: visible!important;}
       bottom: 1rem;
       i{font-size:20px}
       }
+  }
+
+  .checkout__shipping-method{
+    background: black;
+    color: #fff;
+    small,
+    *{color:#fff!important}
   }
