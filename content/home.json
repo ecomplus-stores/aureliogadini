@@ -13,12 +13,12 @@
         {
           "desktop": {
             "mask_opacity": 0,
-            "img": "/img/uploads/blood-desk.png",
+            "img": "/img/uploads/blood_desk_ok.png",
             "link": "https://vapordiscos.com.br/blood-incantation---absolute-elsewhere"
           },
           "mobile": {
             "mask_opacity": 0,
-            "img": "/img/uploads/blood-mobile.png",
+            "img": "/img/uploads/blood_mobile_ok.png",
             "link": "https://vapordiscos.com.br/blood-incantation---absolute-elsewhere"
           },
           "start": "",
