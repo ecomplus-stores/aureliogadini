@@ -27,20 +27,6 @@
         {
           "desktop": {
             "mask_opacity": 0,
-            "img": "/img/uploads/silvia-machete-banner.jpg",
-            "link": "https://vapordiscos.com.br/silvia-machete---invisible-woman"
-          },
-          "mobile": {
-            "mask_opacity": 0,
-            "img": "/img/uploads/silvia-machete_mobile.jpg",
-            "link": "https://vapordiscos.com.br/silvia-machete---invisible-woman"
-          },
-          "start": "2024-09-21T22:54:21.267Z",
-          "end": "2025-12-25T22:54:00.000Z"
-        },
-        {
-          "desktop": {
-            "mask_opacity": 0,
             "img": "/img/uploads/funko-pop_set.png",
             "link": "https://vapordiscos.com.br/toys"
           },
