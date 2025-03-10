@@ -25,20 +25,6 @@
         {
           "desktop": {
             "mask_opacity": 0,
-            "img": "/img/uploads/blood_desk_ok.png",
-            "link": "https://vapordiscos.com.br/blood-incantation---absolute-elsewhere"
-          },
-          "mobile": {
-            "mask_opacity": 0,
-            "img": "/img/uploads/blood_mobile_ok.png",
-            "link": "https://vapordiscos.com.br/blood-incantation---absolute-elsewhere"
-          },
-          "start": "",
-          "end": "2025-03-07T01:14:17.447Z"
-        },
-        {
-          "desktop": {
-            "mask_opacity": 0,
             "img": "/img/uploads/funko-pop_set.png",
             "link": "https://vapordiscos.com.br/toys"
           },
