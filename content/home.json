@@ -259,61 +259,7 @@
       "title_img": "/img/uploads/logo-habibi.png",
       "description": "O selo Habibi Funk, com sede em Berlim, resgata raridades da música árabe, unindo influências tradicionais com funk, soul e jazz.\nAlém de reedições e compilações que trazem à tona vozes quase esquecidas, o selo valoriza a história por trás dessas músicas, revelando como elas refletem momentos sociais e políticos únicos. Artistas de países como Marrocos, Egito, Argélia, Sudão, Líbano e Tunísia, estão presentes no catálogo da Habibi Funk. Confira!"
     },
-    {
-      "spacing": {
-        "container": "container_90",
-        "desktop": {
-          "margin_top": "5",
-          "margin_bottom": "5",
-          "padding_bottom": "0",
-          "padding_top": "0"
-        },
-        "mobile": {
-          "margin_top": "4",
-          "margin_bottom": "5",
-          "padding_top": "0",
-          "padding_bottom": "4"
-        }
-      },
-      "products": [
-        "679c16e9fe85ee502f5b26c8",
-        "679c16f4fe85ee502f5b26fb",
-        "679c16eefe85ee502f5b26e0",
-        "679c16fcfe85ee502f5b2717",
-        "679c170cfe85ee502f5b2750",
-        "679c1714fe85ee502f5b2779",
-        "679c1715fe85ee502f5b277d",
-        "679c1719fe85ee502f5b2789",
-        "679c1722fe85ee502f5b27a6",
-        "679c173cfe85ee502f5b27fa",
-        "679c174afe85ee502f5b282c",
-        "679c174cfe85ee502f5b2837",
-        "679c1754fe85ee502f5b2859",
-        "679c1773fe85ee502f5b28b7",
-        "679c1777fe85ee502f5b28c1",
-        "679c1795fe85ee502f5b290b",
-        "679c1798fe85ee502f5b2918",
-        "679c17a2fe85ee502f5b293b",
-        "679c179dfe85ee502f5b292b",
-        "679c17acfe85ee502f5b295c",
-        "679c17affe85ee502f5b2965",
-        "679c17b0fe85ee502f5b296b",
-        "679c17b7fe85ee502f5b297a",
-        "676313b6a0c96d5393d9652a",
-        "679c16cdfe85ee502f5b262d",
-        "679c1741fe85ee502f5b280c",
-        "679c1750fe85ee502f5b2849",
-        "679c17b9fe85ee502f5b297e",
-        "6731125586609e53f8752dd3"
-      ],
-      "num_col_md": "3",
-      "num_col_sm": "1",
-      "visibility": "d-block d-md-block",
-      "title": "Poster Collab Vapor + Gráfica Gorila",
-      "type": "apx_productList_A",
-      "title_color": "",
-      "description": ""
-    },
+    
     {
       "spacing": {
         "container": "container_90",
