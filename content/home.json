@@ -53,7 +53,6 @@
             "title_color": "#ffffff",
             "link": "/indie--rock"
           },
-          
           "mobile": {
             "mask_opacity": 10,
             "img": "/img/uploads/rock-indie10.jpg",
@@ -194,28 +193,25 @@
         }
       },
       "products": [
-        "67b6552653d3dd5b9c72303f",
-        "67b6534a53d3dd5b9c722df3",
-        "67b654e753d3dd5b9c722ffb",
-        "67b655d653d3dd5b9c7230fc",
-        "67b6565a53d3dd5b9c723181",
-        "67b6517c53d3dd5b9c722bf8",
-        "67b651e853d3dd5b9c722c6d",
-        "67b6528a53d3dd5b9c722d39",
-        "67b64fb253d3dd5b9c7229bd",
-        "67b656b953d3dd5b9c7231d3",
-        "67b6587653d3dd5b9c723372",
-        "67b658aa53d3dd5b9c7233a1",
-        "67b658f853d3dd5b9c7233e7",
-        "67b659ce53d3dd5b9c7234cd",
-        "67b65ad053d3dd5b9c723610",
-        "67b66b2553d3dd5b9c7243ac",
-        "67b66c1253d3dd5b9c724477",
-        "67b66c5e53d3dd5b9c7244bb",
-        "67b66cc553d3dd5b9c724512",
-        "67b66b1253d3dd5b9c72439b",
-        "67b650ef53d3dd5b9c722b60",
-        "67b6560d53d3dd5b9c723128"
+        "67e14bc43b75ec550cceba32",
+        "67e14bba3b75ec550cceb9c3",
+        "67e14bc03b75ec550cceba08",
+        "67e14bbd3b75ec550cceb9e5",
+        "67e14bd03b75ec550cceba9a",
+        "67e14bcd3b75ec550cceba82",
+        "67e14bc73b75ec550cceba4c",
+        "67e14bc83b75ec550cceba58",
+        "67e14bc93b75ec550cceba62",
+        "67e14bd33b75ec550ccebab9",
+        "67e14bcc3b75ec550cceba79",
+        "67e14bc13b75ec550cceba12",
+        "67e14bce3b75ec550cceba89",
+        "67e14bd63b75ec550ccebad3",
+        "67e14bd43b75ec550ccebac5",
+        "67e14bdd3b75ec550ccebb0e",
+        "67e14bd83b75ec550ccebae4",
+        "67e14bdf3b75ec550ccebb23",
+        "67e14be03b75ec550ccebb29"
       ],
       "num_col_md": "3",
       "num_col_sm": "1",
@@ -260,7 +256,6 @@
       "title_img": "/img/uploads/logo-habibi.png",
       "description": "O selo Habibi Funk, com sede em Berlim, resgata raridades da música árabe, unindo influências tradicionais com funk, soul e jazz.\nAlém de reedições e compilações que trazem à tona vozes quase esquecidas, o selo valoriza a história por trás dessas músicas, revelando como elas refletem momentos sociais e políticos únicos. Artistas de países como Marrocos, Egito, Argélia, Sudão, Líbano e Tunísia, estão presentes no catálogo da Habibi Funk. Confira!"
     },
-    
     {
       "spacing": {
         "container": "container_90",
