@@ -69,23 +69,32 @@ apx_tags.forEach(slug => {
   lgpd.style.maxWidth = screen.width <= mobileScreen ? '85%' : lgpd.style.maxWidth;
   var isPreview = new URLSearchParams(window.location.search).get('preview');
   if (!localStorage.getItem('lgpd')) {
+    try{
       gtag("consent", "default", {
         ad_storage: "denied",
         analytics_storage: "denied",
         ad_personalization: "denied",
         ad_user_data: "denied",
       }) 
+    }catch(e){
+      console.log(e)
+    }  
+   
       lgpd.classList.remove("d-none");
   }
   document.getElementById('lgpd-btn').onclick = function() {
-    gtag("consent", "update", {
-      ad_storage: "granted",
-      analytics_storage: "granted",
-      ad_personalization: "granted",
-      ad_user_data: "granted",
-    })  
+    try{
+        gtag("consent", "update", {
+        ad_storage: "granted",
+        analytics_storage: "granted",
+        ad_personalization: "granted",
+        ad_user_data: "granted",
+      });  
+    }catch(e){
+      console.log(e)
+    }
     localStorage.setItem('lgpd', true);
-      lgpd.classList.add('d-none');
+    lgpd.classList.add('d-none');
   };
 </script>
 <% if(apx_popup && apx_popup.image && apx_popup.title){ %>
