@@ -623,7 +623,7 @@ export default {
     }
     
     let lastCat = sessionStorage.getItem('last_category');
-    let lastCatExistInProduct = this.body.categories.find(el => el.name === lastCat);
+    let lastCatExistInProduct = this.body.categories ? this.body.categories.find(el => el.name === lastCat) : false;
     let breadcrumbs = $(`.breadcrumb > .breadcrumb-item a`).map(function() {
       return {
         name: $(this).text().trim(),
@@ -648,16 +648,18 @@ export default {
       }
     } else if (!lastCat || ['discos', 'toys', 'acessorios'].includes(lastCat.toLowerCase().trim())) {
       // Se lastCat for null ou não existir na lista de categorias, insere a primeira categoria no breadcrumb
-      let firstCategory = this.body.categories.filter(el => !['discos', 'toys', 'acessorios'].includes(el.name.toLowerCase()));
-      firstCategory = firstCategory[0]
-      $(`.breadcrumb > .breadcrumb-item:last-child`).before(`
-        <li class="breadcrumb-item">
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6.75 13.5L11.25 9L6.75 4.5" stroke="#000" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-          <a href="/${firstCategory.slug}">${firstCategory.name.toUpperCase()}</a>
-        </li>
-      `);
+      let firstCategory = this.body.categories ? this.body.categories.filter(el => !['discos', 'toys', 'acessorios'].includes(el.name.toLowerCase())) : false;
+      firstCategory = firstCategory != false ? firstCategory[0] : false;
+      if(firstCategory){
+        $(`.breadcrumb > .breadcrumb-item:last-child`).before(`
+          <li class="breadcrumb-item">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.75 13.5L11.25 9L6.75 4.5" stroke="#000" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <a href="/${firstCategory.slug}">${firstCategory.name.toUpperCase()}</a>
+          </li>
+        `);
+      }
     }
   },
 
