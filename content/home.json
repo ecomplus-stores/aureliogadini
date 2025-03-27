@@ -17,10 +17,12 @@
             "link": "https://vapordiscos.com.br/poster-collab"
           },
           "mobile": {
-            "mask_opacity": 0
+            "mask_opacity": 0,
+            "img": "/img/uploads/collab-1-.png",
+            "link": "https://vapordiscos.com.br/poster-collab"
           },
           "start": "2025-03-27T22:54:26.260Z",
-          "end": "2025-03-27T22:54:26.277Z"
+          "end": "2025-08-07T22:54:26.277Z"
         },
         {
           "desktop": {
