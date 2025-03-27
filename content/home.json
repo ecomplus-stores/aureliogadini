@@ -13,6 +13,18 @@
         {
           "desktop": {
             "mask_opacity": 0,
+            "img": "/img/uploads/banner-collab-1-.png",
+            "link": "https://vapordiscos.com.br/poster-collab"
+          },
+          "mobile": {
+            "mask_opacity": 0
+          },
+          "start": "2025-03-27T22:54:26.260Z",
+          "end": "2025-03-27T22:54:26.277Z"
+        },
+        {
+          "desktop": {
+            "mask_opacity": 0,
             "img": "/img/uploads/souljazz.png"
           },
           "mobile": {
@@ -35,18 +47,6 @@
           },
           "start": "2024-09-21T22:55:12.957Z",
           "end": "2025-09-21T22:55:00.000Z"
-        },
-        {
-          "desktop": {
-            "mask_opacity": 0,
-            "img": "/img/uploads/banner-collab-1-.png",
-            "link": "https://vapordiscos.com.br/poster-collab"
-          },
-          "mobile": {
-            "mask_opacity": 0
-          },
-          "start": "2025-03-27T22:54:26.260Z",
-          "end": "2025-03-27T22:54:26.277Z"
         }
       ]
     },
