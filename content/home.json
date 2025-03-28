@@ -284,6 +284,34 @@
         }
       },
       "products": [
+        "67e5ca233b75ec550cd658e9",
+        "67e5ca253b75ec550cd658f0",
+        "67e5ca263b75ec550cd658f2",
+        "67e5ca293b75ec550cd658fa"
+      ],
+      "num_col_md": 3,
+      "num_col_sm": "1",
+      "visibility": "d-block d-md-block",
+      "title": "Poster Collab Vapor + Gráfica Gorila",
+      "type": "apx_productList_A",
+      "link": "/toys",
+      "title_color": "",
+      "description": ""
+    },
+    {
+      "spacing": {
+        "container": "container_90",
+        "desktop": {
+          "margin_top": "5",
+          "margin_bottom": "5"
+        },
+        "mobile": {
+          "margin_top": "4",
+          "margin_bottom": "4",
+          "padding_bottom": "5"
+        }
+      },
+      "products": [
         "66e618c59e4b2e07f50bd971",
         "66f350409e4b2e07f518d900",
         "66e618cb9e4b2e07f50bd97d",
