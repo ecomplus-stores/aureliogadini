@@ -27,14 +27,16 @@
         {
           "desktop": {
             "mask_opacity": 0,
-            "img": "/img/uploads/souljazz.png"
+            "img": "/img/uploads/mm-food-2-.png",
+            "link": "https://vapordiscos.com.br/mf-doom---mm-food-20th-anniversary"
           },
           "mobile": {
             "mask_opacity": 0,
-            "img": "/img/uploads/souljazz_mobile_final.png"
+            "img": "/img/uploads/diverso-e-criativo-o-quarto-album-de-estudio-da-banda-irlandesa-de-alt-rock-de-volta-por-aqui-1-.png",
+            "link": "https://vapordiscos.com.br/mf-doom---mm-food-20th-anniversary"
           },
           "start": "2025-02-20T16:01:31.895Z",
-          "end": "2025-05-30T16:01:31.911Z"
+          "end": "2026-05-30T16:01:00.000Z"
         },
         {
           "desktop": {
