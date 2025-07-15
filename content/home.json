@@ -13,20 +13,6 @@
         {
           "desktop": {
             "mask_opacity": 0,
-            "img": "/img/uploads/banner-collab-1-.png",
-            "link": "https://vapordiscos.com.br/poster-collab"
-          },
-          "mobile": {
-            "mask_opacity": 0,
-            "img": "/img/uploads/mobile-collab-2.png",
-            "link": "https://vapordiscos.com.br/poster-collab"
-          },
-          "start": "2025-03-27T22:54:26.260Z",
-          "end": "2025-08-07T22:54:26.277Z"
-        },
-        {
-          "desktop": {
-            "mask_opacity": 0,
             "img": "/img/uploads/funko-pop_set.png",
             "link": "https://vapordiscos.com.br/toys"
           },
