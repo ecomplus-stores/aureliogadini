@@ -23,6 +23,18 @@
           },
           "start": "2024-09-21T22:55:12.957Z",
           "end": "2025-09-21T22:55:00.000Z"
+        },
+        {
+          "desktop": {
+            "mask_opacity": 0,
+            "img": "/img/uploads/doechii.png",
+            "link": "https://vapordiscos.com.br/doechii---alligator-bites-never-heal"
+          },
+          "mobile": {
+            "mask_opacity": 0
+          },
+          "start": "2025-07-17T12:07:45.300Z",
+          "end": "2025-07-17T12:07:45.315Z"
         }
       ]
     },
