@@ -13,16 +13,16 @@
         {
           "desktop": {
             "mask_opacity": 0,
-            "img": "/img/uploads/funko-pop_set.png",
-            "link": "https://vapordiscos.com.br/toys"
+            "img": "/img/uploads/turnstile-desktop.png",
+            "link": "https://vapordiscos.com.br/turnstile---never-enough"
           },
           "mobile": {
             "mask_opacity": 0,
-            "img": "/img/uploads/funko_mobile_set.png",
-            "link": "https://vapordiscos.com.br/toys"
+            "img": "/img/uploads/turnsitle-mobile-1-.png",
+            "link": "https://vapordiscos.com.br/turnstile---never-enough"
           },
-          "start": "2024-09-21T22:55:12.957Z",
-          "end": "2025-09-21T22:55:00.000Z"
+          "start": "2025-07-17T20:54:54.756Z",
+          "end": "2025-09-19T20:56:23.674Z"
         },
         {
           "desktop": {
@@ -37,20 +37,6 @@
           },
           "start": "2025-07-17T12:07:45.300Z",
           "end": "2025-09-19T12:07:45.315Z"
-        },
-        {
-          "desktop": {
-            "mask_opacity": 0,
-            "img": "/img/uploads/turnstile-desktop.png",
-            "link": "https://vapordiscos.com.br/turnstile---never-enough"
-          },
-          "mobile": {
-            "mask_opacity": 0,
-            "img": "/img/uploads/turnsitle-mobile-1-.png",
-            "link": "https://vapordiscos.com.br/turnstile---never-enough"
-          },
-          "start": "2025-07-17T20:54:54.756Z",
-          "end": "2025-09-19T20:56:23.674Z"
         }
       ]
     },
