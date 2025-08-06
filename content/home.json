@@ -13,42 +13,30 @@
         {
           "desktop": {
             "mask_opacity": 0,
-            "img": "/img/uploads/banner-collab-1-.png",
-            "link": "https://vapordiscos.com.br/poster-collab"
+            "img": "/img/uploads/turnstile-desktop.png",
+            "link": "https://vapordiscos.com.br/turnstile---never-enough"
           },
           "mobile": {
             "mask_opacity": 0,
-            "img": "/img/uploads/mobile-collab-2.png",
-            "link": "https://vapordiscos.com.br/poster-collab"
+            "img": "/img/uploads/turnsitle-mobile-1-.png",
+            "link": "https://vapordiscos.com.br/turnstile---never-enough"
           },
-          "start": "2025-03-27T22:54:26.260Z",
-          "end": "2025-08-07T22:54:26.277Z"
+          "start": "2025-07-17T20:54:54.756Z",
+          "end": "2025-09-19T20:56:23.674Z"
         },
         {
           "desktop": {
             "mask_opacity": 0,
-            "img": "/img/uploads/souljazz.png"
+            "img": "/img/uploads/doechii-desktop.png",
+            "link": "https://vapordiscos.com.br/doechii---alligator-bites-never-heal"
           },
           "mobile": {
             "mask_opacity": 0,
-            "img": "/img/uploads/souljazz_mobile_final.png"
+            "img": "/img/uploads/doechii-mobileok.png",
+            "link": "https://vapordiscos.com.br/doechii---alligator-bites-never-heal"
           },
-          "start": "2025-02-20T16:01:31.895Z",
-          "end": "2025-05-30T16:01:31.911Z"
-        },
-        {
-          "desktop": {
-            "mask_opacity": 0,
-            "img": "/img/uploads/funko-pop_set.png",
-            "link": "https://vapordiscos.com.br/toys"
-          },
-          "mobile": {
-            "mask_opacity": 0,
-            "img": "/img/uploads/funko_mobile_set.png",
-            "link": "https://vapordiscos.com.br/toys"
-          },
-          "start": "2024-09-21T22:55:12.957Z",
-          "end": "2025-09-21T22:55:00.000Z"
+          "start": "2025-07-17T12:07:45.300Z",
+          "end": "2025-09-19T12:07:45.315Z"
         }
       ]
     },
@@ -207,25 +195,25 @@
         }
       },
       "products": [
-        "67e14bc43b75ec550cceba32",
-        "67e14bba3b75ec550cceb9c3",
-        "67e14bc03b75ec550cceba08",
-        "67e14bbd3b75ec550cceb9e5",
-        "67e14bd03b75ec550cceba9a",
-        "67e14bcd3b75ec550cceba82",
-        "67e14bc73b75ec550cceba4c",
-        "67e14bc83b75ec550cceba58",
-        "67e14bc93b75ec550cceba62",
-        "67e14bd33b75ec550ccebab9",
-        "67e14bcc3b75ec550cceba79",
-        "67e14bc13b75ec550cceba12",
-        "67e14bce3b75ec550cceba89",
-        "67e14bd63b75ec550ccebad3",
-        "67e14bd43b75ec550ccebac5",
-        "67e14bdd3b75ec550ccebb0e",
-        "67e14bd83b75ec550ccebae4",
-        "67e14bdf3b75ec550ccebb23",
-        "67e14be03b75ec550ccebb29"
+        "68782ec4578b5f795465c8a7",
+        "68782ec9578b5f795465c8bc",
+        "68782ee4578b5f795465c926",
+        "68782eec578b5f795465c949",
+        "68782eef578b5f795465c954",
+        "68782efb578b5f795465c97a",
+        "68782efe578b5f795465c988",
+        "68782f07578b5f795465c9a7",
+        "68782f15578b5f795465c9cb",
+        "68782eea578b5f795465c93d",
+        "68782ee8578b5f795465c934",
+        "68782edd578b5f795465c90c",
+        "68782ec8578b5f795465c8b7",
+        "68782ed0578b5f795465c8dd",
+        "68782eda578b5f795465c903",
+        "68782ed6578b5f795465c8f1",
+        "68782ed3578b5f795465c8e8",
+        "68782f0b578b5f795465c9b0",
+        "68782f10578b5f795465c9be"
       ],
       "num_col_md": "3",
       "num_col_sm": "1",
@@ -251,12 +239,14 @@
         }
       },
       "products": [
-        "67631392a0c96d5393d96487",
-        "67631395a0c96d5393d96496",
-        "676313a8a0c96d5393d964e2",
-        "676313bca0c96d5393d96550",
-        "676313d0a0c96d5393d965b7",
-        "676313e4a0c96d5393d96602"
+        "67b654e753d3dd5b9c722ffb",
+        "67b6501053d3dd5b9c722a55",
+        "67b652cb53d3dd5b9c722d74",
+        "67b6596e53d3dd5b9c723474",
+        "67b650be53d3dd5b9c722b1e",
+        "67b65bf553d3dd5b9c7236d1",
+        "67b64f5353d3dd5b9c722959",
+        "67b6523153d3dd5b9c722cd8"
       ],
       "btn_bg": "#ffffff",
       "bg_color": "#e3e2e1",
@@ -267,36 +257,8 @@
       "title": "",
       "type": "apx_productList_A",
       "imagem_margin": "-6rem",
-      "title_img": "/img/uploads/logo-habibi.png",
-      "description": "O selo Habibi Funk, com sede em Berlim, resgata raridades da música árabe, unindo influências tradicionais com funk, soul e jazz.\nAlém de reedições e compilações que trazem à tona vozes quase esquecidas, o selo valoriza a história por trás dessas músicas, revelando como elas refletem momentos sociais e políticos únicos. Artistas de países como Marrocos, Egito, Argélia, Sudão, Líbano e Tunísia, estão presentes no catálogo da Habibi Funk. Confira!"
-    },
-    {
-      "spacing": {
-        "container": "container_90",
-        "desktop": {
-          "margin_top": "5",
-          "margin_bottom": "5"
-        },
-        "mobile": {
-          "margin_top": "4",
-          "margin_bottom": "4",
-          "padding_bottom": "5"
-        }
-      },
-      "products": [
-        "67e5ca233b75ec550cd658e9",
-        "67e5ca253b75ec550cd658f0",
-        "67e5ca263b75ec550cd658f2",
-        "67e5ca293b75ec550cd658fa"
-      ],
-      "num_col_md": 3,
-      "num_col_sm": "1",
-      "visibility": "d-block d-md-block",
-      "title": "Poster Collab Vapor + Gráfica Gorila",
-      "type": "apx_productList_A",
-      "link": "/toys",
-      "title_color": "",
-      "description": ""
+      "title_img": "/img/uploads/souljazzlogo.jpg",
+      "description": "O selo Soul Jazz foi fundado por Stuart Baker em Londres no início dos anos 90, inicialmente como uma loja de discos e, pouco depois, como uma gravadora dedicada a resgatar músicas raras ou em risco de desaparecimento — e, em muitos casos, já esquecidas pelo tempo. Ao longo de mais de três décadas construiu um catálogo precioso, lançando títulos dos mais diversos segmentos e com uma curadoria incrível. Confira!\n"
     },
     {
       "spacing": {
