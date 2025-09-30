@@ -13,30 +13,13 @@
         {
           "desktop": {
             "mask_opacity": 0,
-            "img": "/img/uploads/mdou-moctar.png",
-            "link": "https://vapordiscos.com.br/deftones---private-music"
+            "img": "/img/uploads/banner-aniversario1-1-.png"
           },
           "mobile": {
-            "mask_opacity": 0,
-            "img": "",
-            "link": ""
+            "mask_opacity": 0
           },
-          "start": "2025-07-17T20:54:54.756Z",
-          "end": "2025-12-20T20:56:23.674Z"
-        },
-        {
-          "desktop": {
-            "mask_opacity": 0,
-            "img": "/img/uploads/doechii-desktop.png",
-            "link": "https://vapordiscos.com.br/doechii---alligator-bites-never-heal"
-          },
-          "mobile": {
-            "mask_opacity": 0,
-            "img": "/img/uploads/doechii-mobileok.png",
-            "link": "https://vapordiscos.com.br/doechii---alligator-bites-never-heal"
-          },
-          "start": "2025-07-17T12:07:45.300Z",
-          "end": "2025-09-19T12:07:45.315Z"
+          "start": "2025-09-30T21:13:08.035Z",
+          "end": "2025-10-31T21:13:08.049Z"
         },
         {
           "desktop": {
