@@ -37,6 +37,17 @@
           },
           "start": "2025-07-17T12:07:45.300Z",
           "end": "2025-09-19T12:07:45.315Z"
+        },
+        {
+          "desktop": {
+            "mask_opacity": 0,
+            "img": "/img/uploads/banner-site-promo-aniversario-1-.png"
+          },
+          "mobile": {
+            "mask_opacity": 0
+          },
+          "start": "2025-09-30T20:50:24.832Z",
+          "end": "2025-10-31T20:50:24.850Z"
         }
       ]
     },
