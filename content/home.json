@@ -13,10 +13,11 @@
         {
           "desktop": {
             "mask_opacity": 0,
-            "img": "/img/uploads/banner-aniversario1-1-.png"
+            "img": "/img/uploads/banner-desk-1.png"
           },
           "mobile": {
-            "mask_opacity": 0
+            "mask_opacity": 0,
+            "img": "/img/uploads/1.png"
           },
           "start": "2025-09-30T21:13:08.035Z",
           "end": "2025-10-31T21:13:08.049Z"
