@@ -25,10 +25,11 @@
         {
           "desktop": {
             "mask_opacity": 0,
-            "img": "/img/uploads/banner-site-promo-aniversario-1-.png"
+            "img": "/img/uploads/banner-desk-2.png"
           },
           "mobile": {
-            "mask_opacity": 0
+            "mask_opacity": 0,
+            "img": "/img/uploads/2.png"
           },
           "start": "2025-09-30T20:50:24.832Z",
           "end": "2025-10-31T20:50:24.850Z"
