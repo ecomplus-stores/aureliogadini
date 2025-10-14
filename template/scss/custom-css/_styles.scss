@@ -1024,7 +1024,7 @@ nav[aria-label="breadcrumb"]{
   .minicart__subtotal{
       color: var(--blk);
       .prices__value{
-        font-size: var(--h5);
+        // font-size: var(--h5);
         text-transform: uppercase;
         font-family: var(--ff2);
         color: var(--blk);
@@ -1940,7 +1940,7 @@ nav.header__submenu[style="display: grid;"]{
     line-height: 0;
   }
   .prices__discount-label:after{
-    content: "à vista via pix";
+    content: "no pix";
     // font-size: calc(var(--font-size-sm) * 1.1);
     // line-height: calc(var(--font-size-sm) * 1.1);
     font-weight:500;
@@ -4016,3 +4016,33 @@ body{overflow-y: visible!important;}
     small,
     *{color:#fff!important}
   }
+
+.prices,
+.prices--big,
+.prices--literal{
+  display: flex;
+  flex-direction: column;
+  .prices__value{
+    font-size: var(--font-size);
+  }
+  > span {
+    display: flex;
+    flex-direction: column;
+    .prices__discount{
+      order: 1;
+      margin-top: 5px;
+      *{
+        font-size: calc(var(--font-size) * 1.3);
+      }
+      .prices__discount-label:after{
+        font-size: calc(var(--font-size) * 1);
+      }
+      .prices__discount-label{font-size: 0!important;}
+    }
+    .prices__installments{
+      order:10;
+      margin-top: 5px;
+      
+    }
+  }
+}
