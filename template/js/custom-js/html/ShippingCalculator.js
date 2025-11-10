@@ -19,6 +19,7 @@ import ShippingLine from '@ecomplus/storefront-components/src/ShippingLine.vue'
 
 const localStorage = typeof window === 'object' && window.localStorage
 const zipStorageKey = 'shipping-to-zip'
+const selectedServiceStorageKey = 'shipping-selected-service'
 const globalOpts = (typeof window === 'object' && window.propsShippingCalculator) || {}
 
 const reduceItemBody = itemOrProduct => {
@@ -206,19 +207,53 @@ export default {
                   ? -1
                   : 1
           })
-          if (this.canAutoSelectService) {
-            this.setSelectedService(0)
-          } else {
-            this.selectedService = null
-          }
           this.hasPaidOption = Boolean(this.shippingServices.find(service => {
             return service.shipping_line.total_price || service.shipping_line.price
           }))
           if (Array.isArray(this.shippingAppsSort) && this.shippingAppsSort.length) {
             this.shippingServices = sortApps(this.shippingServices, this.shippingAppsSort)
           }
-          //console.log(this.shippingServices)
+          ////console.log(this.shippingServices)
           this.shippingServices.sort((a, b) => a.shipping_line.delivery_time.days - b.shipping_line.delivery_time.days);
+          
+          // Restaurar serviço selecionado do localStorage após todos os sorts
+          if (localStorage && this.canSelectServices) {
+            const storedService = localStorage.getItem(selectedServiceStorageKey)
+            if (storedService) {
+              try {
+                const parsedService = JSON.parse(storedService)
+                const serviceIndex = this.shippingServices.findIndex(service => 
+                  service.service_code === parsedService.service_code &&
+                  service.app_id === parsedService.app_id
+                )
+                if (serviceIndex !== -1) {
+                  this.$emit('select-service', this.shippingServices[serviceIndex])
+                  this.selectedService = serviceIndex
+                  //console.log('Restored shipping service at index:', serviceIndex)
+                } else if (this.canAutoSelectService) {
+                  // Se não encontrou o serviço salvo, seleciona o primeiro
+                  this.$emit('select-service', this.shippingServices[0])
+                  this.selectedService = 0
+                }
+              } catch (e) {
+                console.error('Error parsing stored service', e)
+                if (this.canAutoSelectService) {
+                  this.$emit('select-service', this.shippingServices[0])
+                  this.selectedService = 0
+                }
+              }
+            } else if (this.canAutoSelectService) {
+              // Se não há serviço salvo, seleciona o primeiro
+              this.$emit('select-service', this.shippingServices[0])
+              this.selectedService = 0
+            }
+          } else if (this.canAutoSelectService) {
+            // Fallback: auto-seleciona o primeiro
+            this.$emit('select-service', this.shippingServices[0])
+            this.selectedService = 0
+          } else {
+            this.selectedService = null
+          }
         }
       }
     },
@@ -284,9 +319,12 @@ export default {
     },
 
     setSelectedService (i) {
-      if (this.canSelectServices) {
+      if (this.canSelectServices) {       
         this.$emit('select-service', this.shippingServices[i])
         this.selectedService = i
+        if (localStorage) {
+          localStorage.setItem(selectedServiceStorageKey, JSON.stringify(this.shippingServices[i]))
+        }
       }
     }
   },
