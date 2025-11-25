@@ -236,14 +236,12 @@
         }
       },
       "products": [
-        "67b654e753d3dd5b9c722ffb",
-        "67b6501053d3dd5b9c722a55",
-        "67b652cb53d3dd5b9c722d74",
-        "67b6596e53d3dd5b9c723474",
-        "67b650be53d3dd5b9c722b1e",
-        "67b65bf553d3dd5b9c7236d1",
-        "67b64f5353d3dd5b9c722959",
-        "67b6523153d3dd5b9c722cd8"
+        "66da3c68fc4aac27a2c8249b",
+        "692062b2c650040a8c41490c",
+        "68b8d77a578b5f7954a07388",
+        "68b8d758578b5f7954a0734a",
+        "6920628fc650040a8c414870",
+        "692062a6c650040a8c4148d8"
       ],
       "btn_bg": "#ffffff",
       "bg_color": "#e3e2e1",
@@ -254,8 +252,8 @@
       "title": "",
       "type": "apx_productList_A",
       "imagem_margin": "-6rem",
-      "title_img": "/img/uploads/souljazzlogo.jpg",
-      "description": "O selo Soul Jazz foi fundado por Stuart Baker em Londres no início dos anos 90, inicialmente como uma loja de discos e, pouco depois, como uma gravadora dedicada a resgatar músicas raras ou em risco de desaparecimento — e, em muitos casos, já esquecidas pelo tempo. Ao longo de mais de três décadas construiu um catálogo precioso, lançando títulos dos mais diversos segmentos e com uma curadoria incrível. Confira!\n"
+      "title_img": "/img/uploads/jidlogo.jpg",
+      "description": "Fundada em 2017 pelos produtores Adrian Younge, Ali Shaheed Muhammad (A Tribe Called Quest), pelo produtor de shows Andrew Lojero e pelo veterano da indústria Adam Block, a Jazz Is Dead se tornou um movimento global vivido através de comunidade e cultura. O coletivo viaja pelo mundo em busca de discos raros e dos artistas que lhes deram vida. Garimpam caixas e mais caixas atrás de músicas e histórias que despertam imaginação e aproximam pessoas. A motivação que os move é honrar o legado desses heróis musicais por meio de shows ao vivo, conteúdo visual e novas gravações analógicas.\nConfira os discos da JID na Vapor!\n"
     },
     {
       "spacing": {
