@@ -283,32 +283,6 @@
       "link": "/toys",
       "title_color": "",
       "description": "Aqui você encontrará uma seleção incrível de figuras Funko Pop e Super 7 inspiradas em artistas de diversos estilos, desde ícones do rock até estrelas do pop e lendas do indie."
-    },
-    {
-  "title": "black friday",
-  "slug": "black-friday",
-  "meta_title": "Black Friday",
-  "meta_description": "Ofertas especiais de Black Friday",
-  "sections": [
-    {
-      "type": "apx_banner-slider",
-      "visibility": "d-block d-md-block",
-      "autoplay": 20000,
-      "spacing": {
-        "container": "container-fluid"
-      },
-      "slides": []
-    },
-    {
-      "type": "apx_productList_A",
-      "visibility": "d-block d-md-block",
-      "title": "Ofertas Black Friday",
-      "products": [],
-      "num_col_md": "3",
-      "num_col_sm": "1",
-      "description": "Produtos com descontos exclusivos"
     }
-  ]
-}
   ]
 }
