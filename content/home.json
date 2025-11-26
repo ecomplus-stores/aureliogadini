@@ -9,7 +9,22 @@
       "spacing": {
         "container": "container-fluid"
       },
-      "slides": []
+      "slides": [
+        {
+          "desktop": {
+            "mask_opacity": 0,
+            "img": "/img/uploads/black-site.jpg",
+            "link": "https://vapordiscos.com.br/black-friday"
+          },
+          "mobile": {
+            "mask_opacity": 0,
+            "img": "/img/uploads/black-imobile.jpg",
+            "link": "https://vapordiscos.com.br/black-friday"
+          },
+          "start": "2025-11-26T17:04:33.364Z",
+          "end": "2025-11-29T17:04:33.376Z"
+        }
+      ]
     },
     {
       "type": "apx_banners-grid",
