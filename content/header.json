@@ -1,6 +1,8 @@
 {
   "categories_list": {
-    "featured": [],
+    "featured": [
+      "/black-friday?Black Friday"
+    ],
     "random": 3,
     "full_width": false
   },
