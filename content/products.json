@@ -16,11 +16,7 @@
       "type": "related-products",
       "title": "Indicamos para você"
     },
-    {
-      "type": "recommended-products",
-      "title": "Quem comprou este produto, também comprou:",
-      "show_loading": true
-    },
+    
     
     {
       "type": "product-specifications",
