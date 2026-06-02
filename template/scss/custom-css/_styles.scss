@@ -3736,7 +3736,7 @@ body{overflow-y: visible!important;}
   }
   
 }
-
+.app .login button .i-check{display:block!important}
 @media(max-width:990px){
   // html{overflow:hidden}
   body{
@@ -4046,3 +4046,5 @@ body{overflow-y: visible!important;}
     }
   }
 }
+
+.rc-anchor{display: none!important;}
