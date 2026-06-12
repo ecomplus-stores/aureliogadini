@@ -1,4 +1,5 @@
 // Add your custom JavaScript for storefront pages here.
+require('./encomenda.js');
 window.list_cols = sessionStorage.getItem(`list_cols`) || "3";
 document.addEventListener("DOMContentLoaded", function() {
   const loadedScreenSize = window.innerWidth;

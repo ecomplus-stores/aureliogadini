@@ -4048,3 +4048,64 @@ body{overflow-y: visible!important;}
 }
 
 .rc-anchor{display: none!important;}
+.product__out-of-stock{
+  button{
+    width:100%;
+    border-radius:0;
+    font-size:18px;
+  }
+}
+.product__encomenda {line-height:44px;}
+.offers-notification{
+  background:transparent;
+  color: var(--c1);
+}
+
+#encomenda-widget{position:fixed;right:18px;bottom:100px;z-index:2050;font-size:14px;display:none}
+  #encomenda-widget.is-active{display:block}
+  #encomenda-widget .encomenda__launcher{display:flex;align-items:center;gap:8px;border:0;border-radius:40px;
+    padding:12px 18px;background:var(--primary,#6d1b7b);color:#fff;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.25);
+    font-weight:600;animation:encomendaPulse 1.8s ease-in-out 3}
+  #encomenda-widget .encomenda__launcher i{font-style:normal}
+  @keyframes encomendaPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+  #encomenda-widget .encomenda__panel{display:none;width:380px;max-width:calc(100vw - 24px);background:#fff;
+    border-radius:14px;box-shadow:0 12px 40px rgba(0,0,0,.28);overflow:hidden}
+  #encomenda-widget.is-open .encomenda__panel{display:block}
+  #encomenda-widget.is-open .encomenda__launcher{display:none}
+  #encomenda-widget .encomenda__header{background:var(--primary,#6d1b7b);color:#fff;padding:14px 16px;display:flex;
+    align-items:flex-start;justify-content:space-between;gap:8px}
+  #encomenda-widget .encomenda__header h4{margin:0;font-size:18px;line-height:1.2;font-weight:bold;}
+  #encomenda-widget .encomenda__header p{margin:4px 0 0;font-size:14px;opacity:.9}
+  #encomenda-widget .encomenda__close{background:0;border:0;color:#fff;font-size:22px;line-height:1;cursor:pointer}
+  #encomenda-widget form{padding:14px 16px;max-height:55vh;overflow:auto}
+  #encomenda-widget label{display:block;font-size:14px;font-weight:600;margin:8px 0 3px;color:#333}
+  #encomenda-widget input,#encomenda-widget textarea{width:100%;border:1px solid #ccc;border-radius:8px;
+    padding:9px 10px;font-size:14px;box-sizing:border-box}
+  #encomenda-widget textarea{resize:vertical;min-height:54px}
+  #encomenda-widget .encomenda__field{position:relative}
+  #encomenda-widget .encomenda__suggestions{display:none;list-style:none;margin:4px 0 0;padding:6px;border:1px solid #eee;
+    border-radius:8px;background:#fafafa;max-height:190px;overflow:auto}
+  #encomenda-widget .encomenda__suggestion{display:flex;align-items:center;gap:8px;width:100%;text-align:left;border:0;
+    background:0;padding:6px;border-radius:6px;cursor:pointer;font-size:13px}
+  #encomenda-widget .encomenda__suggestion:hover{background:#efe6f1}
+  #encomenda-widget .encomenda__suggestion img{width:34px;height:34px;border-radius:4px;object-fit:cover}
+  #encomenda-widget .encomenda__verified{display:none;margin-top:6px;font-size:12px;color:#1a7d3c}
+  #encomenda-widget .encomenda__submit{width:100%;border:0;border-radius:10px;padding:12px;margin-top:14px;
+    background:var(--primary,#6d1b7b);color:#fff;font-weight:700;cursor:pointer;font-size:16px}
+  #encomenda-widget .encomenda__submit:disabled{opacity:.6;cursor:default}
+  @media(max-width:480px){#encomenda-widget{right:10px;left:10px;bottom:10px}
+    #encomenda-widget .encomenda__panel{width:100%}}
+
+    .search-engine__encomenda-cta{padding:0}
+.search-engine__encomenda{
+  background: transparent;
+    border-radius: 0;
+    font-size: 14px!important;
+    padding: .5rem 1rem!important;
+    width: 100%;
+    margin: 0;
+    color:var(--c1)!important;
+}
+.search-engine__encomenda:hover{
+  color:#fff!important;
+}

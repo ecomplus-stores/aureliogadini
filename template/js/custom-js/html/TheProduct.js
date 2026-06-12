@@ -437,6 +437,12 @@ export default {
       } else {
         this.buy()
       }
+    },
+
+    openEncomenda () {
+      if (typeof window.openEncomenda === 'function') {
+        window.openEncomenda('produto', this.name)
+      }
     }
   },
 

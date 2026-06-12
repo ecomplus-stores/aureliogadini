@@ -189,12 +189,28 @@
     </button>
   </transition>
 
+  <transition enter-active-class="animated fadeInDown">
+    <div
+      v-if="hasEmptyResult && term"
+      class="search-engine__encomenda-cta container text-center my-2"
+    >
+      <button
+        type="button"
+        class="btn btn-lg btn-outline-primary search-engine__encomenda"
+        @click="openEncomenda"
+      >
+        <i class="i-shopping-bag mr-1"></i>
+        <span v-html="encomendaCta"></span>
+      </button>
+    </div>
+  </transition>
+
   <transition
     enter-active-class="animated fadeInDown"
     leave-active-class="animated fadeOutUp fast position-absolute"
   >
     <div
-      
+
       class="search-engine__nav"
     >
       <div class="container">

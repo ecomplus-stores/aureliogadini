@@ -1,0 +1,32 @@
+{
+  "launcher": "Encomende um produto",
+  "searchCta": "Parece que não temos este produto em nosso catálogo. <b>Quero encomendar!</b>",
+  "title": "Quero fazer uma encomenda!",
+  "subtitle": "Não achou o que procura? Deixe aqui o título que te interessa e verificamos com os selos/distribuidores a disponibilidade do produto.",
+  "close": "Fechar",
+  "labelName": "Nome*",
+  "labelEmail": "E-mail*",
+  "labelPhone": "Telefone / WhatsApp",
+  "labelItem": "Item desejado* (artista, álbum...)",
+  "labelNotes": "Observações",
+  "notesPlaceholder": "",
+  "submit": "Enviar pedido de encomenda",
+  "sending": "Enviando...",
+  "verifiedPrefix": "Conferido:",
+  "alertSuccess": "Pedido de encomenda enviado!",
+  "alertError": "Não foi possível enviar agora. Tente novamente em instantes.",
+  "alertRequired": "Por favor preencha nome, e-mail e o item desejado.",
+  "mail": {
+    "subjectPrefix": "Encomenda solicitada — ",
+    "heading": "Nova solicitação de encomenda",
+    "labelName": "Cliente:",
+    "labelEmail": "E-mail:",
+    "labelPhone": "Telefone/WhatsApp:",
+    "labelItem": "Item desejado:",
+    "labelVerified": "Referência conferida (iTunes):",
+    "verifiedLink": "ver",
+    "labelNotes": "Observações:",
+    "labelOrigin": "Origem:",
+    "labelPage": "Página:"
+  }
+}

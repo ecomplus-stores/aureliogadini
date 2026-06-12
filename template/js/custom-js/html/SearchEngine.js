@@ -239,6 +239,11 @@ export default {
       const count = this.suggestedItems.length
       const rest = count % this.pageSize
       return (rest === 0 ? count - this.pageSize : count - rest) - 1
+    },
+
+    encomendaCta () {
+      return (window.encomendaTexts && window.encomendaTexts.searchCta) ||
+        '<b>Quero encomendar!</b>'
     }
   },
 
@@ -574,6 +579,12 @@ export default {
         this.page = 1
       } else {
         this.scheduleFetch()
+      }
+    },
+
+    openEncomenda () {
+      if (typeof window.openEncomenda === 'function') {
+        window.openEncomenda('busca', this.term)
       }
     }
   },
