@@ -178,6 +178,12 @@ export default {
       //}
     },
 
+    encomendaCard(){
+      if (typeof window.openEncomenda === 'function') {
+        window.openEncomenda('card', this.body.name)
+      }
+    },
+
     buy () {
       const product = this.body
       this.$emit('buy', { product })

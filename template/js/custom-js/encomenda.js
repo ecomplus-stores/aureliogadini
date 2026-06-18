@@ -304,7 +304,10 @@ function buildWidget () {
 function showWidget (origin, prefillItem, autoOpen) {
   buildWidget()
   widgetEl.attr('data-origin', origin).addClass('is-active')
-  if (prefillItem && !widgetEl.find('[name="item"]').val()) {
+  // if (prefillItem && !widgetEl.find('[name="item"]').val()) {
+  //   widgetEl.find('[name="item"]').val(prefillItem)
+  // }
+  if (prefillItem) {
     widgetEl.find('[name="item"]').val(prefillItem)
   }
   if (autoOpen) {
