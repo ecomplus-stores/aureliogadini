@@ -33,7 +33,18 @@ import {
 } from '@ecomplus/utils'
 
 import lozad from 'lozad'
-import EcomSearch from '@ecomplus/search-engine'
+//import EcomSearch from '@ecomplus/search-engine'
+import EcomSearch, { dslMiddlewares } from '@ecomplus/search-engine'
+dslMiddlewares.push(dsl => {
+  const must = dsl.query && dsl.query.bool && dsl.query.bool.must
+  if (Array.isArray(must)) {
+    must.forEach(clause => {
+      if (clause.multi_match) {
+        clause.multi_match.operator = 'or'
+      }
+    })
+  }
+})
 import { Portal } from '@linusborg/vue-simple-portal'
 import scrollToElement from '@ecomplus/storefront-components/src/js/helpers/scroll-to-element'
 import ABackdrop from '@ecomplus/storefront-components/src/ABackdrop.vue'
