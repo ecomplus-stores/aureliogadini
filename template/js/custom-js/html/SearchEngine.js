@@ -40,7 +40,10 @@ dslMiddlewares.push(dsl => {
   if (Array.isArray(must)) {
     must.forEach(clause => {
       if (clause.multi_match) {
-        clause.multi_match.operator = 'or'
+        // exige que TODAS as palavras do termo combinem (name/keywords),
+        // evitando que termos curtos como "de la soul" tragam milhares de
+        // produtos que só batem na palavra comum "de" e enterrem o resultado certo
+        clause.multi_match.operator = 'and'
       }
     })
   }
