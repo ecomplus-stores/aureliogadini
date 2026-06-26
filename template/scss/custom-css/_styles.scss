@@ -4000,8 +4000,21 @@ body{overflow-y: visible!important;}
     color: #fff;
   }
 }
-
+#instant-search{
+   .search__header .apx-side-heading{display: none;}
+  }
 @media(max-width:990px){
+  #encomenda-widget form{
+    max-height:unset;
+  }
+  
+  .search-engine__encomenda{
+        height: auto!important;
+    display: flex!important;
+    line-height: initial!important;
+    align-items: center!important;
+    i{display: none;}
+  }
   .floating-whatsapp-link{
       height: 36px;
       width: 36px;
@@ -4055,7 +4068,7 @@ body{overflow-y: visible!important;}
     font-size:18px;
   }
 }
-.product__encomenda {line-height:44px;}
+.product__encomenda {line-height:44px;padding:0}
 .offers-notification{
   background:transparent;
   color: var(--c1);

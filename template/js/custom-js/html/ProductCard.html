@@ -105,12 +105,20 @@
         name="out-of-stock"
         v-else-if="!isInStock"
       >
+      
         <p class="badge badge-dark mt-auto py-2 mb-1">
           {{ i19outOfStock }}
         </p>
-        <p class="badge badge-light mt-0 py-2 text-uppercase" style="border:1px solid; cursor:pointer;">
+        <p class="badge badge-light mt-0 py-2 text-uppercase" style="border:1px solid;">
+          <a-link
+         
+          :href="`/${body.slug}`"
+          :title="name"
+        >
           Avise-me
+          </a-link>
         </p>
+        
       </slot>
 
       <slot
