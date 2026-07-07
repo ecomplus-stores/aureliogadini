@@ -443,6 +443,12 @@ export default {
       if (typeof window.openEncomenda === 'function') {
         window.openEncomenda('produto', this.name)
       }
+    },
+
+    openAviseMe (ev) {
+      if (typeof window.openAviseMe === 'function') {
+        window.openAviseMe(ev.currentTarget, this.name)
+      }
     }
   },
 

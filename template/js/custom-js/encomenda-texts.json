@@ -16,6 +16,11 @@
   "alertSuccess": "Pedido de encomenda enviado!",
   "alertError": "Não foi possível enviar agora. Tente novamente em instantes.",
   "alertRequired": "Por favor preencha nome, e-mail e o item desejado.",
+  "avise": {
+    "button": "Avise-me quando chegar",
+    "submit": "Quero ser avisado",
+    "subjectPrefix": "Avise-me quando chegar — "
+  },
   "mail": {
     "subjectPrefix": "Encomenda solicitada — ",
     "heading": "Nova solicitação de encomenda",

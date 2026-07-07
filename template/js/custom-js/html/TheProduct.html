@@ -94,6 +94,15 @@
 
             <button
               type="button"
+              class="btn btn-primary product__avise mt-2"
+              @click="openAviseMe"
+            >
+              <i class="i-bell mr-1"></i>
+              Avise-me quando chegar
+            </button>
+
+            <button
+              type="button"
               class="btn btn-primary product__encomenda mt-2"
               @click="openEncomenda"
             >
@@ -249,6 +258,15 @@
                 <slot name="out-of-stock">
                   {{ i19outOfStock }}
                 </slot>
+
+                <button
+                  type="button"
+                  class="btn btn-primary product__avise mt-2"
+                  @click="openAviseMe"
+                >
+                  <i class="i-bell mr-1"></i>
+                  Avise-me quando chegar
+                </button>
 
                 <button
                   type="button"

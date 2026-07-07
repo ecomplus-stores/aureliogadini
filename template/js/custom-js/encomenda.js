@@ -180,7 +180,7 @@ function buildBody (data) {
     '<p><strong>' + m.labelPhone + '</strong> ' + escapeHtml(data.phone) + '</p>',
     '<p><strong>' + m.labelItem + '</strong> ' + escapeHtml(data.item) + '</p>'
   ]
-  if (verifiedRef) {
+  if (data.withVerified && verifiedRef) {
     lines.push(
       '<p><strong>' + m.labelVerified + '</strong> ' +
         escapeHtml(verifiedRef.label) +
@@ -204,16 +204,15 @@ function escapeHtml (str) {
     .replace(/"/g, '&quot;')
 }
 
-function onSubmit (e) {
-  e.preventDefault()
-  const $form = widgetEl.find('form')
+function submitForm ($form, origin, subjectPrefix, withVerified) {
   const data = {
     name: $form.find('[name="name"]').val().trim(),
     email: $form.find('[name="email"]').val().trim(),
     phone: $form.find('[name="phone"]').val().trim(),
     item: $form.find('[name="item"]').val().trim(),
     notes: $form.find('[name="notes"]').val().trim(),
-    origin: widgetEl.attr('data-origin') || 'site'
+    origin,
+    withVerified
   }
 
   if (!data.name || !data.email || !data.item) {
@@ -228,12 +227,17 @@ function onSubmit (e) {
   postMail({
     destination: ENCOMENDA_EMAIL,
     replyTo: data.email,
-    subject: T.mail.subjectPrefix + data.item,
+    subject: subjectPrefix + data.item,
     body: buildBody(data),
     form: $form
   }).finally(() => {
     $btn.prop('disabled', false).text(original)
   })
+}
+
+function onSubmit (e) {
+  e.preventDefault()
+  submitForm(widgetEl.find('form'), widgetEl.attr('data-origin') || 'site', T.mail.subjectPrefix, true)
 }
 
 function injectStyles () {
@@ -323,3 +327,43 @@ window.openEncomenda = function (origin, prefillItem) {
 
 // Textos disponíveis para os templates Vue (ex.: rótulo do botão na busca).
 window.encomendaTexts = T
+
+/* ============ "Avise-me quando chegar" (formulário inline) ============ */
+
+// Mesmo formulário/e-mail da encomenda, mas expandido na própria página
+// (sem popup) e com outro assunto. Chamado pelo TheProduct.
+window.openAviseMe = function (anchorEl, itemName) {
+  const $anchor = $(anchorEl)
+  let $box = $anchor.next('.avise-form')
+  if ($box.length) {
+    $anchor.toggleClass('is-open')
+    // ponytail: .toggle() em vez de slideToggle — o jQuery slim do storefront não tem o módulo de efeitos
+    $box.toggle($anchor.hasClass('is-open'))
+    return
+  }
+  $anchor.addClass('is-open')
+  $box = $(`
+  <div class="avise-form">
+    <form novalidate>
+      <label>${T.labelName}</label>
+      <input type="text" name="name" autocomplete="name" required>
+
+      <label>${T.labelEmail}</label>
+      <input type="email" name="email" autocomplete="email" required>
+
+      <label>${T.labelPhone}</label>
+      <input type="tel" name="phone" autocomplete="tel">
+
+      <input type="hidden" name="item">
+      <input type="hidden" name="notes">
+
+      <button type="submit" class="encomenda__submit">${T.avise.submit}</button>
+    </form>
+  </div>`)
+  $box.find('[name="item"]').val(itemName || '')
+  $box.find('form').on('submit', function (e) {
+    e.preventDefault()
+    submitForm($(this), 'avise-me (produto)', T.avise.subjectPrefix, false)
+  })
+  $anchor.after($box)
+}

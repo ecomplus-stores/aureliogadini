@@ -4069,6 +4069,16 @@ body{overflow-y: visible!important;}
   }
 }
 .product__encomenda {line-height:44px;padding:0}
+.product__avise {line-height:44px;padding:0}
+.product__avise.is-open{background:#fff;color:var(--primary,#6d1b7b)}
+.avise-form{margin-top:10px;text-align:left;border:1px solid #ddd;border-radius:10px;padding:12px 14px;background:#fff}
+  .avise-form label{display:block;font-size:14px;font-weight:600;margin:8px 0 3px;color:#333}
+  .avise-form input,.avise-form textarea{width:100%;border:1px solid #ccc;border-radius:8px;
+    padding:9px 10px;font-size:14px;box-sizing:border-box}
+  .avise-form textarea{resize:vertical;min-height:54px}
+  .avise-form .encomenda__submit{width:100%;border:0;border-radius:10px;padding:12px;margin-top:14px;
+    background:var(--primary,#6d1b7b);color:#fff;font-weight:700;cursor:pointer;font-size:16px}
+  .avise-form .encomenda__submit:disabled{opacity:.6;cursor:default}
 .offers-notification{
   background:transparent;
   color: var(--c1);
