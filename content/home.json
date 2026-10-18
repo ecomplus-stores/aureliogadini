@@ -75,15 +75,15 @@
             "content_position": "center_center",
             "mask_color": "#38b0fa",
             "mask_opacity": 10,
-            "title": "RAP<br>TRAP<br>R&B",
-            "link": "/rap--trap--rb",
+            "title": "RAP<br>TRAP",
+            "link": "/rap--trap",
             "title_color": "#ffffff"
           },
           "mobile": {
             "mask_opacity": 10,
             "img": "/img/uploads/raptrap10.jpg",
             "mask_color": "#38b0fa",
-            "link": "/rap--trap--rb"
+            "link": "/rap--trap"
           }
         },
         {
