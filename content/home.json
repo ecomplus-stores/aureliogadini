@@ -89,19 +89,19 @@
         {
           "desktop": {
             "img": "/img/uploads/punkmetal10.jpg",
-            "title": "PUNK<br>METAL",
+            "title": "PUNK<br>HARDCORE",
             "mask_opacity": 10,
             "mask_color": "#38b0fa",
             "content_position": "center_center",
             "content_order": "inside_image",
             "title_color": "#ffffff",
-            "link": "/punk--metal"
+            "link": "/punk--hardcore"
           },
           "mobile": {
             "mask_opacity": 10,
             "mask_color": "#38b0fa",
             "img": "/img/uploads/punkmetal10.jpg",
-            "link": "/punk--metal"
+            "link": "/punk--hardcore"
           }
         },
         {
