@@ -52,18 +52,18 @@
         {
           "desktop": {
             "img": "/img/uploads/funksoul10.jpg",
-            "title": "FUNK<BR>SOUL<BR>JAZZ",
+            "title": "FUNK<BR>SOUL",
             "mask_opacity": 10,
             "mask_color": "#38b0fa",
             "content_position": "center_center",
             "content_order": "inside_image",
             "title_color": "#ffffff",
-            "link": "/funk--soul--jazz"
+            "link": "/funk--soul"
           },
           "mobile": {
             "mask_opacity": 10,
             "img": "/img/uploads/funksoul10.jpg",
-            "link": "/funk--soul--jazz",
+            "link": "/funk--soul",
             "mask_color": "#38b0fa"
           }
         },
