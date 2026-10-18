@@ -148,13 +148,13 @@
             "content_order": "inside_image",
             "title_color": "#ffffff",
             "img": "/img/uploads/pop10.jpg",
-            "title": "POP",
-            "link": "/pop"
+            "title": "R&B<BR>POP",
+            "link": "/rb--pop"
           },
           "mobile": {
             "mask_opacity": 10,
             "img": "/img/uploads/pop10.jpg",
-            "link": "/pop",
+            "link": "/rb--pop",
             "mask_color": "#38b0fa"
           }
         }
