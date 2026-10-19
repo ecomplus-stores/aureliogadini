@@ -161,7 +161,7 @@
         {
           "desktop": {
             "mask_opacity": 10,
-            "img": "/img/uploads/metal2.jpg",
+            "img": "/img/uploads/metal.jpg",
             "link": "/metal",
             "title": "METAL",
             "title_color": "#ffffff",
@@ -172,7 +172,7 @@
           "mobile": {
             "mask_opacity": 0,
             "link": "/metal",
-            "img": "/img/uploads/metal2.jpg"
+            "img": "/img/uploads/metal.jpg"
           }
         }
       ],
