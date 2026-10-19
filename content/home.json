@@ -106,6 +106,23 @@
         },
         {
           "desktop": {
+            "mask_opacity": 10,
+            "img": "/img/uploads/metal.jpg",
+            "link": "/metal",
+            "title": "METAL",
+            "title_color": "#ffffff",
+            "mask_color": "#38b0fa",
+            "content_position": "center_center",
+            "content_order": "inside_image"
+          },
+          "mobile": {
+            "mask_opacity": 0,
+            "link": "/metal",
+            "img": "/img/uploads/metal.jpg"
+          }
+        },
+        {
+          "desktop": {
             "img": "/img/uploads/eletronica10.jpg",
             "mask_opacity": 10,
             "mask_color": "#38b0fa",
@@ -156,23 +173,6 @@
             "img": "/img/uploads/pop10.jpg",
             "link": "/rb--pop",
             "mask_color": "#38b0fa"
-          }
-        },
-        {
-          "desktop": {
-            "mask_opacity": 10,
-            "img": "/img/uploads/metal.jpg",
-            "link": "/metal",
-            "title": "METAL",
-            "title_color": "#ffffff",
-            "mask_color": "#38b0fa",
-            "content_position": "center_center",
-            "content_order": "inside_image"
-          },
-          "mobile": {
-            "mask_opacity": 0,
-            "link": "/metal",
-            "img": "/img/uploads/metal.jpg"
           }
         }
       ],
