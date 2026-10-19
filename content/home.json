@@ -123,7 +123,7 @@
         },
         {
           "desktop": {
-            "img": "/img/uploads/jazz2.jpg",
+            "img": "/img/uploads/jazz3.jpg",
             "title": "JAZZ",
             "mask_opacity": 10,
             "mask_color": "#38b0fa",
@@ -135,7 +135,7 @@
           "mobile": {
             "mask_opacity": 10,
             "mask_color": "#38b0fa",
-            "img": "/img/uploads/jazz2.jpg",
+            "img": "/img/uploads/jazz3.jpg",
             "link": "/jazz"
           }
         },
