@@ -51,43 +51,6 @@
         },
         {
           "desktop": {
-            "img": "/img/uploads/funksoul10.jpg",
-            "title": "FUNK<BR>SOUL",
-            "mask_opacity": 10,
-            "mask_color": "#38b0fa",
-            "content_position": "center_center",
-            "content_order": "inside_image",
-            "title_color": "#ffffff",
-            "link": "/funk--soul"
-          },
-          "mobile": {
-            "mask_opacity": 10,
-            "img": "/img/uploads/funksoul10.jpg",
-            "link": "/funk--soul",
-            "mask_color": "#38b0fa"
-          }
-        },
-        {
-          "desktop": {
-            "img": "/img/uploads/raptrap10.jpg",
-            "content_order": "inside_image",
-            "alt": "",
-            "content_position": "center_center",
-            "mask_color": "#38b0fa",
-            "mask_opacity": 10,
-            "title": "RAP<br>TRAP",
-            "link": "/rap--trap",
-            "title_color": "#ffffff"
-          },
-          "mobile": {
-            "mask_opacity": 10,
-            "img": "/img/uploads/raptrap10.jpg",
-            "mask_color": "#38b0fa",
-            "link": "/rap--trap"
-          }
-        },
-        {
-          "desktop": {
             "img": "/img/uploads/punkmetal10.jpg",
             "title": "PUNK<br>HARDCORE",
             "mask_opacity": 10,
@@ -123,6 +86,79 @@
         },
         {
           "desktop": {
+            "img": "/img/uploads/raptrap10.jpg",
+            "content_order": "inside_image",
+            "alt": "",
+            "content_position": "center_center",
+            "mask_color": "#38b0fa",
+            "mask_opacity": 10,
+            "title": "RAP<br>TRAP",
+            "link": "/rap--trap",
+            "title_color": "#ffffff"
+          },
+          "mobile": {
+            "mask_opacity": 10,
+            "img": "/img/uploads/raptrap10.jpg",
+            "mask_color": "#38b0fa",
+            "link": "/rap--trap"
+          }
+        },
+        {
+          "desktop": {
+            "img": "/img/uploads/funksoul10.jpg",
+            "title": "FUNK<BR>SOUL",
+            "mask_opacity": 10,
+            "mask_color": "#38b0fa",
+            "content_position": "center_center",
+            "content_order": "inside_image",
+            "title_color": "#ffffff",
+            "link": "/funk--soul"
+          },
+          "mobile": {
+            "mask_opacity": 10,
+            "img": "/img/uploads/funksoul10.jpg",
+            "link": "/funk--soul",
+            "mask_color": "#38b0fa"
+          }
+        },
+        {
+          "desktop": {
+            "img": "/img/uploads/jazz2.jpg",
+            "title": "JAZZ",
+            "mask_opacity": 10,
+            "mask_color": "#38b0fa",
+            "content_position": "center_center",
+            "content_order": "inside_image",
+            "title_color": "#ffffff",
+            "link": "/jazz"
+          },
+          "mobile": {
+            "mask_opacity": 10,
+            "mask_color": "#38b0fa",
+            "img": "/img/uploads/jazz2.jpg",
+            "link": "/jazz"
+          }
+        },
+        {
+          "desktop": {
+            "img": "/img/uploads/reggae.jpg",
+            "title": "REGGAE<br>DUB",
+            "mask_opacity": 10,
+            "mask_color": "#38b0fa",
+            "content_position": "center_center",
+            "content_order": "inside_image",
+            "title_color": "#ffffff",
+            "link": "/reggae--dub"
+          },
+          "mobile": {
+            "mask_opacity": 10,
+            "mask_color": "#38b0fa",
+            "img": "/img/uploads/reggae.jpg",
+            "link": "/reggae--dub"
+          }
+        },
+        {
+          "desktop": {
             "img": "/img/uploads/eletronica10.jpg",
             "mask_opacity": 10,
             "mask_color": "#38b0fa",
@@ -136,24 +172,6 @@
             "mask_opacity": 10,
             "img": "/img/uploads/eletronica10.jpg",
             "link": "/eletronica",
-            "mask_color": "#38b0fa"
-          }
-        },
-        {
-          "desktop": {
-            "img": "/img/uploads/brasil10.jpg",
-            "mask_opacity": 10,
-            "mask_color": "#38b0fa",
-            "content_position": "center_center",
-            "content_order": "inside_image",
-            "title_color": "#ffffff",
-            "title": "BRASIL",
-            "link": "/brasil"
-          },
-          "mobile": {
-            "mask_opacity": 10,
-            "img": "/img/uploads/brasil10.jpg",
-            "link": "/brasil",
             "mask_color": "#38b0fa"
           }
         },
@@ -177,20 +195,20 @@
         },
         {
           "desktop": {
-            "img": "/img/uploads/jazz2.jpg",
-            "title": "JAZZ",
+            "img": "/img/uploads/brasil10.jpg",
             "mask_opacity": 10,
             "mask_color": "#38b0fa",
             "content_position": "center_center",
             "content_order": "inside_image",
             "title_color": "#ffffff",
-            "link": "/jazz"
+            "title": "BRASIL",
+            "link": "/brasil"
           },
           "mobile": {
             "mask_opacity": 10,
-            "mask_color": "#38b0fa",
-            "img": "/img/uploads/jazz2.jpg",
-            "link": "/jazz"
+            "img": "/img/uploads/brasil10.jpg",
+            "link": "/brasil",
+            "mask_color": "#38b0fa"
           }
         }
       ],

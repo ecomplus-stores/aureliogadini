@@ -50,6 +50,25 @@ const isAlphabeticalOrderSubmenu = header.alphabetical_order_submenu
 const fullWidthSubmenu = header.full_width_submenu
 const isCentralizedLogo = header.centralized_logo
 const hasAllDepartments = header.menu_all_departments
+
+// fixed order for "Discos" submenu (unlisted categories go last)
+const discosOrder = [
+  'indie--rock',
+  'punk--hardcore',
+  'metal',
+  'rap--trap',
+  'funk--soul',
+  'jazz',
+  'reggae--dub',
+  'eletronica',
+  'rb--pop',
+  'brasil',
+  '7-polegadas'
+]
+const getDiscosIndex = ({ slug }) => {
+  const index = discosOrder.indexOf(slug)
+  return index > -1 ? index : discosOrder.length
+}
 %>
 
 <div id="overlay" class="fade"></div>
@@ -348,15 +367,11 @@ const hasAllDepartments = header.menu_all_departments
                           return b.name > a.name ? -1 : 1
                         })
                       }
+                      if (name == "Discos") {
+                        subcategories.sort((a, b) => getDiscosIndex(a) - getDiscosIndex(b))
+                      }
                     %>
                     <nav class="header__submenu<%= fullWidthSubmenu ? ' header__submenu--full' : '' %>" id="<%= `s-${slug.replace(/\//g, '_')}` %>">
-                      <% if (name == "Discos") {%>
-                        <div> 
-                          <a href="<%- slug %>">
-                            Todos os Discos
-                          </a>
-                        </div>
-                      <% } %>
                       <% subcategories.forEach(subcategory => { %>
                         <div>               
                           <a id="sd-<%= subcategory._id %>" href="/<%= subcategory.slug %>"><%= subcategory.name %></a>
@@ -375,6 +390,13 @@ const hasAllDepartments = header.menu_all_departments
                           <% }) %>
                         </div>
                       <% }) %>
+                      <% if (name == "Discos") {%>
+                        <div>
+                          <a href="/<%- slug %>">
+                            Todos os Discos
+                          </a>
+                        </div>
+                      <% } %>
                     </nav>
                   <% } %>
                 <% } %>

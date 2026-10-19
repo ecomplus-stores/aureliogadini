@@ -35,6 +35,28 @@ if (mainCategories) {
     }
   }
 }
+
+// fixed order for "Discos" submenu (unlisted categories go last)
+const discosOrder = [
+  'indie--rock',
+  'punk--hardcore',
+  'metal',
+  'rap--trap',
+  'funk--soul',
+  'jazz',
+  'reggae--dub',
+  'eletronica',
+  'rb--pop',
+  'brasil',
+  '7-polegadas'
+]
+const getDiscosIndex = ({ slug }) => {
+  const index = discosOrder.indexOf(slug)
+  return index > -1 ? index : discosOrder.length
+}
+if (categoryParents.discos) {
+  categoryParents.discos.sort((a, b) => getDiscosIndex(a) - getDiscosIndex(b))
+}
 %>
 
 <aside id="menu" class="menu shadow">
@@ -121,11 +143,6 @@ if (mainCategories) {
           <% } %>
 
           <div class="menu__list">
-            <% if (category && category.slug && category.name == "Discos") { %>
-              <a href="/<%= category.slug %>" class="menu__item">
-                <span>Todos os Discos</span>
-              </a>
-            <% } %>
             <% categoryParents[slug].forEach((subcategory, index) => { %>
               <% const hasSubmenu = Array.isArray(categoryParents[subcategory.slug]) %>
               <a
@@ -158,6 +175,11 @@ if (mainCategories) {
                 <% } %>
               </a>
             <% }) %>
+            <% if (category && category.slug && category.name == "Discos") { %>
+              <a href="/<%= category.slug %>" class="menu__item">
+                <span>Todos os Discos</span>
+              </a>
+            <% } %>
           </div>
 
           
