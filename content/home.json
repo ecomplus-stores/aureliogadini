@@ -157,6 +157,23 @@
             "link": "/rb--pop",
             "mask_color": "#38b0fa"
           }
+        },
+        {
+          "desktop": {
+            "mask_opacity": 10,
+            "img": "/img/uploads/metal2.jpg",
+            "link": "/metal",
+            "title": "METAL",
+            "title_color": "#ffffff",
+            "mask_color": "#38b0fa",
+            "content_position": "center_center",
+            "content_order": "inside_image"
+          },
+          "mobile": {
+            "mask_opacity": 0,
+            "link": "/metal",
+            "img": "/img/uploads/metal2.jpg"
+          }
         }
       ],
       "grid": "5",
